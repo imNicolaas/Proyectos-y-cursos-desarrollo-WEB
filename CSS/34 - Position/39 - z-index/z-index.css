@@ -1,0 +1,115 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 25px;    
+    padding: 0 10%;
+}
+
+main{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+h1{
+    font-weight: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1{
+    width: 150px;
+    height: 150px;
+    background-color: firebrick;
+    position: relative;
+    top: 45px;
+    left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box-2{
+    width: 150px;
+    height: 150px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-3{
+    width: 150px;
+    height: 150px;
+    background-color: firebrick;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 45px;
+    left: 45px;
+}
+
+.box-4{
+    width: 150px;
+    height: 150px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.box-5{
+    width: 150px;
+    height: 150px;
+    background-color: firebrick;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 20;
+}
+
+.box-6{
+    width: 150px;
+    height: 150px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    bottom: 45px;
+    left: 30px;
+    z-index: 30;
+}
+
+.box-7{
+    width: 150px;
+    height: 150px;
+    background-color: mediumseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    bottom: 210px;
+    left: 130px;
+
+    z-index: 10;
+}

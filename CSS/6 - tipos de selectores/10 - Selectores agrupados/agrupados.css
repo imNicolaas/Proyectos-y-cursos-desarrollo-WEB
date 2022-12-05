@@ -1,0 +1,68 @@
+/*  SELECTORES */
+
+/* 
+    Selectores Simples:
+
+            Selectores elementales:
+
+                    Selector universal -> Se representa solo con un * y engloba a todo el documento al que este vinulado el CSS que lo use
+
+                    Selector de tipo o etiqueta -> Se utilizan poniendo el nombre de la etiqueta a la que queremos cambiar su estilo y este se aplicara a todas las etiquetas de este tipo en el documento, exepto si tienen otro en particular. 
+
+            Selectores de atributo:
+
+                    id -> se representa por medio del id del elemento 
+
+                    clase -> se representa por medio la clase del elemento 
+
+                    otros atributos -> Se utilizan llavez tipo [ ] y dentro se pone el atributo que queremos seleccionar.
+                    ejemplos:
+
+                         [ href ]{
+                            propiedad : ;
+                         }
+
+                    O tambien se puede poner el nombre del atributo y su valor para cambiar solo una propiedad especifica:
+
+                         [ href = " https://goolge.com "  ] {
+                            propiedad: ;
+                         }
+
+    Selectores Compuestos:
+
+            Selectores Agrupados:
+                    Para hacer uso de este tipo de selectores es necesario que todos los elementos a los que se les vaya a dar estilo tengan un atributo class luego se nombran todos al inicio de la misma regla separados por comas y con un punto al inicio de cada nombre
+                         
+                         
+                         
+        Selectores Combinadores
+        Pseudoclases - Pseudo (Se vera mas adelante en el curso)
+
+*/
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.max_width{
+    max-width: 60%;
+}
+
+code{
+    font-size: 16.5px;
+}
+
+.rojo{
+    color: red;
+}
+
+.text-1, .text-2, .code-1{
+    background-color: saddlebrown;
+    border-radius: 3px;
+}

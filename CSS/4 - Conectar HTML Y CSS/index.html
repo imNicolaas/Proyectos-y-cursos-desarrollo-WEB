@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar HTML y CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+    <!-- CONEXION ENTRE HTML Y CSS -->
+    <link rel="stylesheet" href="/HTML y CSS/CSS/Conectar HTML y CSS/CSS/styles.css">
+
+    <script src="https://kit.fontawesome.com/288f863fc1.js" crossorigin="anonymous"></script>
+</head>
+
+            <!-- FORMAS DE CONECTAR CSS Y HTML -->
+
+<body>
+
+    <h1>Formas de conectar HTML y CSS</h1>
+
+    <ol>
+        <li>
+            <h2>Creando un archivo CSS en la carpeta del proyecto:</h2>
+
+            <p>
+                Esta es la forma mas recomendada de crear una conexion entre HTML y CSS ya que de esta forma el contenido de los dos lenguajes esta separado y el proyecto goza de una mejor armonia y un mayor orden
+                <br><br>
+                La conexion se haria primero creando el documento CSS que queremos vincular, en la misma carpeta del proyecto. Y en el documento HTML haremos uso de una etiqueta <b>&#60;link rel="stylesheet" href=""></b> que ira posicionada en el head del documento, donde el <b>stylesheet</b> hace referencia a "hoja de estilos" y en el <b>" href "</b> deberemos poner la direccion de la hoja de estilo CSS que queremos vincular, entonces automaticamente esa hoja de estilo quedara vinculada al documento HTML y a tu proyecto.
+            </p>
+
+            <div class="centrar" class="bordes">
+                <img src="/HTML y CSS/CSS/Conectar HTML y CSS/assets/images/ejem html y css.jpg" alt="ejemplo html y css.jpg">
+            </div>
+            
+        </li>
+
+        <li>
+            <h2>Usando una etiqueta Style:</h2>
+
+            <p>
+                Es posible hacer uso de el lenguaje CSS con una etiqueta HTML en el mismo documento sin hacer uso una hoja de estilo y es con la etiqueta <b>&#60;style>  &#60;/style></b> pero aunque esto sea posoble no es recomendable en la gran mayoria de los casos ya que en un proyecto de desasrrollo de una pagina web se tienen varios documentos HTML y no es conveniente si se quiere cambiar algo en el estilo de la o las paginas 
+            </p>
+
+            <p>
+                esta etiqueta se veria de esta forma:
+            </p>
+
+            <pre><code>
+                &#60;style>
+
+                    .titulo{
+                        font-family: 'Oswald', sans-serif;
+            
+                        display: flex;
+                        justify-content: center;
+            
+                        font-size: 40px;
+                    }
+            
+                    body{
+                        font-family: 'Roboto', sans-serif;
+            
+                        font-size: 17px;
+                        
+                    }   
+                &#60;/style>
+            </code></pre>
+        </li>
+
+        <li>
+            <h2>CSS en linea:</h2>
+
+            <p>
+                Esta implica añadir un atributo a la etiqueta en particular a la que queremos darle algun estilo con CSS, y es la menos recomendada por su poca practicidad. No se recomienda usar practicamente nunca y se veria de esta forma 
+            </p>
+
+            <pre><code>
+    <b>&#60;h3 style="color: <i  class="fas fa-square"></i> red;"> </b>Subtitulo H3 de prueba <b>&#60;/h3></b>
+            </code></pre>
+
+            <h3 style="color: red;">Subtitulo H3 de prueba</h3>
+        </li>
+
+        <li>
+            <h2>Haciendo uso del @import</h2>
+
+            <p>
+                Para implementar una hoja de estilo CSS en nuestro proyecto haciendo uso del <b>@import</b> solo se escribiria en el heead del socumento HTML y en <b>url</b> se pondria la direccion de la hoja de estilos
+            </p>
+
+            <pre><code>
+    @import url(/HTML y CSS/CSS/Conectar HTML y CSS/CSS/styles.css)
+            </code></pre>
+
+            <P>
+                Esta es la menos recomendada de todas y se podria decir que su uso no es correcto ya que al implementar css de esta fomra en nuestra pagina, se carga todo de forma asincrona <b>es decir que el HTML cargara todos los componentes de la pagina entre ellos este @import o sea que si tardan en cargar los demas elementos el estilo cargara despues haciendo que la pagina de una mala experiencia  </b>
+            </P>
+
+            
+        </li>
+    </ol>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 25px;    
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.div{
+    margin: 0;
+}
+
+h1{
+    font-weight: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+li{
+    margin-bottom: 6px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1{
+    width: 180px;
+    height: 180px;
+    background-color: hsl(60, 100%, 50%);
+}
+
+.nota-1{
+    width: 400px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(60, 184, 206);
+    padding: 1% 2%;
+    bottom: 116px;
+    left: 200px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, .5);
+}
+
+.box-3{
+    width: 180px;
+    height: 180px;
+    background-color: hsl(240 100% 50% / .5);
+}
+
+.nota-2{
+    width: 400px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(60, 184, 206);
+    padding: 1% 2%;
+    bottom: 112px;
+    left: 200px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, .5);
+}
+
+.sombra{
+    box-shadow: 5px 5px 10px black;
+    border-radius: 20px;
+}

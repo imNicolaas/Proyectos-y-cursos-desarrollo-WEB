@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores de id y clase CSS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/HTML y CSS/CSS/6 - tipos de selectores/8 - Selectores de id y clase/id_y_clase.css">
+
+</head>
+
+<body>
+    
+    <h1 id="titulo-1">Selectores de id y clase en CSS</h1>
+
+    <h2>Selector por medio de id:</h2>
+
+    <p>El <b>id</b> es un atributo por el cual se puede identificara una etiqueta en particular de las demas y se diferenciara de lo demas por que el id es unico para cada elemento, y a la hora de dar estilo a este objeto por medio de CSS se llamara a este id con un <b>#</b> pero <b class="rojo">no es muy recomendable usar id para dar estilos por que los "id's" son identificadores y esto quiere decir que solo puede haber uno, y uno de los principios de CSS es que los estilos sean reutilizables lo cual no es compatible con dar estilo a solo un elemento</b></p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;h1 <span class="rojo">id</span>="titulo-1">Selectores de id y clase en CSS</h1>
+            </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+    <span class="rojo">#</span>titulo-1{
+        display: flex;
+        justify-content: center;
+        background-color: lightslategray;
+        border-radius: 5px;
+    }
+            </code></pre>
+        </li>
+    </ul>
+
+    <h2>Selector por medio de class:</h2>
+
+    <p >
+        El <b>class</b> es un atributo que permite separar el elemento para acceder al el por medio de (en este caso) CSS para dar estilos y se accede a ellos en CSS por medio de un punto ( . ) y despues el nombre de la class
+    </p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;h1 <span class="rojo">class</span>="titulo-1">Selectores de id y clase en CSS</h1>
+            </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+    <span class="rojo">.</span>titulo-1{
+        display: flex;
+        justify-content: center;
+        background-color: lightslategray;
+        border-radius: 5px;
+    }
+            </code></pre>
+        </li>
+    </ul>
+    
+
+    <p>
+        No hay un limite de clases para un elemento o etiqueta, podemos poner las que queramos, así:
+    </p>
+
+    <pre><code>
+    &#60;h1 <span class="vino_tinto">class</span> = <span class="rojo">"titulo-1 titulo-2 titulo-3 titulo-4" </span>>Selectores de id y clase en CSS</h1>
+    </code></pre>
+
+
+
+    <div class="centrar">
+        <p class="max_width">
+            <span class="rojo">Nota:</span> las clases y id's son "Case sensitive" es decir que su alguna de las clases o id's es escrita con alguna de sus letras en mayuscula o minuscula cuando en su nombre esta de otra forma, el lenguaje CSS no entendera que se habla de el elemento en si.
+        </p>
+    </div>
+    
+
+</body>
+</html>

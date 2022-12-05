@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs seleccionables</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        .azul{
+            color: blue;
+        }
+
+        .azul_claro{
+            color: darkturquoise;
+        }
+
+        .rojo{
+            color: firebrick;
+            
+        }
+
+        .Parrafo_lindo{
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        h1{
+            font-family: 'Nanum Myeongjo', serif;
+            font-size: 50px;
+        }
+
+        .cod_mascotas{
+            color: darkblue;
+        }
+    </style>
+    
+</head>
+<!--
+        Radio -> Permire seleccionar una unica opcion de una lista de opciones relacionadas.
+
+        checkbox -> Permite seleccionar varias opciones de una lista de opciones relacionadas.
+        
+        Select -> crea una lista de opciones donde podemos seleccionar una o varias opciones.
+
+        - Cada opcion ira dentro de una etiqueta <option> </option>
+
+        si tememos muhcas opciones podemos ordenarlas por categorias a travez de la etiqueta <optgroup> con el atributo label para nombrar la categoria  
+
+-->
+<body>
+    <h1>Elementos seleccionables</h1>
+
+    <form>
+
+<!-- INPUT TIPO RADIO-->
+
+        <h2>Color de piel: (INPUT TIPO RADIO)</h2>
+        <!-- Para poder seleccionar un solo campo se les debe poner un name = "" igual a todos los inputs relacionados -->
+
+        <!-- para que una casilla este marcada por defecto esta el atributo checed-->
+
+        <label>Negro 
+            <input type="radio" name="genero" value="Negro" checked>
+        </label> <br>
+
+        <label>Prieto 
+            <input type="radio" name="genero" value="Prieto">
+        </label> <br>
+
+        <label>Blanco
+            <input type="radio" name="genero" value="Blanco">
+        </label> <br>
+
+<!-- INPUT TIPO CHECKBOX-->
+
+        <h2>Lenguajes que conoces: (INPUT TIPO CHECKBOX)</h2>
+
+        <label>HTML
+                <input type="checkbox" name="Lenguajes" value="HTML">
+        </label> <br>
+
+        <label>CSS
+            <input type="checkbox" name="Lenguajes" value="CSS">
+        </label> <br>
+
+        <label>JavaScript
+            <input type="checkbox" name="Lenguajes" value="JavaScript">
+        </label> <br>
+
+<!-- INPUT TIPO SELECT-->
+
+        <h2>Tipo de identificacion: (FORMULARIO SELECT)</h2>
+        <!-- En este tipo de input se despliegan varias opciones y estas deben ir dentro del select correcto en un etiqueta <option> </option>--> 
+
+        <p class="Parrafo_lindo">Este tipo de formulario despliega las opciones que estan relacionadas con el tema de selcecion y todas van dentro de una etiqueta &lt;select name="">  &lt;/select> y cada opcion va dentro de una etiqueta option con el atributo value que representa el valor que posee, asi:</p>
+
+        <pre>
+            <code>
+                &lt;<span class="azul">select</span> <span class="azul_claro">name</span>=<span class="rojo">"Tipo de identificacion"</span>>
+
+                    &lt;<span class="azul">option</span> <span class="azul_claro">value</span> =<span class="rojo"> "Cedula_de_ciudadania"</span>> C.C &lt;/<span class="azul">option</span>>
+                    &lt;<span class="azul">option</span> <span class="azul_claro">value</span> = <span class="rojo">"Tarjeta_De_identidad"</span>> Tarjeta de identidad &lt;/<span class="azul">option</span>>
+                    &lt;<span class="azul">option</span> <span class="azul_claro">value</span> = <span class="rojo">"Contraseña"</span>> Contraseña &lt;/<span class="azul">option</span>>
+
+                &lt;/<span class="azul">select</span>>
+            </code>
+        </pre>
+
+    <label>Tipo de identificacion
+        <select name="Tipo de identificacion" >
+                <option value="Cedula_de_ciudadania">C.C</option>
+                <option value="Tarjeta_De_identidad">Tarjeta de identidad</option>
+                <option value="Contraseña">Contraseña</option>
+        </select>
+    </label>
+
+        <p class="Parrafo_lindo">Para hacer que en este menu desplegable se puedan selecionar varias opciones se usa el atributo <u><i>Multiple</i></u> que al ser utilizado se podran selecionar varias opciones haciedno uso continuo de la tecla control y seleecionando las opciones deseadas. <br>
+        de esta forma:</p>
+
+    <label>Tipo de identificacion
+        <select name="Tipo de identificacion" multiple>
+            <option value="Cedula_de_ciudadania">C.C</option>
+            <option value="Tarjeta_De_identidad">Tarjeta de identidad</option>
+            <option value="Contraseña">Contraseña</option>
+        </select>
+    </label>
+
+    <h2> Eliga su mascota: (Formulario seleccionables avanzados)</h2>
+
+    <p class ="Parrafo_lindo">
+        Este input es igual al de select pero se hace uso de la etiqueta  &lt;optgroup>  &lt;/optgroup> para agrupar diferentes opciones en grupos y se les pone nombre  con la etiqueta label, para hacer mas facil el proceso de seleccion, de esta forma:
+    </p>
+
+    <pre>
+        <code class="cod_mascotas">
+            &lt;select name="Mascotas">
+
+                &lt;optgroup label="4 patas">
+                    &lt;option value="Perro">Perro</option>
+                    &lt;option value="Gato">Gato</option>
+                    &lt;option value="Hamster">Hamster</option>
+                    &lt;option value="Conejo">Conejo</option>
+                &lt;/optgroup>
+                
+                &lt;optgroup label="Aves">
+                    &lt;option value="Loro">Loro</option>
+                    &lt;option value="Canario">Canario</option>
+                &lt;/optgroup>
+                
+                &lt;optgroup label="Otros">
+                    &lt;option value="Serpiente">Serpiente</option>
+                    &lt;option value="T_rex">T rex</option>
+                    &lt;option value="Dodo">Dodo</option>
+                &lt;/optgroup>
+                
+            &lt;/select>
+        </code>
+    </pre>
+
+    <!-- INPUTS SELECCIONABLES AVANZADOS -->
+
+    <!--Este input es igual al de select pero se hace uso de la etiqueta <optgroup></optgroup> para agrupar diferentes opciones en grupos y se les pone nombre  con la etiqueta label, para hacer mas facil el proceso de seleccion-->
+    <h3>Resultado: </h3>
+
+    <label> Mascota
+    <select name="Mascotas">
+
+        <optgroup label="4 patas">
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Hamster">Hamster</option>
+            <option value="Conejo">Conejo</option>
+        </optgroup>
+        
+        <optgroup label="Aves">
+            <option value="Loro">Loro</option>
+            <option value="Canario">Canario</option>
+        </optgroup>
+        
+        <optgroup label="Otros">
+            <option value="Serpiente">Serpiente</option>
+            <option value="T_rex">T rex</option>
+            <option value="Dodo">Dodo</option>
+        </optgroup>
+        
+    </select>
+</label>
+
+<!-- FORMULARIOS TIPO DATALIST -->
+
+    <h2>Seleccion de mascotas: (FORMULARIOS TIPO DATALIST) </h2> 
+
+
+    <p class="Parrafo_lindo">
+        Muestra las opciones que estén dentro de esta etiqueta en forma de lista dinámica es decir que en el input principal se podrá digitar una parte de la opción que estemos buscando entre la lista y las opciones que coincidan deberán salir recomendadas
+    </p>
+      
+
+    <input type="list" list="Mascotas">
+
+    <datalist id="Mascotas">
+
+        <option value = "Perro"></option>
+        <option value = "Gato"></option>
+        <option value = "Hamster"></option>
+        <option value = "Conejo"></option>
+        <option value = "Loro"></option>
+        <option value = "Canario"></option>
+        <option value = "Serpiente"></option>
+        <option value = "T-rex"></option>
+        <option value = "Dodo"></option>
+
+    </datalist>
+
+    <!-- -->
+
+
+
+
+         
+
+    </form>
+</body>
+</html>
+

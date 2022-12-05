@@ -1,0 +1,44 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.max_width{
+    max-width: 70%;
+}
+
+.espacio{
+    position: relative;
+    left: 18px;
+}
+
+code{
+    font-size: 16.5px;
+}
+
+.rojo{
+    color: red;
+    border-radius: 4px;
+}
+
+h2{
+    color: steelblue;
+    font-size: 26px;
+}
+
+.p{
+    color: deeppink;
+}
+
+.link{
+    color: inherit;
+}
+
+.normal{
+    color: initial;
+    font-size: initial;
+}

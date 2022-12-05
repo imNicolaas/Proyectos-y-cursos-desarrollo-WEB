@@ -1,0 +1,76 @@
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 25px;    
+    margin: 0;
+
+    position: relative;/* para que el body ocupe el 100% del viewport pero solo funciona si se establece el borde*/
+    min-height: 100vh;
+    /* border: 4px solid red; */
+}
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.div{
+    margin: 0;
+}
+
+h1{
+    font-weight: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+li{
+    margin-bottom: 6px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1{
+    width: 100%;
+    height: 100px;
+    background-color: darkolivegreen;
+
+    max-width: 1000px;
+    min-width: 510px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box-2{
+    width: 100%;
+    height: 20vw;
+    background-color: sandybrown;
+
+    max-height: 200px;
+    min-height: 150px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 250, 0.89);
+    text-align: center;
+    font-size: 24px;
+
+    position: absolute;
+    bottom: 0;
+
+}

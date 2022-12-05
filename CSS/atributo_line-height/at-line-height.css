@@ -1,0 +1,37 @@
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding-left: 10%;
+    padding-right: 15%;
+    
+}
+
+.line-height{
+    line-height: 25px;
+}
+
+.h1{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 34px;
+
+    left: 50%;
+    position: absolute;
+    padding-bottom: 0px;
+  
+    transform: translate(-50%, -50%);
+    
+}
+
+.padding{
+    padding-top: 64px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+

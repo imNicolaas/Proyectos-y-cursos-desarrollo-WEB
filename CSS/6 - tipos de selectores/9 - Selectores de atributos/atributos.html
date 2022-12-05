@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores de atributos CSS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/HTML y CSS/CSS/6 - tipos de selectores/9 - Selectores de atributos/atributos.css">
+
+</head>
+
+<body>
+    
+    <h1 class="centrar">Selectores de atributos en CSS</h1>
+
+    <h2>Selector por uso de [ ]:</h2>
+
+    <p>Se utilizan llavez tipo <b>[ ]</b> y dentro se pone el atributo que queremos seleccionar.</b></p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;li> ‎viernes, ‎18 ‎de ‎junio ‎de ‎2021 - ‏‎6:41:17 pm: <br>    &#60;a <span class="rojo">href=</span>"/HTML y CSS/HTML/Etiqueta_audio.html" ><br>    Etiqueta_audio.html &#60;/a> &#60;/li>
+            </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+    <span class="rojo">[href]</span>{
+        background-color: lightgray;
+        border-radius: 4px;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <ol>
+
+        <li>‎viernes, ‎18 ‎de ‎junio ‎de ‎2021 - ‏‎6:41:17 pm: <a href="/HTML y CSS/HTML/Etiqueta_audio.html" target="_blank">Etiqueta_audio.html</a></li>
+
+        <li>‎viernes, ‎18 ‎de ‎junio ‎de ‎2021 - ‏‎7:49:19 pm: <a href="/HTML y CSS/HTML/Etiqueta_video.html" target="_blank">Etiqueta_video.html</a></li>
+
+        <li>‎domingo, ‎20 ‎de ‎junio ‎de ‎2021 - ‏‎5:55:22 pm: <a href="/HTML y CSS/HTML/Etiqueta_Iframe.html" target="_blank">Etiqueta_Iframe.html</a></li>
+
+        <li>‎jueves, ‎17 ‎de ‎junio ‎de ‎2021 - 7:43:35 pm: <a href="/HTML y CSS/HTML/Etiqueta_Picture.html" target="_blank">Etiqueta_Picture.html</a></li>
+
+    </ol>
+
+    <h2>Selector por medio de [atributo] y su valor:</h2>
+
+    <p >
+        O tambien se puede poner el nombre del atributo y su valor para cambiar solo una propiedad especifica.
+    </p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;li>domingo, ‎27 ‎de ‎junio ‎de ‎2021 ‏‎12:30:06 pm: <br>    &#60;a <span class="rojo">href="/HTML y CSS/HTML/Open_Graph_Protocol.html"</span>> <br>    Etiqueta_Iframe.html &#60;/a> &#60;/li>
+            </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+    [<span class="rojo">href="/HTML y CSS/HTML/Open_Graph_Protocol.html"</span>]{
+        background-color: salmon;
+        font-size: 21;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <ol>
+
+        <li>‎viernes, ‎18 ‎de ‎junio ‎de ‎2021 - ‏‎6:41:17 pm: <a href="/HTML y CSS/HTML/Etiqueta_audio.html" target="_blank">Etiqueta_audio.html</a></li>
+
+        <li>‎viernes, ‎18 ‎de ‎junio ‎de ‎2021 - ‏‎7:49:19 pm: <a href="/HTML y CSS/HTML/Etiqueta_video.html" target="_blank">Etiqueta_video.html</a></li>
+
+        <li>‎domingo, ‎27 ‎de ‎junio ‎de ‎2021 ‏‎12:30:06 pm: <a href="/HTML y CSS/HTML/Open_Graph_Protocol.html" target="_blank">Open_Graph_Protocol.html</a></li>
+
+        <li>‎jueves, ‎17 ‎de ‎junio ‎de ‎2021 - 7:43:35 pm: <a href="/HTML y CSS/HTML/Etiqueta_Picture.html" target="_blank">Etiqueta_Picture.html</a></li>
+
+    </ol>
+
+    <h2>Selector por medio de [ atributo ] y coincidencia de nombre al inicio: </h2>
+
+    <p>
+        Para seleccionar elementos con la sintaxis de [ ] y una coincidencia de nombre se usa el <b>acento circunflejo (^)</b> despues del nombre de el atributo para indicar que queremos seleccionar todos los elementos cuyo nombre empiece por lo indicado en el valor dentro de las comillas <b>(href<span class="rojo">^</span> = "texto a coincidir en el inicio ")</b>
+    </p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;a href = "<span class="rojo">color</span>-verde-oscuro"> Color verde oscuro &#60;/a>
+
+    &#60;a href = "<span class="rojo">color</span>-de-relleno-cabecera"> Color de relleno para cabecera &#60;/a>
+            </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+    [href<span class="rojo">^ </span>="<span class="rojo">color</span>"]{
+        background-color: lightgreen;
+        font-family: monospace, sans-serif;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <a href="color-verde-oscuro">Color verde oscuro</a> <br>
+
+    <a href="color-de-relleno-cabecera">Color de relleno para cabecera</a>
+
+
+    <h2>Selector por medio de [ atributo ] y coincidencia de nombre al en cualquier lugar del enunciado: </h2>
+
+    <p>
+        Para hacer una seleccion de los elementos con una coincidencia en el nombre en cualquier parte de el nombre del "valor del atributo" se usa un <b>*</b> como acompañante del atributo que se vaya a usar para seleccionar los elementos 
+    </p>
+
+    <p>de esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;a href = "color-azul-<span class="rojo">cabeza</span>"> Color azul cabeza &#60;/a>
+
+    &#60;a href = "<span class="rojo">cabeza</span>-de-relleno-articulo"> Cabeza de relleno articulo &#60;/a>
+            </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+    [href<span class="rojo">* </span>="<span class="rojo">cabeza</span>"]{
+        background-color: red; 
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <a href="color-azul-cabeza">Color azul cabeza</a> <br>
+
+    <a href="cabeza-de-relleno-articulo">Cabeza de relleno articulo</a>
+
+
+        <h2>Selector por medio de [ atributo ] y coincidencia de nombre al final del enunciado: </h2>
+
+    <p>
+        Para hacer una seleccion de los elementos con una coincidencia en el nombre en el final del nombre del "valor del atributo" se usa un signo<b>$</b> como acompañante del atributo que se vaya a usar para seleccionar los elementos 
+    </p>
+
+    <p>de esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;a href = "motor-de-<span class="rojo">plantilla</span>"> motor de plantilla &#60;/a>
+
+    &#60;a href = "color-de-relleno-<span class="rojo">plantilla</span>"> color de relleno plantilla &#60;/a>
+            </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+    [href<span class="rojo">$ </span>="<span class="rojo">plantilla</span>"]{
+        background-color: steelblue;
+        border-radius: 4px;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <a href="motor-de-plantilla">motor de plantilla</a> <br>
+
+    <a href="color-de-relleno-plantilla">color de relleno plantilla</a>
+
+
+    <h2>Selector por medio de [ atributo ] y el simbolo " | " : </h2>
+
+    <p>
+        Este tipo  de seleccion se usa generalmente para los elementos que tienen atributos donde se especifica el idioma en el que esta escrito, puede funcionar solo con la coincidencia de las siglas del idioma en si, y haciendo uso del simbolo <b>" | "</b> se le puede agregar un guion el valor del atributo <b>lang</b> o idioma y esta seleccion seguira funcionando.
+    </p>
+
+    <p>de esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;p <span class="rojo">lang="es-CO"</span>>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi <br>        veniam, velit perferendis dolor ad hic, soluta doloribus autem ex tenetur <br>        voluptates qui mollitia eveniet adipisci, quod et asperiores eum?
+    &#60;/p>
+            </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+    [href<span class="rojo">|</span>="<span class="rojo">es</span>"]{
+        background-color: burlywood;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <p lang="es-CO">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nihil praesentium iusto sed quaerat nostrum magni, neque optio dignissimos ex, consequatur incidunt eaque hic harum autem. Vitae quae hic tempore!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, earum nesciunt ullam unde fuga praesentium facilis itaque eius, expedita nam molestias dolore molestiae impedit excepturi. Sit illo tempore ipsa sapiente?
+    </p>
+
+
+
+    <div class="centrar">
+        <p class="max_width">
+            <span class="rojo">Nota:</span> Todas estas formas de seleccionar elementos son suceptibles al efecto "Cascada".
+        </p>
+    </div>
+    
+
+</body>
+</html>

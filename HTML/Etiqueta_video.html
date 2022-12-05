@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta video</title>
+
+    <link rel="icon" href="/HTML y CSS/Contenido_Enbebido/assets/icon/pelicula_3.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        pre{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        video{
+            max-width: 100%;
+        }
+
+        .Video_negro{
+            width: 854px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>USO DE LA ETIQUETA VIDEO</h1>
+
+    <p> <pre><b>• Etiqueta video: </b>
+    
+    El elemento video se utiliza para incrustar vídeos en un documento HTML o XHTML Esta etiqueta consta de los elementos <b>src</b>, para especificar la fuente de donde sale el video en <br>    cuestión. <b>autoplay, autobuffer, buffered, controls, height, loop, poster width</b> que son elementos de interacion con el video. </pre>
+
+
+    <video src="/HTML y CSS/HTML/Contenido_Enbebido/assets/videos/Niños Espero que valga la pena.mp4" controls></video>
+
+    <p>
+        • Para hacer que un video se ajuste siempre al ancho minimo de una pagina se usan las siguintes propuiedades de la etiqueta estilo
+    </p>
+
+    <pre><code>        video{
+            max-width: 100%;
+        }
+    </code></pre>
+
+    <p>
+        • Para hacer que un video se reproduzca solo se usa el atributo <b>autoplay</b>
+    </p>
+
+    <p>
+        • Para hacer que un vide este muteado por defecto se usa el atributo <b>muted</b>
+    </p>
+
+    <video class="Video_negro" src="/HTML y CSS/HTML/Contenido_Enbebido/assets/videos/Negro base.mp4"  controls autoplay muted></video>
+
+    <p>
+        • Para hacer que un video se reproduzca sin parar se usa el atributo <b>loop</b>
+    </p>
+
+    <video src="/HTML y CSS/HTML/Contenido_Enbebido/assets/videos/video0-1.mp4" controls loop ></video>
+
+    <p>
+        • Para definir una imagen de previsualizacion o una "miniatura" se usa el atributo <b>poster</b>, si este no se especifica la imagen de previzualizacion. 
+    </p>
+
+    <video
+     src="/HTML y CSS/HTML/Contenido_Enbebido/assets/videos/video0.mp4" poster="/HTML y CSS/HTML/Contenido_Enbebido/assets/imagenes/unknown.png" controls> </video>
+
+
+
+
+
+
+    
+</body>
+</html>

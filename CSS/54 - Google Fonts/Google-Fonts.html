@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fonts CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Google-Fonts.css">
+</head>
+
+<body>
+
+    <h1>Google Fonst en CSS</h1>
+
+    <p>Siempre que se utilicen fuentes remotas o que no sean genericas, se debe poner una fuente de fallback (respaldo) por si falla.</p>
+
+    <p>siempre se debe usar el codigo que nos proporciona google y no la propiedad @import ya que si google fonts falla por cualquier motivo vamos a tener probelmas.</p>
+
+    <ul>
+        <li><h2>En HTML:</h2>
+
+        <pre><code>&#60;link rel="preconnect" href="https://fonts.googleapis.com">
+&#60;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+&#60;link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet"></code></pre>
+</li>
+
+    <li>
+        <h2>En CSS:</h2>
+<pre><code>
+.box-1{
+    font-family: 'Cormorant SC';
+    font-size: 22px;
+}
+</code></pre>
+        
+    </li>
+
+    <li>
+        <h3>Resultado:</h3>
+
+        <div class="box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odio officiis facere ab natus facilis laborum laudantium voluptatem vel? Voluptatem ipsam animi aliquam suscipit nihil architecto repellendus voluptatibus, odit laboriosam.</div>
+    </li>
+    </ul>
+
+    <h2>Respaldo de fuentes en CSS:</h2>
+
+    <p>Para especificar que fuente queremos que se respalde encaso de que la nuestra no cargue debemos escribir la instruccion en la misma línea que delcaramos la fuente, separando la fuente de respaldo por comas, de esta forma </p>
+
+    <pre><code>
+        font-family: 'Cormorant SC', <span class="rojo">serif</span>;
+    </code></pre>
+
+    <p>En este caso estamos especificando la fuente la fuente remota 'Cormorant SC', pero si esta llegara a falllar por algún motivo cargaria la fuente <span class="rojo">serif</span> en su lugar.</p>
+
+    <p>Se puede importar y usar mas de una fuente en un documento pero no es recomendable ya que cada fuente que se poner es una peticion que se le esta haiendo al servidor por lo que la página cargará mas lento ademas que la fuente tarda en descargarse.</p>
+
+    <pre><code>
+        font-family: <span class="rojo">'Cormorant SC', 'Montserrat'</span>, monospace;
+    </code></pre>
+
+</body>
+</html>

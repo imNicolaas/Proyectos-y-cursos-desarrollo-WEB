@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones sombreados</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        .prueba{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: white;
+            height: 100px;
+            width: 200px;
+            position: relative;
+
+            border-radius: 5px;
+        }
+
+        .prueba::after{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            content: ' ';
+            background-color: rgb(84, 194, 238);
+            height: 100px;
+            width: 200px;
+
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+
+            filter: blur(8px);
+            z-index: -1;
+
+        }
+
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+
+        body{
+            background-color: #EBE5E5;
+            font-family: 'Montserrat', sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .a{
+            font-size: 22px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    
+    <div class="prueba">
+        <span class="a">Registrarse</span>
+    </div>
+    
+</body>
+</html>

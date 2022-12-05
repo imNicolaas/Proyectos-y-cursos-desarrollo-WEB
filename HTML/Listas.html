@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+</head>
+<!-- Las listas en HTML sirven para listar contenido y dependiendo del orden o lo que estemos buscando hacer con los elementos de la lista escogeremos entre:  
+    
+        ul -> unordered list: Se utiliza cuando el orden de los elementos no es importante (lista de compra)
+    
+        ol -> ordered list: se utiliza cuando queremos que los elementos de la lista esten ordenados (top 10)
+
+        en cada una de estas listas los elementos son listados con la etiqueta li
+
+    
+        dl -> definition list: se utiliza para hacer una lista de definiciones (diccionario)
+    
+        en la lista de definicion se  usan dos etiqeutas para listar los elementos...
+            dt: definition term: se pone el termino que vamos a definir
+        
+            dd -> definition description: la descripcion del termino en cuestion -->
+
+<body>
+    <h1>LISTAS</h1>
+
+    <!-- LISTA DESORDENADA -->
+    <h2>Lista desordenada -> Compras</h2>
+    <ul>
+        <li>pan</li>
+        <li>huevos</li>
+        <li>harina</li>
+    </ul>
+
+    <!-- LISTA ORDENADA -->
+    <h2>Lista ordenada -> Ruta aprendizaje programacion web</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <!-- LISTA DE DEFINICION -->
+    <h2>Lista de definicion -></h2>
+
+    <dl>
+       <dt>HTML</dt> 
+       <dd>
+           Hypertext markup language: hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones
+        </dd>   
+
+       <dt>CSS</dt> 
+       <dd>
+           Cascade Style Sheets: Lenguaje conocido como complemto de HTML orientado casi en su totalidad al diseño y estilo de las paginas cuyo esqueleto esta hecho en HTML 
+        </dd>    
+
+       <dt>JavaScript</dt> 
+       <dd>
+           lenguaje de programacion basado en el lenguaje C orientado a dar interactividad a los sitios en los que se implementa, ademas de poder dar mas funcionalidades
+        </dd>     
+    </dl>
+
+    <!-- LISTAS ANIDADAS -->
+
+    <h2>Listas anidadas</h2>
+    
+    <ol type= "a">
+        <li>HTML
+            <ol>
+                <li>Sintaxsis</li>
+                <li>Estructuras</li>
+                <li>Etiquetas</li>
+            </ol>
+        </li>
+
+        <li>CSS</li>
+
+        <li>JavaScript</li>
+
+        <li>
+            Snacks
+            <ul type = "square">
+                <li>Chocolate</li>
+                <li>Papas</li>
+                <li>Brownie</li>
+            </ul>
+        </li>
+
+    </ol>
+
+</body>
+</html>

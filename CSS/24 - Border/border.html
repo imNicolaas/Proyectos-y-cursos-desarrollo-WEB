@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/288f863fc1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="border.css">
+</head>
+
+<body>
+    <h1 class="centrar">Border en CSS</h1>
+
+    <p class="p-1">
+        La propiedad border se usa para modificar los bordes de un elemento ya que por defecto los elementos ya tienen borde pero no tiene valor, es un elemetno "Shorthand" y engloba los atributos <b>border-width, border-style y border- color.</b>
+    </p>
+
+    <p>
+        dentor de las tres propiedades que puede agrupar estan:
+    </p>
+
+    <div class="parrafo_ejem centrar">
+        <p>
+            <span class="azul">border:</span>
+            <span class="sep-1">border-width</span>
+            <span class="sep-2">border-style</span>
+            <span class="sep-3">border-color </span>
+        </p>       
+    </div>
+
+    <p>
+        y de estos tres atributos <b>los tres son "shorthands"</b> ya que engloban el atributo de cada uno de los lados en todos los casos es decir que al especificar un valor para <b> border-width </b> se esta especificando el valor de los cuatro lados del elemento lo que tambien hace posible que se puedan especificar datos independientes para todos los lados ya que son independientes.
+    </p>
+
+    <div class="centrar">
+        <img src="../assets/images/ejemplo_border.jpg" alt="ejemplo_border.jpg">
+    </div>
+    
+    <br>
+
+    <div class="centrar">
+        <img src="../assets/images/ejemplo_border_2.jpg" alt="ejemplo_border_2.jpg">
+    </div>
+
+    <br>
+
+    <p>
+        Es posible hacer esto con todos los atributos tales como:
+    </p>
+    
+    <pre>
+        <code class="azul">
+    border-top-width: ;
+    border-right-width: ;
+    border-bottom-width: ;
+    border-left-width: ;
+
+    border-top-style: ;
+    border-right-style: ;
+    border-bottom-style: ;
+    border-right-style: ;
+
+    border-top-color: ;
+    border-left-color: ;
+    border-bottom-color: ;
+    border-right-color: ;
+        </code>
+    </pre>
+
+    <h2>Ejemplo:</h2>
+
+    <ol>
+        <li><h3>En HTML: </h3>
+            <pre>
+                <code>
+    &#60;div class="div-1">
+        &#60;button>Registrarse&#60;/button>
+    &#60;/div>
+                </code>
+            </pre>
+        </li>
+
+        <li><h3>En CSS:</h3>
+            <pre>
+                <code>
+    button{
+        border-radius: 6px;
+        padding: 20px 40px;
+    
+        <span class="rojo">border: 6px solid darkred;</span>
+    }
+                </code>
+            </pre>
+        </li>
+
+        <li> 
+            <h3>Resultado:</h3>
+        </li>
+    </ol>
+
+    <div class="div-1">
+        <button class="button-1">Registrarse</button>
+    </div>
+
+    <h2> Listado de valores del atributo <u>style</u>:</h2>
+
+    <p>El atributo style puede tener varios valores es decir que una linea puede tener diferentes estilos, los estilos que puede tener un borde son: </p>
+
+    <ol>
+        <li><h3>None:</h3>
+            <p>Este atributo representa un margen nulo es decir que aunque se le asigne un valor este no asignara ningun tipo de margen.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-1">
+                <button class="border-1">
+                    Border none
+                </button>
+            </div>
+        </li>
+
+        <li><h3>Hidden:</h3>
+            <p>Este atributo representa un margen casi nulo pero tiene diferencias en cuanto al margen none a la hora de ser usado en margenes para imagenes.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-2">
+                <button class="border-2">
+                    Border hidden
+                </button>
+            </div>
+        </li>
+
+        <li><h3>Dotted:</h3>
+            <p>Este atributo representa un margen hecho de puntos y el atributo width representa el diametro de cada uno de estos circulos.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-3">
+                <button class="border-3">
+                    Border dotted
+                </button>
+            </div>
+        </li>
+
+        <li><h3>Dashed:</h3>
+            <p>Este atributo representa un margen hecho de rectangulos y el atributo width representa la anchura y altura de cada uno de estos rectangulos.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-4">
+                <button class="border-4">
+                    Border dashed
+                </button>
+            </div>
+        </li>
+
+        <li><h3>Solid:</h3>
+            <p>Este atributo representa un margen completo y solido es decir que el width solo represntara el ancho del margen.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-5">
+                <button class="border-5">
+                    Border solid
+                </button>
+            </div>
+        </li>
+        
+        <li><h3>Double:</h3>
+            <p>Este atributo representa un margen de doble linea dejando un espacio sin color en el medio y el atributo width es dividido en tres partes iguales, una para el ancho del primer margen, otra para el ancho de la parte que ira sin margen y otra parte para el margen restante.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-6">
+                <button class="border-6">
+                    Border double
+                </button>
+            </div>
+        </li>
+
+        <li><h3>Groove:</h3>
+            <p>Este atributo representa un margen en forma de sombra 3D en la que cada uno de los lados se divide en dos extremos y uno estara mas sombreado que otro dando la ilusion de ser un elemento 3D.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-7">
+                <button class="border-7">
+                    Border groove
+                </button>
+            </div>
+        </li>
+
+        <li><h3>Ridge:</h3>
+            <p>Este atributo tambien representa un margen en forma de sombra 3D igual que el anterior pero los lados en los que se ve la sombra estan invertidos, cada uno de los lados se divide en dos extremos y uno estara mas sombreado que otro dando la ilusion de ser un elemento 3D.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-8">
+                <button class="border-8">
+                    Border ridge
+                </button>
+            </div>
+        </li>
+
+        <li><h3>Inset:</h3>
+            <p>Este atributo tambien representa un margen en forma de sombra 3D pero no divide el borde en dos partes, en su lugar pinta dos de los lados del elemento de un color mas oscuro dando la ilusion de ser un elemento 3D.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-9">
+                <button class="border-9">
+                    Border ridge
+                </button>
+            </div>
+        </li>
+
+        <li><h3>Outset:</h3>
+            <p>Este atributo tambien representa un margen en forma de sombra 3D igual que el anterior pero con los colores de la sombra invertidos dando la ilusion de ser un elemento 3D.</p>
+            <h3>Ejemplo:</h3>
+
+            <div class="ejem-border-10">
+                <button class="border-10">
+                    Border outset
+                </button>
+            </div>
+        </li>
+    </ol>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores elementales CSS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/HTML y CSS/CSS/6 - tipos de selectores/7 - Selectores elementales/elementales.css">
+
+</head>
+
+<body>
+    
+    <h1 class="centrar">Selectores elementales en CSS</h1>
+
+    <p><b>Selector universal:</b> Se representa solo con un * y engloba a todo el documento al que este vinulado el CSS que lo use</p>
+
+    <pre><code>
+        *{
+            background-color: lightslategray;
+        }
+    </code></pre>
+
+    <p><b>Selector de tipo o etiqueta:</b> Se utilizan poniendo el nombre de la etiqueta a la que queremos cambiar su estilo y este se aplicara a todas las etiquetas de este tipo en el documento, exepto si tienen otro en particular. </p>
+
+    <pre><code>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+        }
+        
+        h1{
+            background-color: saddlebrown;
+        }
+        
+        b{
+            background-color: gray;
+        }
+        
+        p{
+            background-color: lightgray;
+        }
+        
+    </code></pre>
+
+    <p><b>Otro ejemplo:</b></p>
+
+    <pre><code>
+        ul{
+            background-color: green;
+        }
+        
+        li{
+            background-color: lightgreen;
+        }
+    </code></pre>
+
+    <ul>
+        <li>
+            ejemplo 1
+        </li>
+
+        <li>
+            ejemplo 2
+        </li>
+    </ul>
+
+</body>
+</html>

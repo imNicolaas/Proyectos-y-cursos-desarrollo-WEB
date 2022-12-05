@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Open Graph Protocol - Nicolas C" />
+    <meta property="og:type" content="web" />
+    <meta property="og:url" content=" - " />
+    <meta property="og:image" content="https://www.loopeando.com/wp-content/uploads/2016/11/html5-990x557.jpg" />
+
+    <title>Open Graph Protocol</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+        }
+
+         .centrar{
+            display: flex;
+            justify-content: center;
+        }
+
+        code{
+            font-size: 17px;
+            color: rgb(35, 135, 197);
+        }
+
+        .centrar_2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+    <!--
+        Open Graph Protocol:
+            Hace referencia a los datos que nosotros como creadores de la pagina web querermos que aparezcan en el formato de contenido compartido en este caso por facebook, Whatsapp entre otras redes sociales. Datos como el titulo, imagen, parrafo de previsualizacion etc.
+
+            de no haber un Open Graph Protocol el navegador los escogera por su cuenta o en su defecto solo pondra el link, y esto no es lo que querermos.
+    -->
+<body>
+
+    <h1 class="centrar">Open Graph Protocol</h1>
+
+    <h2>¿Que es el Open Graph Protocol?</h2>
+    
+    <p>
+        Hace referencia a los datos que nosotros como creadores de la pagina web querermos que aparezcan en el formato de contenido compartido en este caso por facebook, Whatsapp entre otras redes sociales. Datos como el titulo, imagen, parrafo de previsualizacion etc.
+
+        de no haber un Open Graph Protocol el navegador los escogera por su cuenta o en su defecto solo pondra el link, y esto no es lo que querermos.
+    </p>
+
+    <div class="centrar">
+        <img src="http://ogp.me/logo.png" alt="Open Graph Protocol.png" >    
+    </div>
+
+    <p class="centrar">mas sobre el •<a href="https://ogp.me/" target="_blank"> Open Graph Protocol</a></p>
+
+    <p>
+        Este protocolo fue creado por facebook y de la larga serie de propiedades que nos da el protocolo sólo tres son indispensables: <b>og: type, og: image y og: url.</b> El resto lo decidiremos en base a nuestras necesidades.
+    </p>
+
+    <p>
+        estas son las etiquetas principales en el body:
+    </p>
+
+    <pre><code>    &#60;meta property="og:title" content="Open Graph Protocol - Nicolas C" />
+    &#60;meta property="og:type" content="web" />
+    &#60;meta property="og:url" content=" - " />
+    &#60;meta property="og:image" content="https://www.loopeando.com/wp-content/uploads/2016/11/html5-990x557.jpg" />
+    </code></pre>
+    
+</body>
+</html>

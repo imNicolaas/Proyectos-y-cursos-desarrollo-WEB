@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos de linea</title>
+
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Elementos de linea</h1>
+
+    <!-- Los elementos de linea se utizan para darle mas o menos prioridad a una parte del texto dentro de un mismo bloque de contenido
+    • em -> Enfasis
+    • strong -> mas enfasis
+    • small ->menos enfasis que el texto normal
+    • br -> salto de linea o forzar un salto de linea
+    • wbr -> salto de linea si hiciera falta
+    • time -> se usa para representar in constenido de hora y fecha
+    • i -> italic
+    • b -> bold
+    • u -> underline
+    sup -> Superindice
+    sub -> Subindice
+
+    para mostrar una etiqueta de html como texto en y que no se entienda como codigo se usa el codigo ascci de el > y < que serian &lt y &gt o &#60 y &#62 respectivamente (ejemplo linea 86) 
+-->
+
+<p>
+    <em>Un párrafo, también llamado parágrafo,</em> <strong> es una unidad comunicativa formada por un conjunto de oraciones secuenciales que trata un mismo tema.</strong> <small> Está compuesto por un conjunto de oraciones</small> que tienen cierta unidad temática o que, sin tenerla, <br>
+<i>se</i> <b> enuncian</b> <u> juntas.</u> 
+</p>
+
+<p>http://127.0.0.1:5500/HTML%20y%20CSS/<wbr>Elementos_de_linea.html/<wbr>pagina_prueba/<wbr>Nicolas_Corrredor_Moya/<wbr>html_poto_2021</p>
+
+<p style="color: red;">
+    PARA LA ETIQUTA TIME ES NECESARIO QUE DENTRO SOLO VAYA LA FECHA O FORMATO RELACIONADOS CON LA FECHA, COMO SE VEN EN LA <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/time" target="_blank">Documentacion Oficial de la etiqueta &#60;time></a>  Y SI SE QUERE AGREGAR TEXTO SE DEBERA AGREGAR EN UNA ETIQUETA P Y DENTRO IRA LA DE TIME, DE ESTA FORMA
+</p>
+
+<pre><code>
+    &#60;p> fecha de creación: &#60;time> 2021-05-29&#60;/time> &#60;/p>
+</code></pre>
+
+<p>fecha de creación: <time> 2021-05-29</time></p>
+
+<!-- italic -->
+
+<h2>• Oración Principal: (italic o cursiva)</h2>
+<p>
+
+    <i>
+        El párrafo está constituido por una oración principal que puede ser distinguida fácilmente, ya que enuncia la parte esencial de la cual dependen los demás. Es posible decir entonces que la oración principal posee un sentido esencial del párrafo. La oración principal puede aparecer en el texto de forma implícita o explícita. Cuando la oración principal está implícita, ésta no aparece por escrito en el párrafo y es necesario deducirla. En cambio, la explícita, sí la encontramos escrita y podemos encontrarla al principio, en el medio o al final del párrafo.
+    </i> 
+</p>
+
+<!-- bold -->
+
+<h2>• Oración Principal: (Negrita)</h2>
+
+<p>
+    <b>
+        El párrafo está constituido por una oración principal que puede ser distinguida fácilmente, ya que enuncia la parte esencial de la cual dependen los demás. Es posible decir entonces que la oración principal posee un sentido esencial del párrafo. La oración principal puede aparecer en el texto de forma implícita o explícita. Cuando la oración principal está implícita, ésta no aparece por escrito en el párrafo y es necesario deducirla. En cambio, la explícita, sí la encontramos escrita y podemos encontrarla al principio, en el medio o al final del párrafo.
+    </b> 
+</p>
+
+<!-- Underline -->
+
+<h2>• Oración Principal: (Rallado abajo)</h2>
+
+<p>
+    <u>  
+        El párrafo está constituido por una oración principal que puede ser distinguida fácilmente, ya que enuncia la parte esencial de la cual dependen los demás. Es posible decir entonces que la oración principal posee un sentido esencial del párrafo. La oración principal puede aparecer en el texto de forma implícita o explícita. Cuando la oración principal está implícita, ésta no aparece por escrito en el párrafo y es necesario deducirla. En cambio, la explícita, sí la encontramos escrita y podemos encontrarla al principio, en el medio o al final del párrafo.
+    </u> 
+</p>
+
+
+<p> <b> Etiqueta Superindice:</b> Se usa mayormente para potencias metematicas 9<sup>3</sup></p>
+
+<p><b> Etiqueta Subindice:</b> Tambien se usa para funciones matematicas  log<sub>10</sub></p>
+
+<!-- Span: se usa para ubicar una parte del texto ya sea para usos de javaScript o para darle estilo con cs solo a la parte del texto que se este seleecionando -->
+
+<h2>• Etiqueta Span:</h2>
+
+<p>
+    
+    Se usa para ubicar una parte del texto ya sea para usos de javaScript o para darle estilo con cs solo a la parte del texto que se este seleecionandoLorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quis repellat eum alias harum tempore ducimus, illo facilis sequi doloribus dicta cum, explicabo nihil quod <span> omnis reiciendis voluptatibus porro dolor?Lorem ipsum dolor sit amet consectetur adipisicing</span> elit. Modi, deleniti libero. Dolores fuga et temporibus vitae minus! Quo maiores, eligendi repellendus saepe rem reprehenderit animi, culpa incidunt deserunt sint quam?
+</p>
+
+<!-- q: es el equivalente a blockquote pero en linea ya que block viene de bloque es decir elemento de bloque, es la etiqueta q se usa para citar algun contenido externo a nuestra pagina pero en linea-->
+
+<h2>• Etiqueta q: </h2>
+<p>
+    <q>El elemento HTML  &lt; q &gt;   indica que el texto adjunto es una cita corta en línea. La mayoría de los navegadores modernos implementan esto rodeando el texto entre comillas. Este elemento está destinado a citas breves que no requieren saltos de párrafo; para citas de bloque independiente, utiliza el elemento</q>
+</p>
+
+<!-- Etiqueta code: se utiliza para poder representar codigo en forma de texto y que visualmente se vea como codigo sin ser interpretado asi, generalmente va dentro de una etiqueta pre ya que asi puede quedar en el mismo lugar que se ve en el editro de texto, de lo contrario queda todo el texto de codigo escrito en una solo linea y ese no es el efecto que se busca-->
+
+<h2>• Etiqueta code: </h2>
+
+<p>    
+    se utiliza para poder representar codigo en forma de texto y que visualmente se vea como codigo sin ser interpretado asi, generalmente va dentro de una etiqueta pre ya que asi puede quedar en el mismo lugar que se ve en el editro de texto, de lo contrario queda todo el texto de codigo escrito en una solo linea y ese no es el efecto que se busca <br>  <br>
+    ejemplo: 
+</p>
+
+<pre>
+    <code>
+           &lt;style&gt;
+                span{
+                    color: red;
+                }
+            &lt;style&gt;
+    </code>
+</pre>
+
+
+  </body>
+</html>

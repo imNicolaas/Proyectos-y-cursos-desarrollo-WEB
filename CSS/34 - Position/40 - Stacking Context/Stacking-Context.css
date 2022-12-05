@@ -1,0 +1,62 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 25px;    
+    padding: 0 10%;
+}
+
+main{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+h1{
+    font-weight: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.box-1{
+    background-color: dodgerblue;
+    position: relative;
+}
+
+.container{
+    background-color: chartreuse;
+    margin-top: -60px ;
+
+}
+
+.title{
+    background-color: cadetblue;
+}
+
+.box-2{
+    background-color: firebrick;
+    margin-top: -62px;
+    position: relative;
+}
+
+.box-3{
+    background-color: mediumseagreen;
+}

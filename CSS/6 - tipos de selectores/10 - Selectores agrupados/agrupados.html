@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores agrupados CSS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/HTML y CSS/CSS/6 - tipos de selectores/10 - Selectores agrupados/agrupados.css">
+
+</head>
+
+<body>
+    
+    <h1 class="centrar">Selectores agrupados en CSS</h1>
+
+    <h2>Agrupacion de elementos para un mismo estilo:</h2>
+
+    <p>Los selectores agrupados se usan cuando queremos darle el mismo estilo a muchos elementos pero o bien no nos interesa darle el mismo estilo a toda la etiqueta como tal. O no solucionaria nuestro problema hacerlo ya que dentro de los elementos a los que queremos dar estilo hay algunos de otra naturaleza (por ejemplo parrafos y etiquetas code) de esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML: 
+
+            <pre>
+                <code>
+                &#60;p <span class="rojo">class = "text-1"</span> >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque officiis<br>                    optio odio voluptates quo eligendi adipisci vero assumenda officia, at<br>                    molestias sequi minus necessitatibus asperiores vel, temporibus corporis<br>                    incidunt reiciendis.<br>
+                &#60;/p>
+        
+                &#60;p <span class="rojo">class = "text-2"</span> >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque officiis<br>                    optio odio voluptates quo eligendi adipisci vero assumenda officia, at<br>                    molestias sequi minus necessitatibus asperiores vel, temporibus corporis<br>                    incidunt reiciendis.<br>
+                &#60;/p>
+        
+                &#60;code <span class="rojo">class = "code-1"</span> >
+                    body{
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                &#60;/code>
+            </code>
+            </pre>
+        
+        </li>
+    </ul>
+
+    
+    <p>En este tipo de casos se hace uso de <b>Selectores agrupados</b> y se haria haciedo uso de el atributo <b>class = "  "</b> de cada elemento al que queremos darle un estilo en particular, una vez estando en el documento CSS del proyecto colocariamos los nombres del atributo class en una nueva regla y cada uno acompañado de un punto al inicio ya que de esta forma CSS entiende que estamos hablando de un atributo particular </p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            En CSS:
+
+            <pre><code>
+    <span class="rojo">.text-1, .text-2, .code-1</span>{
+        background-color: saddlebrown;
+        border-radius: 3px;
+        max-width: 60%;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <div class="max_width">
+        <p class = "text-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, expedita mollitia ea et reiciendis omnis. Ut aspernatur magni sapiente qui architecto inventore natus expedita aut? Dicta repudiandae distinctio quidem officia.
+        </p>
+    
+        <p class = "text-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nulla deleniti libero corrupti temporibus quos possimus quisquam vero tenetur, velit inventore culpa nihil magni pariatur quia ipsa sit quae! Numquam!
+        </p>
+        
+        <pre>
+            <code class = "code-1">
+                body{
+                    font-family: 'Montserrat', sans-serif;
+                }
+            </code>
+        </pre>
+
+    </div>
+
+</body>
+</html>

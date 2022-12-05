@@ -1,0 +1,59 @@
+/*  SELECTORES */
+
+/* 
+    Selectores Simples:
+
+            Selectores elementales:
+
+                    Selector universal -> Se representa solo con un * y engloba a todo el documento al que este vinulado el CSS que lo use
+
+                    Selector de tipo o etiqueta -> Se utilizan poniendo el nombre de la etiqueta a la que queremos cambiar su estilo y este se aplicara a todas las etiquetas de este tipo en el documento, exepto si tienen otro en particular. 
+
+            Selectores de atributo:
+
+                    id -> se representa por medio del id del elemento 
+
+                    clase -> se representa por medio la clase del elemento 
+
+                    otros atributos -> clase #9 curso CSS
+
+
+    Selectores Compuestos:
+
+        Selectores Agrupados
+        Selectores Combinadores
+        Pseudoclases - Pseudo
+
+*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#titulo-1{
+    display: flex;
+    justify-content: center;
+    background-color: lightslategray;
+    border-radius: 5px;
+}
+
+.rojo{
+    color: red;
+}
+
+.vino_tinto{
+    color: rgb(199, 21, 21);
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.max_width{
+    max-width: 60%;
+}
+
+code{
+    font-size: 16.5px;
+}

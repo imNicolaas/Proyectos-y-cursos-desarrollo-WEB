@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONT-FACE CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="FONT-FACE.css">
+</head>
+
+<body>
+
+    <h1>FONT-FACE en CSS</h1>
+
+    <p>Existen diferentes formatos para fuentes, entre ellos:</p>
+
+    <ul>
+        <li>True Type Font (TTF) -> Fue el primer formato estándar, es el mas extendido y el que mas tiempo lleva en la web.</li>
+
+        <li>Open True Type Font (OTF) -> Facilita o implementa la creación de las curvas, y hacer fuentes mas redondeadas.</li>
+
+        <li>Web Open Font Format (WOFF) (WOFF2) -> Es un formato mucho más ligero y mejora el rendimiento. Funciona a través de metadatos. WOFF tiene soporte total y WOFF2 no funciona en internet explorer.</li>
+
+        <li>Scalable Vector Graphics (SVG) -> Para efectos y animaciones sobre el texto, no es recomendable usarlo en el texto genérico de la web, tiene muchos problemas.</li>
+
+        <li>Embedded Open Type (EOT) -> Primer formato digital propuesto para sitios WEB y es comprimido. Se quedó como una propuesta pero no pasó a ser un estándar (solo funciona en internet explorer).</li>
+    </ul>
+
+    <h2>Regla @FONT-FACE</h2>
+
+    <p>Esta es la forma de utilizar fuentes que tenemos descargadas y que no traemos de un servidor remoto, cuando usamos google fonts, esto es lo que está pasando por detrás.</p>
+
+    <ul><li><h3>Sintaxis:</h3></li></ul>
+
+    <p>hay que asiganar dos valores obligatorios los cuales son el atributo font-family:* y el src:*, de esta forma:</p>
+
+    <pre><code>        @font-face {
+            <span class="rojo">font-family:</span> Nombre de La familia, se Lo asignamos nosotros;
+            <span class="rojo">src:</span> aquí pondremos dos tipos de valores.
+
+            Local () -> pondremos el nombre de la fuente para buscarla en el ordenador del usuario, de esa forma podremos
+            evitar descargarla
+
+            url() -> Si no encontramos esa fuente procederemos a descargarla.
+
+            Existe otro valor, menos usado que es format()-> Este valor Lo pasaremos de forma opcional si queremos ser más
+            específicos con La fuente que vamos a buscar o descargar, si no Lo ponemos cogerá el primer formato soportado,
+            si lo ponemos sólo usará el que hemos establecido, y si no lo encuentra no hará nada.
+        }
+    </code></pre>
+
+    <h2>Ejemplo:</h2>
+
+    <ul>
+        <li><h2>EN HTML:</h2>
+            <pre><code>&#60;div class="box-1">Texto...&#60;/div></code></pre>
+        </li>
+
+        <li>
+            <h3>En CSS:</h3>
+
+    <pre><code>@font-face {
+    font-family: 'Monsters U';
+    src: url(../assets/fonts/varsity_regular.ttf);
+}
+    
+.box-1{
+    font-family: 'Monsters U', monospace;
+    font-size: 26px;
+}</code></pre>
+        </li>
+
+        <li>
+            <h3>Resultado:</h3>
+
+            <div class="box-1">UN DÍA SAQUÉ DEL AUTOMÓVIL Y DESTRUÍ UN MONTÓN DE REVISTAS PARA ADOLESCENTES. DE LA EDAD DE PIEDRA, EN EL FONDO; MUY MODERNAS, O AL MENOS MICÉNICAS, EN CUANTO A LA HIGIENE. UNA ACTRIZ MUY HERMOSA Y EN PLENA SAZÓN, CON PESTAÑAS INMENSAS Y UN LABIO INFERIOR ROJO Y PULPOSO, USANDO UN CHAMPÚ. ANUNCIOS, MODAS. LOS JÓVENES ESTUDIANTES ADORAN LA PROFUSIÓN DE LAS FALDAS DOBLADAS. A MENOS QUE SEA MUCHO MÁS VIEJO O MUY IMPORTANTE, EL CABALLERO SIEMPRE SE DEBE QUITAR LOS GUANTES ANTES DE TOMAR LA MANO</div>
+        </li>
+
+    </ul>
+    
+</body>
+</html>

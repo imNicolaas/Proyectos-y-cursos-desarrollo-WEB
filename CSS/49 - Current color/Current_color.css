@@ -1,0 +1,48 @@
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 25px;    
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+
+}
+
+.div{
+    margin: 0;
+}
+
+h1{
+    font-weight: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+li{
+    margin-bottom: 6px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1{
+    background-color: darkcyan;
+    width: 200px;
+    height: 200px;
+    color: red;
+}
+
+.box-hijo{
+    background-color: currentColor;
+    width: 100px;
+    height: 100px;
+}

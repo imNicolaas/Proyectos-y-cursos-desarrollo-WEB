@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar Propiedades CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Ordenar-propiedades.css">
+
+</head>
+
+<body>
+
+    <h1>Ordenar Propiedades CSS</h1>
+
+    <p>
+        Ordenar las propiedades que usamos en CSS es importante pero no necesario, ya que si no lo hacemos no vamos a tener problemas de rendimiento y ademas no es una norma hacerlo, pero al mismo tiempo si no lo hacemos vamos a tener un desorden en las propiedades que no es deseable y se considera una mala practica
+    </p>
+
+    <p>
+        A la hora de procesar el codigo de una pagina el codigo de css de un elemento se queda casi siempre en una sola linea por lo que al navegador le da igual que este primero y que este después pero para nosotros como humanos es mucho mas facil llevar un orden para saber donde buscar una propiedad que queramos quitar o modificar. 
+    </p>
+
+    <ol>
+        <li>Propiedades de posicionamiento</li>
+
+        <li>Propiedades del <a href="../19 - Box Model/Box_Model.html" target="_blank">Box Model.</a></li>
+
+        <li>Propiedades de texto.</li>
+
+        <li>Propiedades visuales.</li>
+
+        <li>Las restantes.</li>
+    </ol>
+
+    <pre><code>
+        <span class="letra_grande">body{</span>
+            <div class="position">
+            position: relative;
+            top: 24px;
+            left: 24px;
+            </div><div class="Box-model">
+            display: block;
+            width: 300px;
+            height: 300px;
+            padding: 120px;
+            margin: 20px;
+            </div><div class="Propiedades-texto">
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            </div><div class="propiedades-visuales">
+            color: firebrick;
+            border: 2px solid royalblue;
+            border-radius: 4px;
+            </div><div class="Otras">
+            opacity: 0.5;
+            animaciones y etc
+            </div>
+        <span class="letra_grande">}</span>        
+    </code></pre>
+
+    <div class="texto-position">Position{</div>
+
+    <div class="texto-box-model">Box model{</div>  
+
+    <div class="texto-propiedades-texto">Propiedades<br>de texto{</div>
+
+    <div class="texto-propiedades-visuales">Propiedades<br>visuales{</div>
+
+    <div class="Restantes">Restantes{</div>        
+    
+</body>
+
+</html>

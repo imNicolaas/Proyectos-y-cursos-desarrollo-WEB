@@ -1,0 +1,91 @@
+/*  SELECTORES */
+
+/* 
+    Selectores Simples:
+
+            Selectores elementales:
+
+                    Selector universal -> Se representa solo con un * y engloba a todo el documento al que este vinulado el CSS que lo use
+
+                    Selector de tipo o etiqueta -> Se utilizan poniendo el nombre de la etiqueta a la que queremos cambiar su estilo y este se aplicara a todas las etiquetas de este tipo en el documento, exepto si tienen otro en particular. 
+
+            Selectores de atributo:
+
+                    id -> se representa por medio del id del elemento 
+
+                    clase -> se representa por medio la clase del elemento 
+
+                    otros atributos -> Se utilizan llavez tipo [ ] y dentro se pone el atributo que queremos seleccionar.
+                    ejemplos:
+
+                         [ href ]{
+                            propiedad : ;
+                         }
+
+                    O tambien se puede poner el nombre del atributo y su valor para cambiar solo una propiedad especifica:
+
+                         [ href = " https://goolge.com "  ] {
+                            propiedad: ;
+                         }
+
+    Selectores Compuestos:
+
+        Selectores Agrupados
+        Selectores Combinadores
+        Pseudoclases - Pseudo
+
+*/
+
+[href]{
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+[href="/HTML y CSS/HTML/Open_Graph_Protocol.html"]{
+    background-color: salmon;
+    font-size: 21px;
+}
+
+[href^="color"]{
+    background-color: lightgreen;
+    font-family: monospace, sans-serif;
+}
+
+[href*="cabeza"]{
+       background-color: red; 
+}
+
+[href$="plantilla"]{
+    background-color: steelblue;
+    border-radius: 4px;
+}
+
+[lang|="es"]{
+    background-color: burlywood;
+    border-radius: 6px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rojo{
+    color: red;
+}
+
+.vino_tinto{
+    color: rgb(199, 21, 21);
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.max_width{
+    max-width: 60%;
+}
+
+code{
+    font-size: 16.5px;
+}

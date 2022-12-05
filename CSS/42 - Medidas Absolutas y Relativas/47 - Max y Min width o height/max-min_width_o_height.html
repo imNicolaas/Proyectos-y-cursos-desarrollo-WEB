@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max y Min width o height CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="max-min_width_o_height.css">
+
+</head>
+
+<body>
+
+    <main>
+
+    <h1>max-width/height y min-width/height en CSS</h1>
+
+    <h2>Limitadores de ancho y alto en css</h2>
+
+    <p>Cuando se establece una medidad ya sea de alto o ancho que sea relativa aveces se quiere que esta cresca o se enconja hasta cierto punto y que nunca supere o descienda mas de esa medida, es en estos casos donde se usa el max <b>max-width/height y min-width/height</b></p>
+
+    <ul>
+        <li>min-width: Indica el ancho minimo que puede alcanzar el elemento.</li>
+        <li>max-width: Indica el ancho máximo que puede alcanzar el elemento.</li>
+        <li>min-height: Indica el alto minimo que puede alcanzar el elemento.</li>
+        <li>max-height: Indica el alto máximo que puede alcanzar el elemento.</li>
+    </ul>
+
+
+
+<ul><li><h2>min width y mas width:</h2></li></ul>
+
+<p>Si se declara un max width de 900px en este caso y como el width es relativo va a ir creciendo hasta un maximo de 900px, y con un min width de 510px ira decreciendo hasta que mida como minimo 510px, de ahi no bajará mas y si la ventana se hace mas pequeña que eso aparecerá una barra de scroll para que se pueda serguir viendo el elemento con un min width declarado <br>De esta forma:</p>
+
+</main>
+
+<div class="box-1 centrar">Box 1</div>
+
+    <main> <!--  si funciona lo de main para aislar cada parte y darle margin -->
+
+        <ul>
+            <li><h2>min width min height:</h2></li>
+
+            <ul>
+                <li><h3>En HTML:</h3>
+<pre><code>&#60;div class="box-2"> Box 2&#60;/div></code></pre>
+                </li>
+
+                <li>
+                    <h3>En CSS:</h3>
+<pre><code>.box-2{
+    width: 100%;
+    height: 20vw;
+    
+<span class="rojo">    max-height: 200px;
+    min-height: 150px;</span>
+
+}</code></pre>
+                </li>
+
+                <li>
+                    <h3>Resultado:</h3>
+                </li>
+            </ul>
+        </ul>
+
+    </main>
+
+<div class="box-2"> Box 2</div>
+
+    <main>
+
+        <h2>Truco:</h2>
+
+        <p>Cuando se quiere dejar un elemento siempre abajo de la pagina uno pensaria en usar la propiedad position: absolute; y un bottom: 0; pero si se añade mas contenido a la pagina entonces esto no funcionaria, despues si se intenta lo mismo pero aplicando position: relative; AL BODY, se estará mas cerca de la solucion pero en algunos casos esto tampoco funcionará bien ya que el body no mide lo que se espera, asi que ademas de todo esto se le debera dar un <span class="rojo"> min-height: 100vh;</span> y de esta forma se le esta diciendo al body que como minimo mida el 100% del viewport. </p>
+    </main>
+
+    <footer>
+        <b>FOOTER</b>
+    </footer>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae ipsum itaque accusamus doloremque debitis! Repellat quas placeat sint. Temporibus, minus. Vero amet aliquam illo harum enim repellendus placeat excepturi officia!
+    Repellat fuga at sed voluptatibus eum, veritatis, porro quia, in illo totam fugit! Repudiandae veniam nulla perspiciatis nihil, ratione eos officia neque suscipit quisquam dolorum porro. Et non repellat accusantium!
+    Distinctio alias quas ipsam iusto quis quo adipisci vel possimus neque, aspernatur nesciunt optio similique obcaecati impedit dolores fuga laudantium. Dolores quos facilis iste, tempore cum esse quibusdam eius eligendi.
+    Quasi impedit, rem quia sapiente corporis saepe vel, ab quis labore porro facilis ipsam ipsum numquam possimus molestiae recusandae dolorem perferendis tempore dolores sint? Aliquid tempore porro nemo labore fugiat?
+    In consequatur dolore ad blanditiis? Delectus similique quisquam quibusdam, officia ducimus sed dicta natus commodi tenetur impedit consequatur saepe rem amet aspernatur, totam quasi, eligendi provident odit et quidem culpa.
+    Obcaecati illo consectetur consequatur sit ipsum rerum accusamus, suscipit amet fugit quae autem reprehenderit totam magnam vero quam sapiente ipsam excepturi nisi error doloribus delectus voluptatem quia? In, labore culpa!
+    Esse consequuntur nemo expedita qui minima quibusdam odio molestiae voluptates quis. Perspiciatis dolor reprehenderit quae unde eius temporibus sint reiciendis atque hic sit doloremque labore itaque odio fugit, ut natus.
+    Neque in ratione placeat ipsum quae delectus maxime nemo reprehenderit necessitatibus distinctio dolor facere porro sapiente non odio repellat aperiam cupiditate alias, voluptatibus perspiciatis ullam tempora iusto. Impedit, amet fugit!
+    Libero nam, accusamus veritatis dolor voluptas officiis reprehenderit necessitatibus pariatur unde dignissimos aliquid consequuntur quisquam ipsam qui exercitationem nemo atque recusandae quaerat voluptates in voluptate nisi excepturi totam. Eveniet, beatae.
+    Id, officia. Accusamus tenetur odit soluta dicta tempore nemo fugit, provident, dolorum, esse quod officiis laudantium temporibus quidem iste incidunt recusandae iusto quas. Blanditiis aliquam asperiores reiciendis a iure voluptatibus!</p>
+
+</body>
+</html>

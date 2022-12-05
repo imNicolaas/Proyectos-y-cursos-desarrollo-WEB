@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Box shadow.css">
+
+</head>
+
+<body>
+    
+    <h1>Box shadow</h1>
+
+    <p>La propiedad <b>Box Shadow</b> añade efectos de sombra alrededor del marco de un elemento. Se pueden definir múltiples efectos separados por comas. La caja de la sombra se describe por los desplazamientos en X e Y <br> pero respeta las demensiones de la caja adaptandose a su alto, ancho y redondez</p>
+
+    <p>En esencia lo que hace es crear un clon de la caja respentando la forma de su box-model  (ancho, alto, redondez)</p>
+
+    <p>
+        La sintaxis de Box-Shadow es distinta segun lo que queramos conseguir, los valores que se le pueden dar son:
+    </p>
+
+    <ul class="letra_grande">
+        <li><b>Offset-x -></b> Desplazamiento en x (Es obligatorio) <br> </li>
+
+        <li><b>Offset-y -></b> Desplazamiento en y (Es obligatorio)<br></li>
+
+        <li><b>Blur radius -></b> Desenfoque de la sombra (si de dice que es de 10px es un desenfoque de 10 pixeles en una escala de distorcion o desenfoque)<br></li>
+
+        <li><b>Spread radius -></b> Hace referencia a la expansion de la sombra (si de dice que es de 10px el desenfoque se difunde en un radio de propagacion de 10px)<br></li>
+
+        <li><b>Color -></b> Este atributo cambia el color de la sombre y sobre escribe el color que este o halla heredado por defecto ya que si es en una caja el color por defecto de la letra es negro por lo tanto el color por defecto de la sobre sera negro pero con el atributo color se sobre escribe este valor<br></li>
+
+        <li><b>Inset -></b> este atributo determina si la sobre se dibujara adentro o afuera del elemento<br></li>
+
+    </ul>
+
+    <p></p>
+
+    <h2>Ejemplo</h2>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>
+    &#60;div class="box-1">
+        Box Shadow 1
+    &#60;/div>
+            </code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>
+    .box-1{
+        box-shadow: 10px 10px 20px;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <div class="box-1 centrar">
+                Box Shadow 1
+            </div>
+
+            <p><span class="rojo">Nota: </span> La sombra esta desplazada 10px en el eje X y 10px en el eje Y, <span class="rojo">respecto a la caja original</span></p>
+
+            <br>
+
+        </li>
+    </ul>
+    
+    <h2>Ejemplo (con la propiedad inset)</h2>
+
+    <p>Opcionalmente se puede agregar la palabra inset a la sintxsis de un box shadow para representar una sombra interna es decir que se representa dentro del marco, de esta forma:</p>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>
+    &#60;div class="box-2">
+        Box Shadow 2
+    &#60;/div>
+            </code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>
+    .box-2{
+        box-shadow: inset 10px 10px 30px;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <div class="box-2 centrar">
+                Box Shadow 2
+            </div>
+
+            <br>
+
+        </li>
+    </ul>
+
+    <h2>Ejemplo (con mas de una sombra)</h2>
+
+    <p>Es posible delclarar mas de una sombra en una instruccion de box shadow y no hay limite en cuanto a cuantas podemos poner, solo se deben separar por coma y cada una puede tener los atributos vistos anteriormente, ademas seran puestas en el orden en que se escriban por lo tanto unas quedaran encima de otras, de esta forma:</p>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>
+    &#60;div class="box-3">
+        Box Shadow 3
+    &#60;/div>
+            </code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>
+    .box-3{
+        box-shadow: 5px 5px red <span class="rojo">, </span> 10px 10px yellow<span class="rojo">, </span>15px 15px orange<span class="rojo">, </span> 20px 20px green<span class="rojo">, </span>25px 25px purple;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <div class="box-3 centrar">
+                Box Shadow 3
+            </div>
+
+            <br>
+
+        </li>
+    </ul>
+
+
+
+</body>
+</html>

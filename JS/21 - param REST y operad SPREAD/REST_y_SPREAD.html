@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST y SPREAD JS</title>
+
+    <link rel="icon" href="/HTML y CSS/JS/assets/images/js_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="REST_y_SPREAD.css">
+
+</head>
+
+<body>
+
+    <h1>REST y SPREAD en JS</h1>
+
+    <h2>Parametro REST:</h2>
+
+    <p>El parametro REST es una forma de hacer que a una funcion se le puedan pasar parametros infinitos o los parametros que se quieran pasar en una ejecución de una función sin que estos parametros ya esten definidos para que la funcion las reciba, si no que con la sintaxis REST se pueden pasar y el metodo los pueda usar dinamicamente.</p>
+
+    <p>Su sintaxis es poner tres puntos (...) al inicio de el parametro que se quiera definir y entender como el parametro REST y al que se la va a poder dar dinamismo con los demas valores que se pueden insertar infinitamente.</p>
+
+    <pre>
+        function sumar (a, b, ...c){
+            resultado = a+b;
+        
+                c.forEach(function(el){
+                    resultado += el
+                });
+        
+            return resultado;
+        }
+        
+        console.log(sumar(2,2,   1,1,1))
+    </pre>
+
+    <h2>Operador SPREAD (Operador de Propagación):</h2>
+
+    <p>Es un operador el cual hace que todos los elementos de un arreglo u objeto puedan ser usados para formar parte de nuevos arreglo/objeto junto con otros elementos en su interior (es decir hace que se pueden sumar los elementos de un arreglo/objeto existente en otro), o para ser asignados a variables, constantes o funciones.</p>
+
+    <h3>Ejemplo:</h3>
+
+    <ul>
+        <li>
+            <h4>En JS:</h4>
+
+            <pre><code>
+//Spread operator: Cuando se tenga una expresion con parametros establecidos y se quiera crear otro en el que
+se quieran agregar todos los valoes de alguno que ya ser tenga creado, el SPREAD se puede usar en estos casos
+
+        const arr1 = [1,2,3,4,5], arr2 = ['a', 'b', 'c', 'd', 'e']
+        console.log(arr1, arr2);//se tienen dos arreglos de 5 posiciones 
+
+//si se quiere crear un arreglo que sea la mezcla de los dos que se tienen se podria intentar.
+
+        const arr3 = [arr1, arr2];//pero asi se tiene un arrelgo de dos posiciones
+        y con dos arreglos de 5 pos cada una.
+
+        console.log(arr3)
+
+//pero con el Operados SPREAD o de propagacion se pueden juntar los dos arreglos con sus elementos
+
+        const arr4 = [...arr1, ...arr2];
+        console.log(arr4)
+
+        const asd = [1,2,3, ...arr2]
+
+        console.log(asd)
+
+//Operador SPREAD en objetos
+
+const a = {
+    a: 'a',
+    _1: '1'
+}
+
+const b ={
+    
+    b: 'b',
+    ...a,
+    _2: 2
+}
+
+console.log(a, b)
+
+            </code></pre>
+        </li>
+    </ul>
+
+    <Script src="REST_y_SPREAD.js"></Script>
+    
+</body>
+</html>

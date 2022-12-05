@@ -1,0 +1,33 @@
+/*  SELECTORES */
+
+/* 
+    Selectores Simples:
+
+        Selectores elementales
+        Selectores de atributo
+
+    Selectores Compuestos:
+
+        Selectores Agrupados
+        Selectores Combinadores
+        Pseudoclases - Pseudo
+
+*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.max_width{
+    display: flex;
+    max-width: 100%;
+}

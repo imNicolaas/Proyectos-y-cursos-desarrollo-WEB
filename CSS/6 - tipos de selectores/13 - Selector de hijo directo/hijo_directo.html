@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectore de hijo directo CSS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/HTML y CSS/CSS/6 - tipos de selectores/13 - Selector de hijo directo/hijo_directo.css">
+
+</head>
+
+<body>
+    
+    <h1 class="centrar">Selectores de hijo directo en CSS</h1>
+
+    <h2>Seleccion de un elemento hijo directo especifico:</h2>
+
+    <p>Este tipo de seleccion se le denomina <b>seleccion de hijo directo</b> y concinste en seleccionar solo los hijos que sean directamente descendientes de un objeto en especial (que solo esten un nivel por debajo de el) y esto se puede realizar con el simbolo <b>></b> </p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+        &#60;div class="container">
+
+            &#60;h2 <span class="rojo">class="h2-1"</span>> Subtitulo de prueba: &#60;/h2>
+    
+            &#60;p <span class="rojo">class="parrafo-1</span>">Lorem ipsum dolor sit amet, consectetur adipisicing<br>                                 elit. Molestias laboriosam consequatur reiciendis, <br>                                 vitae officia cupiditate. Aspernatur omnis suscipit <br>                                 ut minima consectetur at facere? Assumenda, voluptate?<br>                                 Non totam eaque atque quos.&#60;/p>
+
+                    <span class="gris">&#60;div>
+                            &#60;h2 class="h2-2"> Subtitulo de prueba #2 &#60;/h2>
+        
+                            &#60;p class="parrafo-2">Lorem ipsum dolor sit amet, consectetur adipisicing<br>                                                 elit. Molestias laboriosam consequatur reiciendis, <br>                                                 vitae officia cupiditate. Aspernatur omnis suscipit <br>                                                 ut minima consectetur at facere? Assumenda, voluptate?<br>                                                 Non totam eaque atque quos.&#60;/p>
+                    &#60;/div></span>
+    
+            &#60;h2 <span class="rojo"> class="h2-3</span>"> Subtitulo de prueba #3 &#60;/h2>
+    
+            &#60;p <span class="rojo">class="parrafo-3"</span>>Lorem ipsum dolor sit amet, consectetur adipisicing<br>                                 elit. Molestias laboriosam consequatur reiciendis, <br>                                 vitae officia cupiditate. Aspernatur omnis suscipit <br>                                 ut minima consectetur at facere? Assumenda, voluptate?<br>                                 Non totam eaque atque quos.&#60;/p>
+
+        &#60;/div>
+        </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+        <span class="rojo">.container > p</span>{
+            background-color: crimson;
+            border-radius: 6px;
+        }
+            </code></pre>
+            <p>Si no se pusiese este simbolo ( > ) en la estructura se seleccionarian todos los parrafos dentro de el <b>&#60;div class = "container"> </b>ya que se estaria dando la orden de dar estilo a los <b>p</b> que esten dentro de este div, pero usando el <b>></b> se esta dando al orden de que se aplique el estilo solo a los hijos directos de este <b>&#60;div class = "container"></b> </p>
+
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <div class="centrar">
+    <div class="max_width">
+            <div class="container">
+
+                    <h2 class="h2-1">Subtitulo de prueba:</h2>
+            
+                    <p class="parrafo-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias laboriosam consequatur reiciendis, vitae officia cupiditate. Aspernatur omnis suscipit ut minima consectetur at facere? Assumenda, voluptate? Non totam eaque atque quos.</p>
+
+                            <div>
+                                    <h2 class="h2-2">Subtitulo de prueba #2</h2>
+                
+                                    <p class="parrafo-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sed quasi dolore distinctio modi beatae similique saepe, illum vero provident soluta. Odio fugit eveniet non facilis quam odit quia sequi.</p>
+                            </div>
+            
+                    <h2 class="h2-3">Subtitulo de prueba #3</h2>
+            
+                    <p class="parrafo-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sed quasi dolore distinctio modi beatae similique saepe, illum vero provident soluta. Odio fugit eveniet non facilis quam odit quia sequi.</p>
+        
+            </div>
+    </div>
+    </div>
+
+    <div class="centrar">
+        <p class="max_width">
+            <span class="rojo">Nota:</span> Todas estas formas de seleccionar elementos se pueden mezclar e intercambiar como convenga.
+        </p>
+    </div>
+
+    <div class="linea">MISMO NIVEL</div>
+
+
+</body>
+</html>

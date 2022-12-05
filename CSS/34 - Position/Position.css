@@ -1,0 +1,41 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1{
+    font-weight: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1{
+    background-color: steelblue;
+    font-size: 20px;
+    width: 300px;
+    height: 150px;
+    border-radius: 12px;
+    margin-left: 34px;
+    box-shadow: 10px 10px 20px;
+}
+
+.nota{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}

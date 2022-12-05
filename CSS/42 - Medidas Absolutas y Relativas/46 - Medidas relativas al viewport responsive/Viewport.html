@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Relativas al Viewport CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Viewport.css">
+
+
+</head>
+
+<body>
+    
+    <header class="header centrar">
+        <nav>Menu del header (height: 50vh;)</nav>
+    </header>
+
+    <main>
+    <h1>Medidas Relativas al Viewport en CSS</h1>
+
+    <h2>Viewport</h2>
+
+    <p>El viewport es el área útil donde se mostrará la página
+        web. Pero es el area de la pagina que es visible en cualquier tamaño de ventana que se tenga y <span class="rojo">sin hacer scroll.</span>
+        <br>Podemos usar el viewport como medida de varias formas:</p>
+
+    <ul>
+        <li><b>vw-> Viewport Width:</b> hace referencia al ancho del viewport.</li>
+
+        <li><b>vh-> Viewport Height: </b>hace referencia al alto del vh->
+            viewport.</li>
+
+        <li><b>vmax: </b>Utiliza el valor más grande entre el anchoy
+            el alto del viewport.</li>
+
+        <li><b>vmin: </b>Utiliza el valor más pequeño entre el anchoy
+            el alto del viewport.</li>
+    </ul>
+
+    <h3>Medidas y equivalencias para en viewport:</h3>
+
+    <ul>
+        <li>1vw = 1% del ancho del viewport</li>
+        <li>1vh = 1% del alto del viewport</li>
+        <li>1vmin = 1% del valor que sea más pequeño del viewport</li>
+        <li>1vmax = 1% del valor que sea más grande del viewport</li>
+    </ul>
+
+    <h3>View Height</h3>
+
+    <p>si se da un height: 100vh. se esta dando un 100% del alto del viewport es decir de la parte visible de la pagina también se le podria dar un 50% de la misma forma, y si la ventana cambia estas medidas también cambiaran. 
+    </p>
+
+    <h3>View width</h3>
+
+    <p>pero si le da a un objeto un width de 100vh aparecera una barra de scroll ya que no se tiene en cuenta el espacio que ocupa la barra de scroll vertical que siempre aparece.</p>
+
+    <h3>V min</h3>
+
+    <p>Hace referencia al porcentaje de la medida mas pequeña del viewport, ya sea el ancho o el alto, y el nacegador escoje cual es la medidad mas pequeña por el tamaño en si, es decir que si una ventana tiene un tamaño de 1200x600 el vmin sera calculado en base a 600 px ya que es la medida mas pequeña.</p>
+
+    <div class="box-1">
+        <div class="box-1-hijo centrar">Box 1 hijo</div>
+    </div>
+
+    <h3>V max</h3>
+
+    <p>es lo contrario del vmin, es decir que tomara la medida mas grande entre en ancho y alto de la página es decir que si una ventana tiene un tamaño de 1200x600 el vmax sera calculado en base a 1200 px ya que es la medida mas grande.</p>
+
+    <div class="box-2">
+        <div class="box-2-hijo centrar">Box 2 hijo</div>
+    </div>
+
+
+
+</main>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width y Height CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="width_y_height.css">
+</head>
+
+<body>
+
+    <h1 class="centrar">Width y Heigth en CSS</h1>
+
+    <h2>¿Que es el width y el height?</h2>
+
+    <ul>
+        <li>
+            <h3>Width:</h3>
+
+            <p>La propiedad CSS width especifica la anchura del area de contenido de un elemento. El área de contenido está dentro del padding, borde, y margen del elemento.
+                <br><br>
+
+            Las propiedades min-width y max-width sobreescriben el valor de width.</p>
+        </li>
+
+        <li>
+        <h3>Height:</h3>
+
+        <p>La propiedad CSS height especifica la altura del area de contenido de un elemento. El área de contenido está dentro del padding, borde, y margen del elemento.
+            <br><br>
+
+        Las propiedades min-height y max-height sobreescriben el valor de height.</p>
+    </li>
+    </ul>
+
+    <h2>Width y Height en elementos de bloque:</h2>
+
+    <p>
+    Para los elementos de bloque ek ancho y el alto (Width y height) si tienen potestad sobre el elemento en si, es decir que de ser definidos sus valores si van a determinar el ancho y alto del objeto
+    </p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            HTML:
+            
+            <pre><code>
+    &#60;div <span class="rojo">class = "block"</span>> Elemento de bloque &#60;/div>
+            </code></pre>
+        </li>
+
+        <li>
+            CSS:
+
+            <pre><code>
+    <span class="rojo">.block</span>{
+        background-color: steelblue;
+        width: 200px;
+        height: 100px;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+    
+    <div class="block espacio">Elemento de bloque</div>
+
+    <h2>Width y Height en elementos de linea:</h2>
+
+    <p>
+        A diferencia de los <b>elementos de bloque</b>, los elementos de linea no tienen medidas, o no tinene medidas modificables es decir que su ancho y alto van a estar definidos por el tamaño del contenido 
+    </p>
+
+    <p>Si intentamos modificar el <b>width y el height</b> de un elemneto de linea, estas no tendran efecto sobre de el:</p>
+
+    <ul>
+        <li>
+            HTML:
+            
+            <pre><code>
+    &#60;a href="#" <span class="rojo">class = "inline"</span>>Elemento de linea&#60;/a>
+            </code></pre>
+        </li>
+
+        <li>
+            CSS:
+
+            <pre><code>
+    <span class="rojo">.inline</span>{
+        background-color: steelblue;
+        width: 200px;
+        height: 100px;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado: <br><br>
+
+        <a href="#" class="inline">Elemento de linea</a>
+        </li>
+    </ul>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba clases</title>
+
+    <style>
+        .centrar{
+            display: flex;
+            justify-content: center;
+        }
+
+        .sombra{
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+            0 6px 6px rgba(0, 0, 0, 0.23) ;            
+        }
+
+        .bordes{
+            display: flex;
+            border-radius: 13px;
+        }
+
+        .a{
+            display: flex;
+            height: 100px;
+            width: 100px;
+            color: red;
+        }
+
+        .color{
+            color: red;
+        }
+    </style>
+</head>
+
+<!--
+    ES POSIBLE APLICAR VARIAS CLASES A UN MISMO ELEMENTO EN HTML,
+
+    SOLO ES NECESARIO PONER EL NOMBRE DE LAS CLASES DENTRSO DE EL MISMO Y UNICO ATRIBUTO CALSS QUE TIENE UNA ETIQUTA, Y LOS NOMBRES DEBEN SOLO SEPARADOS POR UN ESPACIO, DE ESTA FORMA:
+
+    class = "centrar bordes sombra" -> se estan utilizando tres clases
+-->
+
+<body>
+    
+    <div class="bordes centrar sombra ">
+        <img class="bordes"  src="/HTML y CSS/HTML/Contenido_Enbebido/assets/imagenes/Adesanya.jpg" alt="Adesanya.jpg">
+    </div>
+    
+    
+</body>
+</html>

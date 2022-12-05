@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z - Index CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="z-index.css">
+
+</head>
+
+<body>
+    
+    <h1>Z - Index CSS</h1>
+
+    <p>
+        Esta es la propidad que nos permite modificar el orden en el que se organizan los elementos que se superponen unos a otros, es decir no permite modificar cual va a estar por arriba y cual o cuales por abajo con libertad, ya que por defecto este orden lo defnine el contexto de apilamiento, y el <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context"><i><b>"Staking Context"</b></i></a> o contexto de apilamiento dice que <b>Los elementos HTML ocupan este espacio y son ordenados por orden de prioridad basado en sus atributos.</b> Es decir que los elementos no siempre se van a organizar en el eje z de la misma forma sino que dependeran de los atribuots que tengan o no tengan declarados y de esta forma se les dara su prioridad en el contexto de apilamiento del viewport o de la pagina.        
+    </p>
+
+    <p>
+        Esta propiedad solo aparece cuando un elemento esta posicionado, es decir que tiene como propiedad alguno de los tipos de posicionamiento, de lo contrario el contexto de apilamiento decidira el orden en el que superponen.
+    </p>
+
+    <h2>Conceptos:</h2>
+
+    <ul>
+
+    <li>        
+        <p><span class="rojo">Ejemplo:</span> Al poner simplemente dos cajas si se le pone posicionamiento solo a una esta estara por encima de la otra (debido al contexto de apilamiento) </p>
+
+        <div class="box-1">box 1</div>
+
+        <div class="box-2">Box 2</div>
+    </li>
+
+    <li>
+        <p>
+            pero al poner posicionamiento a las dos cajas el contexto de apilamiento vuelve a tener la autoridad del contexto de apilamiento
+        </p>
+
+        <div class="box-3">box 1</div>
+
+        <div class="box-4">Box 2</div>
+    </li>
+
+</ul>
+
+    <h2>Haciendo uso del Z-Index:</h2>
+
+    <p>
+        Si no se hace uso de la propiedad Z-Index se esta diciendo que la propidad es z-index: auto; es decir que la calcule automaticamente el navegador, y la propiedad por defecto es la que tiene en el HTML, es decir que poner z-index: auto; es como no poner nada
+    </p>
+
+    <ul>
+
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>    &#60;div class="box-3">box 1&#60;/div>
+
+    &#60;div class="box-4">Box 2&#60;/div></code></pre>
+        </li>
+
+        <li>
+            <h3>En CSS:</h3>
+
+            <pre><code>    .box-1{
+        position: relative    
+        <span class="rojo">z-index: 20;</span>
+    }
+
+    .box-2{
+        position: relative
+        bottom: 45px;
+        left: 45px;
+        <span class="rojo">z-index: 30;</span>
+    }
+
+    .box-3{
+        position: relative     
+        bottom: 90px;
+        left: 90px;
+        <span class="rojo">z-index: 10;</span>
+    }</code></pre>
+        </li>
+
+        <li>
+            <h3>Resultado:</h3>
+
+            <div class="box-5">Box 1</div>
+            <div class="box-6">Box 2</div>
+            <div class="box-7">Box 3</div>
+        </li>
+    </ul>
+
+    <h2>Normas:</h2>
+
+    <ol>
+        <li>
+            No se deben poner numeros consecutivos en los valores de z-index, ya que normalmente despues se necesita agragar mas elementos a la pagina y estos muchas veces estaran entres los que ya se tiene por que lo que si este es el caso solo sera necesario ponerlo y agrrgar un valor en medio de los que ya se tiene, si es que se estan manejando valores de 10 en 10 por ejemplo.
+        </li>
+
+        <li>
+            En el caso de que se tengan padres e hijos es decir que haya elemento conteniendo otros, si se quiere hacer que el elemento padre pase a estar delante del hijo, no va a ser posible que se le pude especifcar un z-index que haga que esto pase ya que es imposible, por otro lado si es posible poner al hijo por detras de su padre poniendo por ejemplo z-index: -1; y aunque se consiga el mismo resultado no se esta haciendo lo mismo. Y esto siempre y cuando el padre no tenga ninguna valor de z-index declarado ademas de auto, ya que si se le delcara un valor al padre tampoco funcionará.
+        </li>
+    </ol>
+
+</body>
+</html>

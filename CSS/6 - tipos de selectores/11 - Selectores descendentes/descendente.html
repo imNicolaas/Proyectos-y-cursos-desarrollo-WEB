@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores descendentes CSS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/HTML y CSS/CSS/6 - tipos de selectores/11 - Selectores descendentes/descendente.css">
+
+</head>
+
+<body>
+    
+    <h1 class="centrar">Selectores descendentes en CSS</h1>
+
+    <h2>Seleccion de elementos hijos en forma descendiente:</h2>
+
+    <p>Este tipo de seleccion se le denomina <b>seleccion descendente</b> o <b>seleccion por hijos </b> y concinste en seleccionar un elemento que esta dentro de otro es decir que se representa al escribir todos los niveles de objetos que estan por encima de nuestro elemento, separados por espacios empezando por el nivel mas alto del que queremos descender.</p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML: 
+
+            <pre><code>
+        &#60;div>
+            &#60;h2> Lenguajes y tecnologias mas demandadas para el 2021:&#60;/h2>
+    
+            &#60;ul>
+                &#60;li>
+                    &#60;h3>Javascript:&#60;/h3>
+                    Este sera uno de los leguajes mas demandados para la segunda mitad del año 2021 y todo el 2022
+                    
+                &#60;/li>
+    
+                &#60;li>
+                    &#60;h3>React: &#60;/h3>
+                    React ha tomado mucha prioridad y mucho campo a lo largo del estos ultimos años siendo ahora<br>                    uno de las tecnologias mas cotizadas por las empresas en los ultimos tiempos
+                &#60;/li>
+    
+                &#60;li>
+                    &#60;h3>Sass: &#60;/h3>
+    
+                    El lenguaje de hoja de estilos en cascada Sass ha tomado mucha popularidad en los ultimos meses<br>                    haciendo mas atractivos a los perfiles de las personas quienes manejan esta tecnologia
+                &#60;/li>
+            &#60;/ul>
+        &#60;/div>                
+            </code></pre>
+        
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+            <span class="rojo">div ul li h3</span>{
+                background-color: slategray;
+                border-radius: 4px;
+            }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+
+        <div>
+            <h2> Lenguajes y tecnologias mas demandadas para el 2021:</h2>
+    
+            <ul>
+
+                <li>
+                    <h3>Javascript:</h3>
+                    Este sera uno de los leguajes mas demandados para la segunda mitad del año 2021 y todo el 2022                    
+                </li>
+    
+                <li>
+                    <h3>React: </h3>
+                    React ha tomado mucha prioridad y mucho campo a lo largo del estos ultimos años siendo ahora uno de los leguajes mas cotizados por las empresas en los ultimos tiempos
+                </li>
+    
+                <li>
+                    <h3>Sass: </h3>
+    
+                    La "herramienta" Sass ha tomado mucha popularidad en los ultimos meses haciendo mas atractivos a los perfiles de las personas quienes manejan esta tecnologia
+                </li>
+            </ul>
+        </div>
+    </ul>
+
+    
+    <p>Es decir que al escribir <b>div ul li h3</b> estamos escribriendo la ruta del elemento al que queremos darle estilo siendo el ultimo elemento escrito al que le daremos el estilo, Es decir que en este caso le estamos diciendo que le de estilo a los <b>h3</b> que esten dentro de un <b>li</b> y que este li este dentro de un <b>ul</b> y que este ul este dentro de un <b>div. De lo contrario no aplicara estilos al h3.</b></p>
+
+    <p>Lo que quiere decir que si hay otro <b>h3</b> que este en cualquier otra 
+    "ruta" no va a ser afectado por este estilo (incluso si no coincide con solo un nivel de la ruta especificada)</p>
+
+    <p>Ejemplo con el atributo class:</p>
+
+    <ul>
+        <li>
+            En HTML:
+
+    <pre><code>
+        &#60;h2 class = "titulo-1"> Titulo con h2 #1 &#60;/h2>
+    
+        <span class="rojo">&#60;div></span>
+            &#60;h2 class = "titulo-1"> Titulo con h2 #2 &#60;/h2>
+        <span class="rojo">&#60;/div></span>        
+    </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+        <pre><code>
+        <span class="rojo">div .titulo-1</span>{
+            color: lightgreen;
+            background-color: green;
+            border-radius: 4px;
+            
+        } 
+        </code></pre>
+        </li>
+
+        <li>
+            Resultado:
+
+            <h2 class = "titulo-1">Titulo con h2 #1</h2>
+
+            <div>
+                <h2 class = "titulo-1">Titulo con h2 #2</h2>
+            </div>
+
+            <p>De no tener esta ruta de seleccion descendente los dos titulos serian afectados por el estilo</p>
+            
+        </li>
+
+    </ul>
+
+</body>
+</html>

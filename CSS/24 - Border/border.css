@@ -1,0 +1,263 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(192, 190, 190);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1{
+    font-size: 42px;
+}
+
+code{
+    font-size: 24px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border-radius: 6px;
+}
+
+button{
+    width: 140px;
+    height: 55px;
+}
+
+.max_width{
+    max-width: 70%;
+}
+
+.espacio{
+    position: relative;
+    left: 18px;
+}
+
+.rojo{
+    color: red;
+    border-radius: 4px;
+}
+
+.azul{
+    color: steelblue;
+}
+
+.margin-25l{
+    margin: 20px 30px 20px 25%;
+}
+
+.margin-25r{
+    margin: auto 25px auto auto;
+    margin-right: 25%;
+}
+
+.sep-1{
+    background-color: grey;
+    border-radius: 6px;
+}
+
+.sep-2{
+    background-color: steelblue;
+    border-radius: 6px;
+}
+
+.sep-3{
+    background-color: slateblue;
+    border-radius: 6px;
+}
+
+.sep-4{
+    background-color: seagreen;
+    border-radius: 6px;
+}
+
+.parrafo_ejem{
+
+    font-weight: bold;
+    font-size: 36px;
+    
+}
+
+.p-1{
+    font-size: 18px;
+}
+
+.div-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 100%;
+    height: 150px;
+    background-color: steelblue;
+}
+
+.button-1{
+    border-radius: 6px;
+
+    border: 3px solid darkred;
+}
+
+.ejem-border-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+    
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-1{
+    border: 20px none red;
+}
+
+.ejem-border-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-2{
+    border: 20px hidden red;
+}
+
+.ejem-border-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-3{
+    border: 6px dotted red;
+}
+
+.ejem-border-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-4{
+    border: 3px dashed red;
+}
+
+.ejem-border-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-5{
+    border: 3px solid red;
+}
+
+.ejem-border-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-6{
+    border: 10px double red;
+}
+
+.ejem-border-7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-7{
+    border: 10px groove rgb(250, 38, 74);
+}
+
+.ejem-border-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-8{
+    border: 10px ridge rgb(250, 38, 74);
+}
+
+.ejem-border-9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-9{
+    border: 10px inset rgb(250, 38, 74);
+}
+
+.ejem-border-10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin: 0px 0px 0px 40px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.border-10{
+    border: 10px outset rgb(250, 38, 74);
+}

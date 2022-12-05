@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Text-Decoration.css">
+
+</head>
+
+<body>
+
+    <h1>Decoracion de texto en CSS</h1>
+
+    <h2>Transformaciones de texto:</h2>
+
+    <p><b>Text-transform:</b> Esta propiedad nos permite hacer transformaciones ESTÉTICAS en nuestro texto. Admite Los valores:</p>
+
+    <ul>
+        <li>none: No se aplicará ninguna transformación.</li>
+
+        <li>uppercase: El texto se pondrá en mayúsculas</li>
+            <div class="uppercase caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta eius eaque quae quisquam fugit!</div>
+
+        <li>Lowercase: El texto se pondrá en minúsculas </li>
+            <div class="lowercase caja">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. EOS SOLUTA EIUS EAQUE QUAE QUISQUAM FUGIT!</div>
+
+        <li>capitalize: Transforma la primera letra de cada palabra en mayúscula.</li>
+            <div class="capitalize caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta eius eaque quae quisquam fugit!</div>
+
+    </ul>
+
+    <h2>Adornos en el texto:</h2>
+
+    <p><b>Text-decoration:</b> Esta propiedad nos permite controlar La Línea que podemos poner en Los textos. Admite Los valores:</p>
+
+    <ul>
+        <li>none: Elimina cualquier línea. </li>
+        <div class="caja-link"><a class="none" href="#">link-de-prueba.com</a></div>
+
+        <li>underline: Coloca una Linea bajo el texto. </li>
+        <div class="caja-link"><a class="underline" href="#">link-de-prueba.com</a></div>
+
+        <li>overline: Coloca una Linea sobre el texto.</li>
+        <div class="caja-link"><a class="overline" href="#">link-de-prueba.com</a></div>
+
+        <li>Line-through: Coloca una linea tachando el texto.</li>
+        <div class="caja-link"><a class="line-through" href="#">link-de-prueba.com</a></div>
+    </ul>
+
+    <p><b>Text-shadow:</b> Funciona exactamente igual que box-shadow, con la única diferencia de que no admite el valor inset ni la expansión de la sombra. Los valores son:</p>
+
+    <ul>
+        <li>offsetX: desplazamiento horizontal.</li>
+        <li>offsetY: desplazamiento vertical</li>
+        <li>blur: desenfoque.</li>
+        <li>color: color, por defecto coge el del texto.</li>
+    </ul>
+
+    <div class="caja Text-shadow">“¡Qué extraña cosa el conocimiento! Una vez que ha penetrado en la mente, se aferra a ella como la hiedra a la roca”.</div>
+
+    <div class="caja Text-shadow-2">“¡Qué extraña cosa el conocimiento! Una vez que ha penetrado en la mente, se aferra a ella como la hiedra a la roca”.</div>
+
+    <div class="caja Text-shadow-3">“¡Qué extraña cosa el conocimiento! Una vez que ha penetrado en la mente, se aferra a ella como la hiedra a la roca”.</div>
+
+    <p>Ejemplo con una letra descargada y con FONT-FACE:</p>
+
+    <div class="caja Text-shadow-4">“¡Qué extraña cosa el conocimiento! Una vez que ha penetrado en la mente, se aferra a ella como la hiedra a la roca”.</div>
+
+    <p>Ejemplo con varias sombras:</p>
+
+    <div class="caja Text-shadow-5">“¡Qué extraña cosa el conocimiento! Una vez que ha penetrado en la mente, se aferra a ella como la hiedra a la roca”.</div>
+
+
+    
+</body>
+</html>

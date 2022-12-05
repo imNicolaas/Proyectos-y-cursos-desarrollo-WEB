@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes en html</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .texto_uno{
+            font-family: 'Open Sans', sans-serif;
+            max-width: 100%;
+        }
+
+        .prueba{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        h1{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        h2{
+            font-size: 30px;
+        }
+
+        .prueba_perro{
+            background-color: pink;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subtitulo_random{
+            font-size: 20px;
+        }
+
+        .codigo{
+            text-align: left;
+        }
+    </style>
+</head>
+    <!-- 
+        IMAGENES:
+            • Vectoriales: 
+                • svg: No son imagenes en si, si no que son ordenes que se le da a el navegador las coordenadas en donde tiene que pintar los colores indicados por lo cual nunca pierde calidad, es el formato que usan las imagenes vectoriales y se usa mas que todo para logotipos e iconos, no añaden nada de peso a la pagina web en si.
+
+            • Imagenes de bits:
+                • jpg: se usa para la imagen mas basica de todasm no soporta transparencias ni animaciones
+
+                • png: Pueden ser de 8 y 24 y soporta transparencia 
+
+                • gif: Imagenes animadas en bucle
+
+                • webp: Nuevo formato de google u es el mas recomendado de usar si no se trata de una imagen vectorial, es compatible con todas las imagenes de bits y siempre es mejor transpotarlas a este formato ya que ocuparan casi la mitad de su pesp original. 
+    -->
+
+<body>
+
+    <h1>Contenido embebido</h1>
+
+    <pre class="texto_uno">
+    <b class="subtitulo_random">IMAGENES: </b>
+
+        <b>• Vectoriales: </b>
+
+            • svg: No son imagenes en si, si no que son ordenes que se le da a el navegador las coordenadas en donde tiene que pintar los colores indicados por lo cual nunca pierde<br>            calidad, es el formato que usan las imagenes vectoriales y se usa mas que todo para logotipos e iconos, no añaden nada de peso a la pagina web en si.
+
+        <b>• Imagenes de bits: </b>
+
+            • jpg: se usa para la imagen mas basica de todas, no soporta transparencias ni animaciones
+
+            • png: Pueden ser de 8 y 24 y soporta transparencia 
+
+            • gif: Imagenes animadas en bucle
+
+            • webp: Nuevo formato de google u es el mas recomendado de usar si no se trata de una imagen vectorial, es compatible con todas las imagenes de bits y siempre es mejor <br>            transpotarlas a este formato ya que ocuparan casi la mitad de su pesp original. </pre>
+    
+
+    <h2>Imagenes jpg</h2>
+    <br>
+    
+<div class="prueba">
+ <img class="hongo" src="/HTML y CSS/HTML/Contenido_Enbebido/assets/imagenes/Adesanya.jpg" alt="Israel Adesanya"> 
+</div>
+
+<h2>Imagen png</h2>
+<br>
+
+<div class="prueba_perro">
+    <img src="/HTML y CSS/HTML/Contenido_Enbebido/assets/imagenes/perro.png" alt="Perro" height="540" width="540">
+</div>
+
+<h2>Imagen GIF</h2>
+<br>
+
+<div class="prueba">
+    <img src="/HTML y CSS/HTML/Contenido_Enbebido/assets/imagenes/simpsons.gif" alt="Los_Simpsons_GIF">
+</div>
+
+<h2>Imagen svg</h2>
+<br>
+
+<div class="prueba">
+    <img src="/HTML y CSS/HTML/Contenido_Enbebido/assets/imagenes/archivo-svg.svg" alt="svg_uno">
+</div>
+
+
+
+    
+</body>
+</html>

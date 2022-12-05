@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break y Continue</title>
+
+    <link rel="icon" href="/HTML y CSS/JS/assets/images/js_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Break _Continue.css">
+
+</head>
+
+<body>
+
+    <h1>Break y Continue en JS</h1>
+
+    <pre>
+        const nums = [1,2,3,4,5,6,7,8,9,10];
+
+for(let i =0; i &#60nums.length; i++){
+
+    if(i === 6){
+        break;
+    }//rompe el loop si se cumple la condición.
+
+    console.log(nums[i]);
+}
+
+//el continue aparta o rompe la iteriacion en la que se invoque, es decir hace que la repeticion 
+en la que se active, no se tenga en cuenta en el ciclo.
+
+for(let i =0; i&#60nums.length; i++){
+
+    if(i === 6){
+        continue;
+    }//Se salta esta repeticion del loop en especifico, y continua normalmente.
+
+    console.log(nums[i]);
+}
+
+//imprimir número pares
+
+for(let i =0; i&#60nums.length; i++){
+
+    if(i % 2 ===0){
+        continue;
+    }
+
+    console.log(nums[i]);
+}
+    </pre>
+
+    <Script src="Break _Continue.js"></Script>
+    
+</body>
+</html>

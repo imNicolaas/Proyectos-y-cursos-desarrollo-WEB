@@ -1,0 +1,106 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 25px;    
+    margin: 0 10%;
+}
+
+main{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letra_grande{
+    font-size: 22px;
+}
+
+.box-1{
+    background-color: slategray;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.box-1-hijo{
+    background-color: silver;
+    width: 50%;
+    height: 50%;
+}
+
+.nota-1{
+    width: 800px;
+    background-color: teal;
+    border-radius: 6px;
+    position: absolute;
+    top: 860px;
+    left: 380px;
+    padding: 0 2%;
+    opacity: 90%;
+}
+
+.box-2{
+    background-color: slategray;
+    width: 100%;
+    height: 200px;
+}
+
+.box-2-hijo{
+    background-color: silver;
+    width: 50%;
+    height: 50%;
+}
+
+.box-2-auto{
+    background-color: slategray;
+    width: auto;
+    height: 200px;
+    margin: 0 4%;
+}
+
+.box-2-hijo-auto{
+    background-color: silver;
+    width: 50%;
+    height: 50%;
+}
+
+.box-3{
+    background-color: slategray;
+    width: 200px;
+    height: 200px;
+}
+
+.box-3-hijo{
+    background-color: silver;
+    width: 100%;
+    height: 30%;
+    margin-left: 40px ;
+}
+
+.box-4{
+    background-color: slategray;
+    width: 200px;
+    height: 200px;
+}
+
+.box-4-hijo{
+    background-color: silver;
+    width: auto;
+    height: 30%;
+    margin-left: 40px ;
+}

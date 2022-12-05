@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas % y AUTO CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="PORCENTAJE-Y-AUTO.css">
+</head>
+
+<body>
+
+    <h1>Medidas % y AUTO en CSS</h1>
+
+    <h2>Porcentaje %:</h2>
+
+    <p>Cuando usamos porcentage usamos de referencia el tamaño del contenedor es decir estamos especificando cuanto va a medir el elemento en porcentaje y referente a su contenedor, y el navegador calcula este porcentage. Esto no ocurre cuando usamos transform.</p>
+
+    <h3>Ejemplo:</h3>
+
+    <ul>
+        <li><h4>En HTML:</h4></li>
+
+        <pre><code>&#60;div class="box-1">
+    &#60;div class="box-1-hijo centrar">Box 1 hijo#=60;/div>
+&#60;/div></code></pre>
+        <li><h4>En CSS:</h4></li>
+
+        <pre><code>.box-1{
+    background-color: slategray;
+    width: 200px;
+    height: 200px;
+}
+
+.box-1-hijo{
+    background-color: silver;
+    width: 50%;
+    height: 50%;
+}</code></pre>
+
+<li>
+    <h4>Resultado:</h4>
+
+    <div class="box-1">
+        <div class="box-1-hijo centrar">Box 1 hijo</div>
+    </div>
+</li>
+    </ul>
+
+    <div class="nota-1">
+        <p><span class="rojo">Nota: </span>Al decirle a la caja hija que ocupe un 50% ocupara la mitad de su contenedor es decir que en este caso va a medir 100px, siendo sucenptible a cambios ya que si el contenedor crece en tamaño su hijo tambien lo hará.</p>
+    </div>
+
+    <h3>Porcentaje a el contenedor padre:</h3>
+
+    <p>Ademas se le puede dar un ancho con porcentaje al padre haciendo que su hijo sea siempre suceptible a cambios por la relacion al porcentaje del padre, de esta forma:</p>
+
+    <div class="box-2">
+        <div class="box-2-hijo centrar">Box 1 hijo</div>
+    </div>
+
+    <p>misma caja pero con width auto</p>
+
+    <div class="box-2-auto">
+        <div class="box-2-hijo-auto centrar">Box 1 hijo</div>
+    </div>
+    
+    <h2>Propiedad AUTO:</h2>
+
+    <p>Cuando usamos auto Le pedimos al navegador que calcule en función del espacio disponible, es decir que siempre buscara ocupara el mayor espacio disponible pero siempre lo calculara por si mismo y esto es muy conveniente en muchas ocasiones, por ejemplo:</p>
+
+    <ul><li>Cuando le decimos a un elemento hijo que tenga una width: 100% del ancho del contenedor lo hara con normalidad pero si le decimos a este elemento que haga uso de un margin, el seguira ocupando el 100% del ancho y por el matgin se saldra de la caja, de esta forma:</li></ul>
+
+    <div class="box-3">
+        <div class="box-3-hijo centrar">Box 3 hijo</div>
+    </div>
+
+    <ul><li>Pero si le especificamos al elemento hijo que tenga un width: auto; esto no pasara ya que al hacer uso del margin el ancho se calculara automaticamente ocupando lo maximo que pueda despues de que se le especifico el margin, de esta forma</li></ul>
+
+    <div class="box-4">
+        <div class="box-4-hijo centrar">Box 4 hijo</div>
+    </div>
+</body>
+</html>

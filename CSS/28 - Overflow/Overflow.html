@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Overflow.css">
+</head>
+
+<body>
+    
+    <h1>Overflow</h1>
+
+    <p>EL Overflow es una propiedad que se utiliza para controlar en desvordamiento de las cajas o objetos que con tengan contenido en CSS, es decir cuando la caja que contiene un contenido es menor al tamaño del contenido, es La propiedad que controla qué debe hacer La caja cuando su contenido se desborda del contenedor. <br> <br>
+    Es un shorthand que engloba <b> overflow-x y overflow-y</b></p>
+
+    <h2>Consta de los siguientes valores:</h2>
+
+    <ul>
+        <li>visible -> Es el valor por defecto.</li>
+
+        <li>hidden -> EL contenido que se desborde no se
+            verá. Si aplicamos esta propiedad en un solo
+            eje, el otro se pondrá automáticamente en el
+            valor scroll.</li>
+
+        <li>scroll -> Aparecerán barras de scroll en el eje
+            asignado (x, y o ambos)</li>
+            
+        <li>auto -> Aparecerán barras de scroLL en el caso
+            de que hicieran falta.</li>
+    </ul>
+
+    <h2>Ejemplo:</h2>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>    &#60;div class="box">
+        lorem*3
+    &#60;/div>
+            </code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>    .box{
+        overflow: auto;
+    }</code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <div class="box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum consectetur delectus odio accusamus velit neque qui ipsum, iusto iure doloribus. Accusamus culpa doloribus at dolorem nesciunt tenetur. Exercitationem, eligendi consectetur!
+                Vitae incidunt laboriosam non. Recusandae officia voluptatum possimus odio magnam velit doloremque quo suscipit aspernatur reiciendis fuga soluta perspiciatis, neque enim autem, nostrum exercitationem maxime, eligendi unde accusantium sed! Impedit?
+                Est, ex architecto blanditiis, rem tenetur soluta magnam sint velit maiores cum nihil quae reprehenderit. Nemo, impedit? Ratione vitae, dicta nisi rerum libero nostrum eligendi natus placeat reiciendis voluptates cum?
+            </div>
+        </li>
+    </ul>
+
+    <p class="centrar"> <b> Nota: si solo se especifica un valor el otro se configura automáticamente</b></p>
+    
+</body>
+</html>

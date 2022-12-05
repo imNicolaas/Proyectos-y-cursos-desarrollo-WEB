@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+
+    <style>
+
+      table{
+        font-family: sans-serif;
+        border: 2px solid gray;
+        border-collapse: collapse;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      caption{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom:  1rem;
+
+      }
+
+      th{
+        border:  2px solid gray;
+        padding: .5rem;
+        background-color: lightgreen;
+      
+      }
+      
+      .Columna-horas{
+        background-color: lightgreen;
+      }
+
+      .Fila_descanso{
+        background-color:  lightgreen;
+      }
+
+        col{
+            background-color:yellow;
+        }
+
+        .Col_con_descanso{
+            background-color: aqua;
+        }
+
+        .col_agrupada{
+            background-color: lightcoral;
+        }
+
+        td{
+          border: 2px solid grey;
+          padding: .5rem;
+        }
+    </style>
+
+    
+  </head>
+
+  <!-- Las tablas se usan para mostrar contenido tabulado
+    
+    La estructura basica de una tabla se compone de: 
+        table -> Etiqeuta que encierra una tabla 
+        tr -> table row: etiqueta que contituye una fila 
+        td -> table data: etiqueta que constituye una celda 
+    
+    Y el numero de celdas dentro de una tr (fila) establecera el numero de columas
+
+    Caption es el titulo de la tabla 
+    
+    todas las filas deben ir dentro de una etiqueta tbody si es que se usa un thead, si no se usa es opcional
+
+    Para hacer que las celdas ocupen mas de una fila o mas de una columna tenemos dos atributos:
+            rowspan: sirva para que una celda ocupe mas de una fila, el valor por defecto es uno 
+
+            colspan: sirve para que una celda ocupe mas de una columna, el valor por defecto es 1
+
+    Para seleccionar una columna tenemos la etiqueta colgroup, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas col como columnas  tengamos, cada etiqueta col equivaldra a una columna siguiendo el mismo orden que tienen en la tabla 
+
+    si se necesita que una etiqueta col agrupe mas de una columan, se usa el atributo span que funciona igual con rowspan y colsapn
+-->
+  <body>
+
+    <table>
+      
+      <caption>
+        HORARIO TERCER SEMESTRE
+      </caption><!--caption es la etiqueta que se usa para poner titulo a la tabla-->
+      
+        <colgroup>
+            <col class="Columna-horas">
+            <col class=" Col_con_descanso">
+            <col>
+            <col>
+            <col class = "col_agrupada" span = "2">
+        </colgroup>
+
+      
+
+      <thead>
+        <th></th>
+        <th>LUN</th>
+        <th>MAR</th>
+        <th>MIE</th>
+        <th>JUE</th>
+        <th>VIE</th>
+      </thead>
+      
+      <tbody> <!--Tbody es el cuerpo de la tabla -->
+        <tr>
+          <td>8:00 - 10:00|</td>
+          <td>Programacion Orientada</td>
+          <td>Fisica</td>
+          <td>Calculo</td>
+          <td>Sistemas</td>
+          <td>Modelado</td>
+        </tr>
+
+        <tr>
+          <td>10:00 - 10:45|</td>
+          <td colspan="5" class="Fila_descanso">DESCANSO</td>
+        </tr>
+
+        
+        <tr>
+            <td>11:00 - 1:00|</td>
+            <td rowspan="2">Fisica</td> <!-- se agrupa una celda en dos filas -->
+            <td>Fisica Electrica</td>
+            <td>Calculo Integral</td>
+            <td>Sistemas Operativos</td>
+            <td>Modelado de software</td>
+          </tr>
+
+        <tr>
+          <td>1:00 - 3:00|</td>
+        
+          <td>Calculo</td>
+          <td>Programacion Orientada</td>
+          <td></td>
+          <td>Sistemas</td>
+        </tr>
+      </tbody>
+
+      <tfoot><!-- Es el pie de tabla se puede usasr para hacer sumas de todas las columnas -->
+        <td></td>
+            <td>total de horas: 4</td>
+            <td>total de horas: 6</td>
+            <td>total de horas: 6</td>
+            <td>total de horas: 4</td>
+            <td>total de horas: 6</td>
+      </tfoot>
+    </table>
+  </body>
+</html>

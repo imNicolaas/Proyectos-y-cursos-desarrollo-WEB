@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Outline.css">
+</head>
+
+<body>
+    
+    <h1>Outline</h1>
+
+    <p>La propiedad <b>Outline</b> aplica una especie de enmarcado a una entidad con forma de caja pero con algunas condiciones, es decir que tiene un funcionamiento bastante parecido a la propiedad <a target="_blank" href="../24 - Border/border.html">Border pero con algunos aspectos muy diferenciadores los cuales son:</a>  </p>
+
+    <ul>
+        <li>No ocupa espacio de la pagina en realidad es decir que se representa visualmente en la pagina pero su tamaño no afectara en lo absoluto a las demas entidades</li>
+
+        <li>No se puede redondear el delineado que se haga con esta propiedad ya que como no ocupa espacio en la pagina sus borders no son suceptibles a cambios</li>
+
+        <li>A diferencia de la propiedad border en este caso no se van a poder controlar los lados de forma independiente</li>
+    </ul>
+
+    <p>Ademas cuenta con la propiedad <b>outline-offset</b> la cual nos permite controlar la distancia del outline con respecto a la caja a la que pertence</p>
+
+    <h2>Ejemplo (una caja con border al lado de una con outline)</h2>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>    &#60;div class="outline-1">
+        Outline
+    &#60;/div></code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>    .outline-1{
+        outline: 20px solid red;
+    }</code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <div class="border-1">
+                border
+            </div>
+
+            <br>
+
+            <div class="outline-1">
+                Outline
+            </div>
+
+        </li>
+    </ul>
+
+    <h2>Ejemplo (Una caja con Outline y outline-offset)</h2>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>    &#60;div class="outline-2">
+        outline-offset
+    &#60;/div></code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>    .outline-2{
+        outline: 20px solid red;
+    }</code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <div class="outline-2">
+                outline-offset
+            </div>
+
+            <br>
+
+        </li>
+    </ul>
+    
+</body>
+</html>

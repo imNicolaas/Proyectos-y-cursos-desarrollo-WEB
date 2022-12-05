@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Align CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Text Align.css">
+</head>
+
+<body>
+    
+    <h1>Text align</h1>
+
+    <p>La propiedad <b>Text align</b> es La propiedad que nos permite alinear horizontalmente el contenido de un elemento de bloque siempre que el contenido <b>NO TENGA ANCHO DECLARADO</b></p>
+
+    <p class="centrar"> <span class="rojo">Nota: </span> Es para centrar el contenido, no el contenedor que lo posea</p>
+
+    <h2>Consta de 4 posibles valores:</h2>
+
+    <ul>
+        <li><b>text-align: left; -></b> Alinea el contenido a la izquierda</li>
+
+        <li><b>text-align: right; -></b> Alinea el contenido a la derecha</li>
+
+        <li><b>text-align: center; -></b> Alinea el contenido al centro</li>
+
+        <li><b>text-align: justify; -></b> Alinea el contenido de forma justificada</li>
+    </ul>
+
+    <p></p>
+
+    <h2>Ejemplo</h2>
+
+    <p>Con la propiedad <b>text-align: right;</b> se puede hacer que un <u>contenido</u>, en este caso texto, este alineado a la izquierda:</p>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nemo! Perspiciatis quidem tempora illum rem, ut nulla animi ea dicta quas ipsa non ducimus et iure eveniet aliquam. Expedita, at?
+        Itaque corrupti sequi atque tenetur aliquid beatae inventore officia adipisci praesentium distinctio quo veritatis optio, iure quisquam! Officia maxime quia, accusamus quam incidunt maiores quaerat, neque voluptates eum iste provident.
+    </div>
+
+    <p>Para centrar elementos de linea debemos obligatoriamente usar el atributo <b>display: block</b> para otorgarle a un elemento de linea las caracteristicas de un elemento de bloque</p>
+
+    <p><span class="rojo">Nota: </span> si se usa la propiedad <b>display: inline-block</b> el atributo text-align no va a funcionar ya que es solo para elementos de bloque como tal</p>
+
+    <h2>ejemplo:</h2>
+
+    <ul>
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>    .link{
+        display: block;
+        text-align: center;
+    }</code></pre>
+        </li>
+
+        <li>
+            <h3>Resultado:</h3>
+
+    <a class="link" href="#">link</a>   
+        </li>
+    </ul>
+
+    <p>Para centrar imagenes no sera posible hacerlo con text.align: center ya que como ya se mecion esta propiedad centra el contenido mas no el contenedor y en el caso de las imagenes, la misma imagen es su propio contenido a su vez ocupa todo el tamaño del contenedor por lo cual no se puede usar text-align, y una forma de centrar una imagen que esta suelta es dandole la propiedad de <b>display: block;</b> para que la imagen pueda ser modificada como un elemento de bloque y mediante <b>margin-left: auto; y margin-right: auto;</b> se puede centrar la imagen</p>
+
+    <p>
+        pero otro escenario posible es que la imagen este dentro de un contenedor y se quiera usar text-align para centrar lo que esta dentro del contenedor en cuyo casi si serviria esta propiedad con normalidad pero siempre y cuando la imagen no tenga el atributo display: block; que le indique ser un elemento de bloque, ya que en este caso en el navegador la imagen ocupa todo en ancho posible. 
+    </p>
+
+    <img src="../assets/images/Pastor_1.webp" alt="Pastor_Australiano_1" class="img-1">
+
+    
+
+    
+</body>
+</html>

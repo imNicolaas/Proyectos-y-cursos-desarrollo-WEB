@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuracion JS</title>
+
+    <link rel="icon" href="/HTML y CSS/JS/assets/images/js_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Destructuracion.css">
+
+</head>
+
+<body>
+
+    <h1>Destructuracion en JS</h1>
+
+    <p>La sintaxis de desestructuración es una expresión de JavaScript que permite desempacar valores de arreglos o propiedades de objetos en distintas variables.</p>
+
+    <pre>
+const numeros = [1, 2, 3];
+
+//Sin destructuración
+let uno = numeros[0],
+dos = numeros[1],
+tres = numeros[2];
+
+console.log(uno, dos, tres);
+
+//Destructuracion: forma de separar cada uno de los valores de un arreglo o objeto para asignarlos a variables independientes que pueden ser definidas por const o let
+
+const [one, two, three, cuatro] = numeros;
+
+//one = 2; no se puede porque todas las nuevas variables estan definidas como constantes 
+
+console.log(one, two, three, cuatro)
+
+let [a, b, c] = numeros;
+
+a = 10; // en este caso si deja por que todas las variables definidad por destructuracion son definidas con let por lo tanto no son constantes
+
+console.log(a, b, c);
+
+//destructuracion con objetos
+
+let persona = {
+    nombre: 'Nicolas',
+    apellido: 'Corredor',
+    edad: '21'
+};
+
+//para que la destructuracion en los objetos funcione, la neuva variable que se cree dentro de la sintaxis de destructuracion se llame igual que en el objeto.
+
+let {nombre, apellido, edad} = persona;
+
+console.log(nombre, apellido, edad);
+
+//forma de renombrar las variables en destructuracion con objetos
+
+let {nombre: nom, apellido: ape, edad: age} = persona;
+
+console.log(nom, ape, age)
+
+    </pre>
+
+    <Script src="Destructuracion.js"></Script>
+    
+</body>
+</html>

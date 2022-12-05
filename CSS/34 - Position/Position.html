@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Position.css">
+
+</head>
+
+<body>
+
+    <h1>Position en CSS</h1>
+
+    <p>
+        La propiedad position nos permite posicionar los elementos. consta de los siguientes conceptos.
+    </p>
+    
+    <ul>
+        <li>
+            <b>Flujo de renderizado:</b> Por norma general los elementos se dibujan de izquierda a derecha y de arriba abajo. El punto 0,0 de los elementos, por norma general, es la esquina superior izquierd (se puede modificar).
+        </li>
+        
+        <li>
+            <b>Espacio reservado:</b> Es el espacio que tiene un elemento asignado en el navegador.
+        </li>
+
+        <li>
+            <b>Elemento posicionado:</b> Esto significa que el elemento tiene la propiedad position con un valor distinto de "static", que es el valor que tiene esta propiedad por defecto.
+        </li>
+
+        <li>
+            <b>Stackin context</b> Contexto de apilamiento. Es el orden en el que se apilarán las cajas que se superponen, dentro del mismo contenedor.
+        </li>
+
+    </ul>
+
+    <p>Al posicionar un elemento se habilitan 5 propiedades que podemos utilizar para mover los elementos en los 3 ejes.</p>
+
+    <ul>
+        <li>
+            <b>Top:</b> El elemento se moverá desde la parte superior la distancia que le hayamos indicado.
+        </li>
+
+        <li>
+            <b>Right:</b> El elemento se moverá desde la parte derecha la distancia que le hayamos indicado.
+        </li>
+
+        <li>
+            <b>Bottom:</b> El elemento se moverá desde la parte inferior la distancia que le hayamos indicado.
+        </li>
+
+        <li>
+            <b>Left:</b> El elemento se moverá desde la parte izquierda la distancia que le hayamos indicado.
+        </li>
+
+        <li>
+            <b>z-index:</b> Nos permite mover el elemento en el contexto de apilamiento (eje z)
+        </li>
+
+        <p class="nota"> <span class="rojo">Nota:</span> Si a un elemento le declaramos la propiedad top y/o left, las propiedades bottom y/o right no funcionarán. </p>
+
+    </ul>
+
+    <p>Los posibles valores que le podemos dar a position son:</p>
+
+    <ul>
+        <li>
+            <b>Static</b> Es el valor que tiene por defecto un elemento, con este valor el elemento NO ESTÁ POSICIONADO y por lo cual no podremos moverlo
+        </li>
+
+        <li>
+            <b>Relative</b> El elemento mantendrá su posición y medidas en el flujo de renderizado y mantendrá su espacio reservado. Si lo movemos lo hará usando su posición en el html como punto de referencia.
+        </li>
+
+        <li>
+            <b>Absolute:</b> El elemento perderá sus medidas y su espacio reservado. Si lo movemos usará el elemento posicionado contenedor como referencia. Si no tiene ninguno, usará el elemento html de referencia.
+        </li>
+
+        <li>
+            <b>Fixed</b> El elemento perderá sus medidas y su espacio reservado. <br>
+
+            Si lo movemos usará el elemento html de referencia, y además se quedará fijo en esa posición aunque hagamos scroll.
+        </li>
+
+        <li>
+            <b></b>
+        </li>
+
+        <li>
+            <b>Sticky -> Es una mezcla de position relative y "fixed".</b>
+
+            Con este tipo de posicionamiento los valores top, left, bottom y right no sirven para mover el elemento, si no para indicarle en qué punto pasará a tener un comportamiento de posicionamiento similar a fixed, hasta llegar a ese punto se comportará como si no tuviera posicionamiento, aunque sí contará como posicionado si necesitáramos colocar otro elemento respecto a él (absolute)
+        </li>
+
+        <li>
+            <b>z-index: Es la propiedad que nos permite ordenar los elementos superpuestos para controlar cual se coloca por delante y cual por detrás.</b>
+        </li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Display.css">
+</head>
+
+<body>
+    
+    <h1>Display</h1>
+
+    <p>La propiedad displa se usa entre otras cosas para poder "Cambiar" la naturalidad de un elemento de linea o de bloque haciendo que un elemento de linea se pueda convertir en un elemento de bloque y bisceversa, en realidad no se cambia de raiz su naturalidad pero se le asignan las caracteristicas que tiene el elemento que se escoja ya sea de linea o de bloque </p>
+
+    <h2>Consta de los siguientes valores:</h2>
+
+    <ul>
+        <li><b>none -> </b>Hace que el elemento no se muestre, pero
+            sigue cargándose.</li>
+
+        <li><b>block -></b> Hace que el elemento sea de bloque.</li>
+
+        <li><b>inline -></b> Hace que el elemento sea de linea.</li>
+            
+        <li><b>inline-block -></b> Hace que el elemento sea de linea
+            pero admite medidas y márgenes verticales.</li>
+    </ul>
+
+    <h2>Ejemplo (none):</h2>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>    &#60;p class="text-1"> Lorem ipsum dolor sit amet &#60;/p></code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>    .text-1{
+        display: none;
+    }</code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <p class="text-1">Lorem ipsum dolor sit amet</p>
+            <div class="nota">
+            <p><br>No se muestra ninguna Resultado por que esta propiedad da la orden de no dibujar el contenido en la pantalla pero si se esta cargando en el navegador por lo que si esta consuminedno recursos</p>
+            </div>
+
+        </li>
+    </ul>
+
+    <h2>Ejemplo (block):</h2>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>    &#60;a href="#" class="link">Enlace &#60;/a></code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>    .text-1{
+        display: block;
+        padding-bottom: 24px;
+    }</code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <a href="#" class="link-1">Enlace</a>
+
+            <div class="nota">
+                <p><br>El tamaño del elemento que inicialmente era de linea ahora es el tamaño de un elemento de bloque ya que se le otergaron los atributos de un elemento de bloque, y por lo tanto su tamaño también puede cambiar</p>
+            </div>
+
+        </li>
+    </ul>
+
+    <h2>Ejemplo (inline):</h2>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>    &#60;p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.&#60;/p></code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>    .text-2{
+        display: inline;
+        margin-bottom: 320px;
+    }</code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <p class="text-2">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.</p>
+
+            <div class="nota">
+                <p><br>El elemento que inicialmente era de bloque ahora adopto las caracteristicas de un elemento de linea es decir que ahora no se puede modificar el tamaño del elemento</p>
+            </div>
+
+        </li>
+    </ul>
+
+    <h2>Ejemplo (inline-block):</h2>
+
+    <ul>
+        <li>
+            <h3>En HTML:</h3>
+
+            <pre><code>    &#60;a href="#" class="link">Enlace&#60;/a></code></pre>
+
+        </li>
+
+        <li>
+            <H3>En CSS:</H3>
+            <pre><code>    .link-2{
+        display: inline-block;
+        padding-bottom: 38px;
+        padding-right: 124px;
+    }</code></pre>
+        </li>
+
+        <li>
+            <H3>Resultado:</H3>
+
+            <a href="#" class="link-2">Enlace</a>
+
+            <div>
+                <p class="nota"><br>El elemento que inicialmente era de linea ahora adopto las caracteristicas de un elemento de bloque es decir que ahora se puede modificar el tamaño del elemento con atributos como</p>
+            </div>
+
+        </li>
+    </ul>
+    
+</body>
+</html>

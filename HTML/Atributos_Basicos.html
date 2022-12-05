@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+    <title>Atributos basicos    </title>
+
+        <style>
+            .parrafo_1{
+                color: rgb(165, 126, 42)
+                
+            }
+
+            .titulo_1{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+    </style>
+
+</head>
+
+<!-- 
+    Algunos atriburos globales para html:
+
+    • class -> este atributo se usa para dar estilos en css 
+
+    • id -> Es un identificador unico que se utiliza para seleccionar el elemento desde JS y para hacer navegacion a travez de anclas
+
+    • title -> Es un atributo que se usa para mostrar una descripcion del objeto que se esta apuntando con el mouse 
+
+    • data -> es un atributo que nos permite guardar algun valor en la etiqueta html 
+-->
+<body>
+
+    <h1 class = "titulo_1">Deontay Wilder </h1>
+
+    <img src="/Imagenes/Deontay.jpg" alt="Deontay" width="330" height="321"> <!-- Se copia la ruta de la imagen despues de moverla a la carpeta del proyecto-->
+
+    <p class = "parrafo_1"> <i> "The Bronze Bomber" </i> </p>
+    <p>
+        <a href="/Imagenes/Deontay.jpg" download="">Descargar imagen</a>
+
+    <p id = "parrafo_id">Parrafo prueba id</p>
+    <p title="Deontay Leshun Wilder">Deontay Leshun Wilder (Tuscaloosa, Alabama, 22 de octubre de 1985) es un boxeador estadounidense que compite en la categoría de los pesos pesados. Fue el campeón mundial del Consejo Mundial de Boxeo (WBC) desde 2015 hasta 2020. Wilder tiene una marca personal de 42 victorias (41 por nocaut), una derrota y un empate, estos últimos ante el inglés Tyson Fury.</p>
+
+
+    <script>
+        const p = document.getElementById('parrafo_id')
+
+        console.log(p.textContent)
+    </script>
+    
+</body>
+</html>

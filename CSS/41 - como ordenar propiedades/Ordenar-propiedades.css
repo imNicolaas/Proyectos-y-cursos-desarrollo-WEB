@@ -1,0 +1,104 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 25px;    
+    padding: 0 10%;
+}
+
+main{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+h1{
+    font-weight: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letra_grande{
+    font-size: 22px;
+}
+
+.position{
+    width: 620px;
+    background-color: rgb(8, 166, 194);
+    border-radius: 10px 10px 0 0 ;
+}
+
+.Box-model{
+    width: 620px;
+    background-color: rgb(8, 138, 161);
+    
+}
+
+.Propiedades-texto{
+    width: 620px;
+    background-color: rgb(8, 114, 133);
+}
+
+.propiedades-visuales{
+    width: 620px;
+    background-color: rgb(7, 83, 97);
+}
+
+.Otras{
+    width: 620px;
+    background-color: rgb(5, 67, 78);
+    border-radius: 0 0 10px 10px;
+}
+
+.texto-position{
+    position: absolute;
+
+    font-size: 20px;
+    top: 530px;
+    left: 34px;
+    
+}
+
+.texto-box-model{
+    position: absolute;
+    font-size: 20px;
+    top: 680px;
+    left: 18px;
+}
+
+.texto-propiedades-texto{
+    position: absolute;
+    font-size: 20px;
+    top: 820px;
+    left: 12px;
+
+    text-align: center;
+
+}
+
+.texto-propiedades-visuales{
+    position: absolute;
+    font-size: 20px;
+    top: 945px;
+    left: 12px;
+
+    text-align: center;
+
+}
+
+.Restantes{
+    position: absolute;
+    font-size: 20px;
+    top: 1060px;
+    left: 16px;
+}
+

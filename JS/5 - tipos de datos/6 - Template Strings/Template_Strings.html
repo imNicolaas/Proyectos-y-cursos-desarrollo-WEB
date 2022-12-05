@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Strings JS</title>
+
+    <link rel="icon" href="/HTML y CSS/JS/assets/images/js_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Template_Strings.css">
+
+</head>
+
+<body>
+
+    <h1>Template Strings en JS</h1>
+
+    <h2>Concatenacion:</h2>
+
+    <ul>
+        <li>
+            <h3>En JS:</h3>
+
+<pre><code>
+    let nombre = "Nicolas"
+    let apellido = "Corredor"
+    
+    let saludo = "Hola mi nombre es " + nombre + " " + apellido + '.';
+    console.log(saludo);    
+</code></pre>
+        </li>
+    </ul>
+
+    <h2>Interpolacion de variables:</h2>
+
+    <p>Meter dinamicamente una variable dentro de una cadena de texto, y se tiene que hacer uso de una caracteristica de los string llamanda <b>Template String</b></p>
+
+    <p>En pocas palabras, la interpolación permite utilizar cualquier expresión válida de JavaScript (como por ejemplo la suma de dos variables) dentro de una cadena y obtener como resultado la cadena completa con la expresión evaluada.</p>
+
+    <p>Se hace haciendo uso del <b>Backtick, acento invertido o acento fuerte ( ` ` )</b>, </p>
+
+    <ul>
+        <li>
+            <h3>En JS:</h3>
+
+<pre><code>let nombre = "Nicolas"
+    let apellido = "Corredor"
+    
+    let saludo2 = `Hola mi nombre es ${nombre} ${apellido}`;
+    console.log(saludo2);
+</code></pre>
+        </li>
+    </ul>    
+
+    <p></p>
+
+    <Script src="Template_Strings.js"></Script>
+    
+</body>
+</html>

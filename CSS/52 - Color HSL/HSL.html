@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color HSL CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="HSL.css">
+
+</head>
+
+<body>
+
+    <h1>Color HSL en CSS</h1>
+
+    <p>EL modo de color HSL es el más intuitivo para Los humanos. Su nombre viene de las siglas Hue (tono) Saturation (saturación) y Lightness (Luminancia)</p>
+
+    <ol>
+        <li>
+        <p>El primer valor es el ángulo en el <a href="https://es.wikipedia.org/wiki/C%C3%ADrculo_crom%C3%A1tico" target="_blank">Circulo Cromático</a> donde 0 y 360 será el color rojo. Hay ciertos valores que os pueden servir como referencia para relacionar mejor Los colores con sus ángulos.</p>
+
+            <ul type="disc">
+                <li>0 -> rojo</li>
+                <li>60 -> amarillo</li>
+                <li>120 -> verde</li>
+                <li>180 -> cyan</li>
+                <li>240 -> azul</li>
+                <li>300 -> magenta</li>
+            </ul>
+        </li>
+
+        <li>
+            <p>El segundo valor es la saturación o intensidad del color.</p>
+
+            <ul type="disc">
+                <li>0% -> Gris</li>
+                <li>100% -> Color Puro</li>
+            </ul>
+        </li>
+
+        <li>
+            <p>El tercer valor es la Luminosidad del color.</p>
+
+            <ul type="disc">
+                <li>0%-> negro, nada de Luz</li>
+                <li>100% -> blanco, Luz máxima</li>
+            </ul>
+        </li>
+    </ol>
+
+    <p><span class="rojo">Nota: </span>Es importante que aunque el valor de saturación o Luminancia sea 0 hay que poner 0% si no, no funcionará</p>
+
+    <h2>Ejemplo:</h2>
+
+    <div class="box-1"></div>
+
+    <div class="nota-1">background-color: hsl(360, 100%, 50%);</div>
+
+    <h2>Transparencia con HSL</h2>
+
+    <p>El modo HSL también admite transparencia y su sintaxis es la misma que la del modo RGB. Tenemos dos sintaxis disponible.</p>
+
+    <ul>
+        <li>hsla (h, s, l, a)</li>
+        <li>hsl(H S L/ a)</li>
+    </ul>
+
+    <p>En ambos casos el valor alpha va de 0 a 1</p>
+
+    <h2>Ejemplo:</h3>
+
+        <div class="box-3"></div>
+        <div class="nota-2">background-color: hsl(240 100% 50% <span class="rojo">/ .5</span>);</div>
+
+        <ul>
+            <li><h3>Paginas para ver colores:</h3> minuto <a href="https://youtu.be/cCkUkASbK7w?list=PLROIqh_5RZeDbvISffzihyxzqJBt_z3-Z&t=597">11:00</a></li>
+
+            <iframe class="sombra" width="360" height="240" src="https://www.youtube.com/embed/cCkUkASbK7w?list=PLROIqh_5RZeDbvISffzihyxzqJBt_z3-Z" title="▶ Qué es el Modo de Color HSL y para qué funciona ❓CURSO de CSS Básico desde cero 2021 #52" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>    
+    
+</body>
+</html>

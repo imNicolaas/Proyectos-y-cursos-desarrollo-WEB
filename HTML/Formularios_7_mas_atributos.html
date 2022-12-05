@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas atributos formularios</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+
+        code{
+            color: green;
+        }
+    </style>
+</head>
+
+    <!--
+        placeholder -> texto fantasma que da una pista a lo que el usuaroi tiene que introducir 
+
+        required -> hace que un campo sea obligatorio 
+
+        readonly -> Hace que un campo sea de solo lectura 
+
+        min - max -> establece un minimo y un maximo de un campo numerico 
+
+        maxlenght - minlenght -> establece el minimo y maximo de un campo de de texto 
+
+        selected -> es como el checked en los select, sirve para establecer una opcion por defecto 
+
+        disabled -> Desactiva el campo, no se podra escribir en el autofocus
+
+        autofocus -> Se usa para cargar el foco al cargar el formulario
+    -->
+<body>
+    <h1>Mas atributos para formularios</h1>
+        <form>
+            <!--------------------------------------------------------------------------->
+                <h2>Placeholder</h2>
+
+                <p>
+                    Se representa por medio de un texto fantasma que da una pista a lo que el usuaroi tiene que introducir, de esta forma:
+                </p>
+                <pre><code>
+&lt;input type = "text" placeholder = "Introduce tu nombre">
+                </code></pre>
+
+                <input type="text" placeholder="Introduce tu nombre">
+                <button>Enviar</button>
+
+            <!--------------------------------------------------------------------------->
+                <h2>Atributo required</h2>
+
+                <p>
+                    Este atributo hace que el campo se vuelva obligatorio, de no ser rellenado el fomrulario no se podra enviar y se podra ver un mensaje que indica que campo se debe rellenar 
+                </p>
+
+                <pre><code>
+    &lt;label for="correo">Correo electronico (este campo es obligatorio)&lt;/label>
+
+    &lt;input type="text"  id="correo" required>
+                </code></pre>
+
+                <fieldset >
+                    <legend>Este campo es obligatorio</legend>
+                    <label for="correo"><b>Correo electronico</b></label>
+                    <input type="text"  id="correo" required> 
+
+                    <button>Enviar correo</button>
+            </fieldset>
+
+            <!--------------------------------------------------------------------------->
+            <h2>Atributo readonly</h2>
+            
+            <p>
+                Este atributo hace que el inout sea solo de lectura, es decir que se podra seleccionar el texto en el pero no se podra cambiar el contenido del mismo <b> pero lo que contenga este input si será enviado al formulario</b>
+            </p>
+
+            <pre><code>
+    &#60;input type="text" value="Registro de docentes">
+            </code></pre>
+            
+            <input type="text" value="Registro de docentes">
+
+            <!--------------------------------------------------------------------------->
+            <h2>Atributo disabled</h2>
+
+            <p>
+                Este atributo a diferencia del readonly no se resalta al ser clickeado y esta informacion no será enviada al formulario cuando se le de enviar 
+            </p>
+
+            <pre><code>
+    &#60;input type="text" value="input con atributo disabled" disabled>
+            </code></pre>
+
+            <input type="text" value="input con atributo disabled" disabled>
+
+            <!--------------------------------------------------------------------------->
+            <h2>Atributo min y max</h2>
+
+            <p>
+                Este atributo se usa para establecer el valor minimo y maximo de un input numerico si incumple con alguna de estas condiciones mostrara una alerta emergente, no es necesario que vayan los dos atributos, es decir que podemos hacer uso de el que deseemos.
+            </p>
+
+            <pre><code>
+    &#60;input type="number" min="10" max="100">
+            </code></pre>
+
+            <input type="number" min="10" max="100">
+            <button>Enviar</button>
+
+            <!--------------------------------------------------------------------------->
+            <h2>Atributo minlenght y maxlenght</h2>
+
+            <p>
+                Este atributo se usa para establecer el minimo y el maximo de caracteres que se pueden escribir en un input de texto
+            </p>
+
+            <pre><code>
+    &#60;input type="text" minlength="10" maxlength="15">
+            </code></pre>
+
+            <input type="text" minlength="10" maxlength="15">
+            <button>Enviar</button>
+
+            <!--------------------------------------------------------------------------->
+            <h2>Atributo selected</h2>
+
+            <p>
+                Este atributo se usa para especificar cual sera la opcion que estara marcada por defecto en un select con varias opciones
+            </p>
+
+            <pre><code>
+    &#60;select name="numeros">
+
+        &#60;option value = "Uno"> Uno &#60;/option>
+        &#60;option value = "Dos" selected> Dos &#60;/option>
+        &#60;option value = "Tres"> Tres &#60;/option>
+
+    &#60;/select>                
+            </code></pre>
+
+            <select name="numeros">
+                <option value="Uno">Uno</option>
+                <option value="Dos" selected>Dos</option>
+                <option value="Tres">Tres</option>
+            </select>
+
+            <!--------------------------------------------------------------------------->
+            <h2>Atributo autofocus</h2>
+
+            <p>
+                Este atributo se usa para dejar el cursor de texto en un campo en especifico, como si el usuraio ubuese hecho click en el campo para escribir pero es el campo que saldra por defecto 
+            </p>
+
+            <pre><code>
+    &#60;label for = "campo_uno">A&#60;/label>
+    &#60;input type="text"  id="campo_uno" placeholder="campo uno">
+    &#60;br>
+
+    &#60;label for = "campo_dos">B&#60;/label>
+    &#60;input type="text"  id = "campo_dos" placeholder = "campo dos"  autofocus>
+    &#60;br>
+
+    &#60;label for = "campo_tres">C&#60;/label>
+    &#60;input type = "text"  id = "campo_tres" placeholder = "campo tres">
+    &#60;br>
+            </code></pre>
+
+            <label for="campo_uno">A</label>
+            <input type="text"  id="campo_uno" placeholder="campo uno">
+            <br>
+
+            <label for="campo_dos">B</label>
+            <input type="text"  id="campo_dos" placeholder="campo dos"  autofocus>
+            <br>
+
+            <label for="campo_tres">C</label>
+            <input type="text"  id="campo_tres" placeholder="campo tres">
+            <br>
+
+                
+
+
+        </form>
+    
+</body>
+</html>

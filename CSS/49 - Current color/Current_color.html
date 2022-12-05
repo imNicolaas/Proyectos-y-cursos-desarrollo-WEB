@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Color CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Current_color.css">
+
+</head>
+
+<body>
+
+    <h1>Current Color en CSS</h1>
+
+    <p>Es una palabra clave que se puede usar en Lugar de cualquier valor de color y usará el valor ya sea establecido o heredado en la propiedad color, es decir que es un valor de color que usa el valor color que tenga mas a la mano ya sea en el mismo elemento o de su herencia mas cercana.</p>
+
+    <p>si no hay ningun valor declarado usara el que tenga el navegador por defecto que usualmente es el negro.</p>
+
+    <ul>
+        <li><h2>En HTML:</h2>
+<pre><code>&#60;div class="box-1">
+    &#60;div class="box-hijo "&#60;/div>
+&#60;div></code></pre>            
+        </li>
+
+        <li>
+            <h2>En CSS:</h2>
+<pre><code>.box-1{
+    background-color: darkcyan;
+    color: red;
+}
+
+.box-hijo{
+    background-color: currentColor;
+}</code></pre>
+        </li>
+
+        <li><h2>Resultado:</h2></li>
+
+
+
+    </ul>
+
+    <div class="box-1 centrar">
+        <div class="box-hijo "></div>
+    </div>
+    
+    
+</body>
+</html>

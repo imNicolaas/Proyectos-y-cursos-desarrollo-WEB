@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device pixel ratio</title>
+</head>
+<!--
+    DPR -> (Device pixel ratio)
+        Es la relacion que existe entre los pixeles reales que tiene el dispositivo y los pixeles disponibles para "pintar" contenido o usarlo de alguna forma
+
+    DPR = pixeles reales / pixeles disponibles
+
+    ejemplo: para una pantalla 1080 de pc con pixeles disponibles verticalmente de 969 el DPR seria igual a 1080/969 = 1,11, es decir practicamente 1.
+    Pero en los smarthphones el DPR generalmente es de 2, 2.4, 3 o hasta mas
+-->
+
+<body>
+
+    <h1> Cargar una imagen u otra en funcion del DPR </h1>
+    
+    <img srcset = "/Imagenes/Paisaje.jpg, 
+    /Imagenes/Paisaje_mobile.jpg 2x" alt = "a">    
+
+    <!-- Para poner varias imagenes de ser requerido, se ponen DENTRO DE UNA ETIQUETA SRCSET = set de recursos en ves de un src normal, las rutas separadas por comas -->
+    
+
+     <!-- Google chorme por defecto carga siempre la primera imagen que se pone de primer lugar-->
+
+</body>
+</html>

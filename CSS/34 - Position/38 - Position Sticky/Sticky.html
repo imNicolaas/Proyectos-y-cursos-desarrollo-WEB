@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Sticky CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Sticky.css">
+</head>
+<body>
+    
+    <div class="centrar margin">
+        <img src="/HTML y CSS/CSS/assets/images/Wybie.jpg" alt="Wybie.jpg">
+    </div>
+
+    <Header class="header">
+        <nav class="menu">Menu</nav>
+    </Header>
+
+    <div class="padre-prueba-sticky">
+        <a href="https://www.messenger.com/t/4817312365040465/" target="_blank" class="prueba_Sticky"><img src="/HTML y CSS/CSS/assets/images/messenger logo.png" alt="messenger_logo.png"></a>
+    </div>
+
+    <main class="main">
+        <h1 class="centrar">Position Sticky CSS</h2>
+
+        <p>
+            Es una mezcla de position <a href="/HTML y CSS/CSS/34 - Position/35 - Position Relative/Relative.html" target="_blank">Relative</a> y position <a href="/HTML y CSS/CSS/34 - Position/37 - Position Fixed/Fixed.html" target="_blank">Fixed</a>, Con este tipo de posicionamiento los valores Top, left, bottom, y right no funcionan para mover el elemento, sino para indicarle en que punto en que punto pasara a tener un comportamiento de posicionamiento similar a fixed, hasta llegar a ese punto se comportara como si no tubiera posicionamiento (es decir antes de que se cumpla la condicion que estamos especifcancon de Top, left, bottom o right el elemento si sera suceptible a el scroll), Pero una vez que se cumpla la condicion que estamos estipulando el elemento si se comportara similar a fixed 
+        </p>
+
+        <h2>Caracteristicas:</h2>
+
+        <p>
+            Esta propiedad evalua las medidas del contenedor en el que esta es decir que si el elemento no tiene contenedor no tiene medidas, esta propiedad no funcionara
+        </p>
+
+        <p>
+            y si el contenedor del elemento si tiene medidas pero se le aplica la propiedad position Sticky a el elemento en si, es decir a lo que esta por dentro se cumplira pero dentro de su contenedor (ademas de las condiciones de Top, left, bottom o right), de esta forma.
+        </p>
+
+        <ul>
+            <li>
+                <h3>En HTML:</h2>
+                    <pre><code>    &#60;div class="prueba-1">
+        &#60;nav class="nav-prueba-1">Prueba 1&#60;/nav>
+    &#60;/div></code></pre>
+            </li>
+
+            <li>
+                <h3>En CSS:</h3>
+                <pre><code>.prueba-1{
+    height: 240px;
+}
+                
+.nav-prueba-1{
+    position: sticky;
+    top: 75px;
+}</code></pre>
+            </li>
+
+            <li>
+                <h3>Resultado:</h3>
+            </li>
+        </ul>
+
+        <div class="prueba-1">
+            <nav class="nav-prueba-1">Prueba 1</nav>
+        </div>
+
+        <p>El elemento hijo esta cupliendo la condicion de quedarse sticky cuando el top sea 75px pero solo mientras la altura de su elemento padre se lo permita, cuando no lo haga tendra que perder la propiedad Stiky ya que su elemento padre no tiene altura y ademas no se puede mover con el.</p>
+
+        <p>
+            En el caso de position fixed toma como referencia al elemento padre HTML o body siempre, en el caso de sticky toma como referecia las medidas del elemento padre.
+        </p>
+
+        <p>
+            En el siguiente ejemplo se tienen etiquetas article en las que solo hay un h2 con el nombre de la seccion y una etiquta p con el contenido del parrafo. Al aplicar la propiedad Sticky al h2 va a tener poder de actuacion mientras su elemento padre (la etiqueta <b>article</b>) tenga una altura en la que se pueda representar su "fijacion" de la propiedad Sticky cuando este article se quede sin altura se dejara de representar la fijacion y perdera su posicionamiento en la pantalla pasando a ser un elemento normal, y el proximo h2 cumplira con las condiciones establecidas por lo tanto se le aplicara la propiedad Sticky en pantalla, y asi sucesivamente. De esta forma: 
+        </p>
+
+        <section>
+            <article>
+                <h2 class="article-title">Seccion 1:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quisquam, delectus amet saepe recusandae tempora omnis repellendus accusantium incidunt perferendis laborum quas numquam natus atque inventore neque, quibusdam ipsa optio?
+                Vitae nisi eos dolore voluptatem molestias optio obcaecati repellendus hic ut adipisci possimus quas, qui consequatur eaque facere ad vero corporis odit iste! Veniam, nihil atque ea numquam dolorum voluptas.
+                Nulla quas in quasi temporibus magnam magni, aspernatur ipsum inventore voluptates cum maxime maiores quia, soluta reiciendis facilis hic dignissimos reprehenderit molestias repellat voluptate officia ducimus deserunt! Blanditiis, vero voluptatibus!
+                Ipsam perferendis obcaecati, sunt repellat blanditiis aut, placeat nulla corporis hic quisquam labore? Sunt illo deserunt incidunt sequi quos rerum asperiores molestiae quibusdam consectetur facilis. Quasi tempora unde recusandae a.</p>
+            </article>
+
+            <article>
+                <h2 class="article-title">Seccion 2:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quisquam, delectus amet saepe recusandae tempora omnis repellendus accusantium incidunt perferendis laborum quas numquam natus atque inventore neque, quibusdam ipsa optio?
+                Vitae nisi eos dolore voluptatem molestias optio obcaecati repellendus hic ut adipisci possimus quas, qui consequatur eaque facere ad vero corporis odit iste! Veniam, nihil atque ea numquam dolorum voluptas.
+                Nulla quas in quasi temporibus magnam magni, aspernatur ipsum inventore voluptates cum maxime maiores quia, soluta reiciendis facilis hic dignissimos reprehenderit molestias repellat voluptate officia ducimus deserunt! Blanditiis, vero voluptatibus!
+                Ipsam perferendis obcaecati, sunt repellat blanditiis aut, placeat nulla corporis hic quisquam labore? Sunt illo deserunt incidunt sequi quos rerum asperiores molestiae quibusdam consectetur facilis. Quasi tempora unde recusandae a.</p>
+            </article>
+
+            <article>
+                <h2 class="article-title">Seccion 3:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quisquam, delectus amet saepe recusandae tempora omnis repellendus accusantium incidunt perferendis laborum quas numquam natus atque inventore neque, quibusdam ipsa optio?
+                Vitae nisi eos dolore voluptatem molestias optio obcaecati repellendus hic ut adipisci possimus quas, qui consequatur eaque facere ad vero corporis odit iste! Veniam, nihil atque ea numquam dolorum voluptas.
+                Nulla quas in quasi temporibus magnam magni, aspernatur ipsum inventore voluptates cum maxime maiores quia, soluta reiciendis facilis hic dignissimos reprehenderit molestias repellat voluptate officia ducimus deserunt! Blanditiis, vero voluptatibus!
+                Ipsam perferendis obcaecati, sunt repellat blanditiis aut, placeat nulla corporis hic quisquam labore? Sunt illo deserunt incidunt sequi quos rerum asperiores molestiae quibusdam consectetur facilis. Quasi tempora unde recusandae a.</p>
+            </article>
+
+            <article>
+                <h2 class="article-title">Seccion 4:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quisquam, delectus amet saepe recusandae tempora omnis repellendus accusantium incidunt perferendis laborum quas numquam natus atque inventore neque, quibusdam ipsa optio?
+                Vitae nisi eos dolore voluptatem molestias optio obcaecati repellendus hic ut adipisci possimus quas, qui consequatur eaque facere ad vero corporis odit iste! Veniam, nihil atque ea numquam dolorum voluptas.
+                Nulla quas in quasi temporibus magnam magni, aspernatur ipsum inventore voluptates cum maxime maiores quia, soluta reiciendis facilis hic dignissimos reprehenderit molestias repellat voluptate officia ducimus deserunt! Blanditiis, vero voluptatibus!
+                Ipsam perferendis obcaecati, sunt repellat blanditiis aut, placeat nulla corporis hic quisquam labore? Sunt illo deserunt incidunt sequi quos rerum asperiores molestiae quibusdam consectetur facilis. Quasi tempora unde recusandae a.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <p class="letra-grande"><u><Span class="rojo">IMPORTANTE: </Span> Cuando el elemento padre al que se le esta aplicando la propiedad Sticky tiene la propiedad Overflow declarada con cualquier valor que no sea "visible" la propiedad Sticky no funcionara, es decir hay que tener en cuenta si el contenido tiene el alto sufuciente para generar un Scroll</u></p>
+
+    
+
+    
+
+</body>
+</html>

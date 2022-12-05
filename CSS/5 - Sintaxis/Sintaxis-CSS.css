@@ -1,0 +1,23 @@
+/* 
+    selector: El elemento al que vamos a aplicar estilos (se especifica al incio de el bloque de edicion)
+
+    Popiedad: Especifica el atributo que cambiaremos del selector 
+
+    Valor: EL nuevo valor que va a tener
+
+        propiedad: valor;    ->    Esto se le denomina declaración
+
+
+    A todo el bloque de componentes se le denomina "regla"
+
+ */
+
+            /*  E J E M P L O */
+
+/* .selector{
+    
+        propiedad: valor;
+        propiedad-2: valor-2;
+        propiedad-3: valor-2;
+
+} */

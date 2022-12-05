@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta audio</title>
+
+    <link rel="shortcut icon" href="/HTML y CSS/HTML/Contenido_Enbebido/assets/icon/ondas-de-sonido.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: antiquewhite  ;
+        }
+
+        pre{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        code{
+            color: darkred;
+        }
+
+        h1{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+    </style>
+
+    
+</head>
+
+<body>
+
+    <h1>USO DE LA ETIQUETA AUDIO</h1>
+
+    <p><pre>
+El elemento audio se usa para insertar contenido de audio en un documento HTML o XHTML. El elemento audio se agregó como parte de HTML 5.
+
+Esta etiqueta consta de los elementos <i><b>src</b></i>, para especificar la fuente de donde sale el audio en cuestión. <b>autoplay, autobuffer, buffered, controls, loop, mozCurrentSampleOffset,</b> que son<br>elementos de interacion con el audio.
+
+Si se coloca solo la ruta para hacer uso de la etiqueta audio no se podra visualizar ningun tipo de contenido o reproductor 
+    
+    <code>&lt;audio src="/HTML y CSS/HTML//Contenido_Enbebido/assets/audio/Evgeny Grinko - Field.mp3">&#60;/audio></code>
+
+Pero si se hace uso de el atributo controls si se podra ver, de esta forma:
+
+    <code>&lt;audio src="/HTML y CSS/HTML/Contenido_Enbebido/assets/audio/Evgeny Grinko - Field.mp3" controls>&#60;/audio></code> </pre>
+
+    <audio src="/HTML y CSS/HTML/Contenido_Enbebido/assets/audio/Evgeny Grinko - Field.mp3" controls></audio>
+
+    <p>
+        Para que el contenidose empiece a reproducir de forma automatica se usa el atributo <b>autoplay</b>
+    </p>
+
+    <audio src="/HTML y CSS/HTML/Contenido_Enbebido/assets/audio/Evgeny Grinko - Field.mp3" controls autoplay muted></audio>
+
+    <p>
+        Para que el audio aparezca de forma muteada se usa el atributo <b>muted</b>
+    </p>
+
+    <audio src="/HTML y CSS/HTML/Contenido_Enbebido/assets/audio/Evgeny Grinko - Field.mp3" controls muted></audio>
+
+    <h2>Tema Principal <i>"Howl's Moving Castle"</i></h2>
+
+    <img src="/HTML y CSS/HTML/Contenido_Enbebido/assets/imagenes/Howls Moving Castle.jpg" alt="Howls Moving Castle.jpeg"> 
+
+    <br>
+
+    <audio src="/HTML y CSS/HTML/Contenido_Enbebido/assets/audio/Howls Moving Castle  - Main theme.mp3" controls ></audio>
+    
+</body>
+</html>

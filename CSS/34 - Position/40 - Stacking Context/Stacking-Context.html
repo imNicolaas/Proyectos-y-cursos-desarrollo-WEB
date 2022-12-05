@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking Context CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Stacking-Context.css">
+
+
+</head>
+
+<body>
+
+    <h1>Stacking Context CSS</h1>
+
+    <p>Hace referencia al algoritmo o la forma que tenemos de entender cómo el navegador  va a colocar o "Apilar" las cajas que se vayamos ubicando</p>
+
+    <ul>
+        <li>Documentacion oficial: <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context"><i><b>"Staking Context"</b></i></a>.</li>
+    </ul>
+
+    <p>
+        El staking context sigue un orden para darle mas o menos prioridad a los diferentes elementos de la pagina, este es el orden de mayor a menor prioridad:
+    </p>
+
+    <ol>
+        <li>Elementos posicionados con un z-index de 1 o más</li><br>
+        <li>Elementos posicionados sin z-index declarado (o z-index auto)</li><br>
+        <li>Elementos no posicionados</li><br>
+        <li>Elementos con z-index negativo</li>
+    </ol>
+
+    <h2>Ejemplo:</h2>
+
+    <p>
+        por defecto y si los elementos nos tiene propiedades declaradas que les den mas o menos prioridad el orden en el que se apilan es el que este en en HTML.
+    </p>
+
+    <p>Pero haciendo uso de la segunda propiedad y si a los elementos que estan arriba le damos un tipo de atributo position, este se pondra por arriba y sin necesidad que usar un z-index </p>
+
+    <p>
+        y si un elemento se posiciona por encima de otro que es un contenedor, solo se pondra por encima del contenedor en si, los hijos que pueda tener este contendor no se veran afectados. <u>Como se ve con el box 2 estando encima de el parrafo 1 pero no de sus hijos. para controlar esto se puede dar el atributo position con cualquiera de sus variantes al elemento que se quiera tener por delante ya sea el container o el box 2</u>
+    </p>
+
+    <p>
+        Si los dos elementos tiene el atributo position otra vez estaran al mismo nivel por lo que el staking context sera el por defecto
+    </p>
+
+    <div class="box box-1">Box 1</div>
+
+    <div class="container">
+        <h1 class="title">Apilamiento</h1>
+        <p class="text"><h3>parrafo 1.</h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia accusamus fugit quisquam! Impedit voluptas, accusamus repellendus, sequi, totam possimus exercitationem non earum velit eius at optio fugit ad nisi officia!
+        Aperiam laborum labore eaque nemo, quia accusantium numquam doloremque suscipit velit fugit sapiente! Quam error magni eius vitae non! Ex repellat labore repudiandae voluptate! Voluptas consequatur quasi quod cumque inventore!</p>
+    </div>
+
+    <div class="box box-2">Box 2</div>
+    <div class="box box-3">Box 3</div>
+
+    <h2>Diferentes contextos de Apilamiento:</h2>
+
+    <p>
+        Si un elemento contenedor tiene dentro elementos HTML se generara un contexto de Apilamiento diferente solo dentro del contenedor, ya que el contendor se posiciona y se apila respecto a lo que le rodea pero dentro de el los elementos hacen lo mismo, y por lo tanto hay otro contexto de Apilamiento.
+    </p>
+    
+</body>
+</html>

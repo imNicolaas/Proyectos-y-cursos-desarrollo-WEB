@@ -1,0 +1,74 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 25px;    
+    margin: 0 10%;
+}
+
+main{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letra_grande{
+    font-size: 22px;
+}
+
+.box-1{
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+}
+
+.box-1-hijo{
+    width: 150px;
+    height: 150px;
+    background-color: tan;
+}
+
+.box-2{
+    width: 300px;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+
+.box-3{
+    width: 300px;
+    height: auto;
+    background-color: darkslategrey;
+
+    padding-bottom: 6%;
+    padding-top: 2%;
+}
+
+.box-4{
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+}
+
+.box-4-hijo{
+    position: relative;
+    width: 150px;
+    height: 34%;
+    background-color: tan;
+}
+
+
+

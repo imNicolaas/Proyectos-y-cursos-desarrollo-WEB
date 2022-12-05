@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaciado en letras CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Espaciado-en-letras.css">
+
+</head>
+
+<body>
+
+    <h1>Espaciado entre letras en CSS</h1>
+
+    <h2>Espaciado en fuentes y textos:</h2>
+
+    <ul>
+        <li>
+            <b>Letter-spacing:</b> Establece la separación entre caracteres, se puede establecer en cualquier medida válida para CSS
+
+            <div class="text-1 caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, doloribus soluta.</div>
+        </li>
+
+        <li>
+            <b>word-spacing:</b> Establece la separación entre palabras, se puede establecer en cualquier medida válida para CSS
+
+            <div class="text-2 caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, doloribus soluta.</div>
+        </li>
+
+        <li>
+            <b>Line-height:</b> Establece el alto de cada Línea, se puede dar una medida concreta o se puede poner un número que se multipliará por el font size del texto al que se lo estemos aplicando.
+
+            <div class="text-3 caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis sed, doloribus suscipit veniam excepturi dolores id! Animi quidem nemo tempora, deleniti dolorum perferendis accusantium in vero ea delectus pariatur!</div>
+
+        </li>
+    </ul>
+
+    <h2>Orientacion del texto:</h2>
+
+    <ul>
+        <li>
+            <b>writing-mode:</b> Establece la dirección del texto, tiene varios valores pero algunos aun son experimentales y los mas utilizados son <b>vertical-lr y Vertical-rl</b> que como su nombre indica disponene el texto en una posicion vertical pero el lr (left to right) dibuja el texto de inicio a fin pero empezando desde la izquierda hacia la derecha que seria la parte baja del texto, y el rl hace lo mismo de forma contraria.
+
+            <div class="text-4 caja">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde odit laboriosam beatae at ullam est consequuntur! Quaerat iure laudantium rem, debitis temporibus itaque quae ea deserunt consequuntur sapiente nam quos?</div>
+
+            <p>Ejemplo de rotar un parrafo y que quede escrito desde abajo y en vertical con transform: rotate*</p>
+
+            <div class="text-5 caja">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde odit laboriosam beatae at ullam est consequuntur! Quaerat iure laudantium rem, debitis temporibus itaque quae ea deserunt consequuntur sapiente nam quos?</div>
+
+        </li>
+    </ul>
+
+    <h2>Truco para escribir en vertical:</h2>
+
+    <div class="text-6">Lorem ipsum dolor sit</div>
+    
+</body>
+</html>

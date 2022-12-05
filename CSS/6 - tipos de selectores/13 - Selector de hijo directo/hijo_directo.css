@@ -1,0 +1,107 @@
+/*  SELECTORES */
+
+/* 
+    Selectores Simples:
+
+            Selectores elementales:
+
+                    Selector universal -> Se representa solo con un * y engloba a todo el documento al que este vinulado el CSS que lo use
+
+                    Selector de tipo o etiqueta -> Se utilizan poniendo el nombre de la etiqueta a la que queremos cambiar su estilo y este se aplicara a todas las etiquetas de este tipo en el documento, exepto si tienen otro en particular. 
+
+            Selectores de atributo:
+
+                    id -> se representa por medio del id del elemento 
+
+                    clase -> se representa por medio la clase del elemento 
+
+                    otros atributos -> Se utilizan llavez tipo [ ] y dentro se pone el atributo que queremos seleccionar.
+                    ejemplos:
+
+                         [ href ]{
+                            propiedad : ;
+                         }
+
+                    O tambien se puede poner el nombre del atributo y su valor para cambiar solo una propiedad especifica:
+
+                         [ href = " https://goolge.com "  ] {
+                            propiedad: ;
+                         }
+
+    Selectores Compuestos:
+
+            Selectores Agrupados:                    
+                    Para hacer uso de este tipo de selectores es necesario que todos los elementos a los que se les vaya a dar estilo tengan un atributo class luego se nombran todos al inicio de la misma regla separados por comas y con un punto al inicio de cada nombre
+                         
+                         
+                         
+            Selectores Combinadores:
+
+                    selector descendente:
+                         este concinste en seleccionar un elemento que esta dentro de otro es decir que se representa al escribir todos los niveles de objetos que estan por encima de nuestro elemento, separados por espacios empezando por el nivel mas alto del que queremos descender
+                         ejemplo:
+
+                            html body div .h2 {
+                                background-color: green;
+                            }
+
+                    Selector de hermanos(s):
+                         Nos permite seleccionar el elemento estrictamente siguiente entre los elementos que esten en el mismo nivel o sean "hermanos" y para hacerlo se hace uso de el signo + en la estructura de CSS 
+                         
+                         
+
+
+                    
+        Pseudoclases - Pseudo (Se vera mas adelante en el curso)
+
+*/
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.max_width{
+    max-width: 50%;
+}
+
+code{
+    font-size: 16.5px;
+}
+
+.rojo{
+    color: red;
+}
+
+.gris{
+    color: gray;
+}
+
+.container > p{
+    background-color: crimson;
+    border-radius: 6px;
+}
+
+.linea{
+    width: 10px;
+    height: 480px;
+    position: absolute;
+    top: 310px;
+    left: 125px;
+    border-left: 3px dashed firebrick;
+
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    padding-left: 12px;
+}
+
+
+

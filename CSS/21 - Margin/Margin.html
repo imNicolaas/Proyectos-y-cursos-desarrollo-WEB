@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Margin.css">
+</head>
+
+<body>
+
+    <h1 class="centrar">Margin en CSS</h1>
+
+    <h2>¿Que es el margin?</h2>
+
+    <p class="espacio">
+        La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen:  margin-top, margin-right, margin-bottom y margin-left.
+    </p>
+
+    <h2>Width y Height en elementos de bloque:</h2>
+
+    <p>
+    Para los elementos de bloque el margin tiene un margen de actuacion completo, es decir que todas las formas de decalran un margen en todos los lados tendra un efecto 
+    </p>
+
+    <p>Los cuatro valores que se pueden establecer en un atributo margin actuan de la siguiente forma: </p>
+
+    <ol>
+        <li>
+            <h3>forma #1:</h3>
+            <ul>
+                <li>
+                    <h4>CSS:</h4>
+        
+                    <pre><code>
+    .block-1{
+        background-color: steelblue;
+        width: 100px;
+        height: 100px;
+        
+        <span class="rojo">margin: 50px;</span>
+    }                    
+                    </code></pre>
+        
+            <p>Cuando se pone solo un valor en el atributo margin este se establece como el valor de todos los cuatro margenes</p>            
+                </li>
+        
+                <li>
+                    <h4>Resultado:</h4>
+        
+                    <div class="block_padre">
+                        <div class="block-1">Elemento<br> de bloque</div>    
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Forma #2:</h3>
+            <ul>
+                <li>
+                    <h3>CSS:</h3>
+        
+                    <pre><code>
+    .block-2{
+        background-color: steelblue;
+        width: 100px;
+        height: 100px;
+        
+        <span class="rojo">margin: 100px 100px;</span>
+    }                    
+                    </code></pre>
+        
+            <p>Cuando se ponen dos valores en el atributo <b>margin</b> el primero se establecera como el valor del margen <b>superior e inferior</b> y el segundo valor se establcera como el valor del margen <b>derecho e izquierdo</b> </p>            
+                </li>
+        
+                <li>
+                    <h3>Resultado:</h3>
+        
+                    <div class="block_padre">
+                        <div class="block-2">Elemento<br> de bloque</div>        
+                    </div>
+
+                    
+                </li>
+            </ul>            
+        </li>
+
+        <li>
+            <h3>forma #3:</h3>
+            <ul>
+                <li>
+                    <h4>CSS:</h4>
+        
+                    <pre><code>
+    .block-3{
+        background-color: steelblue;
+        width: 100px;
+        height: 100px;
+        
+        <span class="rojo">margin: 150px 160px 50px 40px ;</span>
+    }                    
+                    </code></pre>
+        
+            <p>Cuando se ponen cuatro valores cada uno hace referencia a un valor de los cuatro margenes posibles y el orden en que estos valores toman lugar es <b>siguiendo el sentido del reloj</b> es decir que el primer valor tomara valor del margen de arriba, el segundo valor tomara el valor del margen derecho, el tercer valor tomara el valor del margen inferior y el cuarto valor tomara el valor del lado izquierdo.</p>            
+                </li>
+        
+                <li>
+                    <h4>Resultado:</h4>
+        
+                    <div class="block_padre">
+                        <div class="block-3">Elemento<br> de bloque</div>    
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>forma #4:</h3>
+            <ul>
+                <li>
+                    <h4>CSS:</h4>
+        
+                    <pre><code>
+    .block-auto{
+        background-color: steelblue;
+        width: 100px;
+        height: 100px;
+        
+        <span class="rojo">margin: 150px 20px auto auto;</span>
+    }                    
+                    </code></pre>
+        
+            <p>Cuadno se hace uso del atributo <b>auto</b> para rellernar uno de los valores del margin (independientemente del los que se esten usando), este margen se calculara automaticamente por ejemplo si hay solo un valor y se pone auto, le dara la misma cantidad equitativamente de la cantidad de espacio disponible a cada una de las direcciones del margen</p>
+            
+            <p>y si se tienen dos valores se comportara de la misma forma en el que se otorgue el atributo auto</p>
+
+            <p>De la misma forma se comportara si se usa el atributo <b>auto</b> en uno de los cuatro valores a especificar, si se especifican 150px en el margen superior de los 200px disponibles, al poner el atributo auto en el margen inferior este le otorgara los 50px que faltan a este margen</p>
+                </li>
+        
+                <li>
+                    <h4>Resultado:</h4>
+        
+                    <div class="block_padre">
+                        <div class="block-auto">Elemento<br> de bloque</div>    
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ol>    
+
+    <h2>Margin en elementos de linea:</h2>
+
+    <p>
+        A diferencia de los <b>elementos de bloque</b>, los elementos de linea no tienen medidas, o no tinene medidas modificables es decir que su ancho y alto van a estar definidos por el tamaño del contenido 
+    </p>
+
+    <p>Si intentamos modificar el <b>width y el height</b> de un elemneto de linea, estas no tendran efecto sobre de el:</p>
+
+    <ul>
+        <li>
+            HTML:
+            
+            <pre><code>
+    &#60;a href="#" <span class="rojo">class = "inline"</span>> Elemento de linea &#60;/a>
+            </code></pre>
+        </li>
+
+        <li>
+            CSS:
+
+            <pre><code>
+    <span class="rojo">.inline</span>{
+        background-color: steelblue;
+        width: 200px;
+        height: 100px;
+
+        <span class="rojo">margin: 150px 20px;</span>
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            Resultado: <br><br>
+
+        <a href="#" class="inline">Elemento de linea</a>
+        </li>
+    </ul>
+
+    
+    
+</body>
+</html>

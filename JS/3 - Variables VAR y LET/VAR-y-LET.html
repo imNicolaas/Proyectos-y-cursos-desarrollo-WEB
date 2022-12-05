@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAR y LET JS</title>
+
+    <link rel="icon" href="/HTML y CSS/JS/assets/images/js_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="VAR-y-LET.css">
+
+</head>
+
+<body>
+
+    <h1>Variables VAR y LET en Javascript</h1>
+
+    <h2>¿Que es una variable?</h2>
+
+    <p>Es un lugar en la memoria de nuestro dispositivo y un nombre asociada a dicho espacio, usada para guardar datos o informacion.</p>
+
+    <p>Los identificadores deben comenzar con:</p>
+
+    <ul>
+        <li>Una letra</li>
+        <li>Un signo de dolar $</li>
+        <li>Un guión bajo</li>
+        <li class="rojo">Nunca con números o caracteres especiales</li>
+    </ul>
+
+    <h2>Ambito de existencia o scope de las Variables</h2>
+
+    <ul><li><h3>Scope global y scope funcional:</h3></li></ul>
+
+    <p>Antes en javascript no habia ambito de bloque es decir que una variable que se creara dentro de un <b>bloque de codigo (segmento de codigo separado por corchetes "{ }" )</b> como una estructura repetitiva, etc, no existia solo dentro de ese bloque sino que el navegador la declaraba al principio del documento haciendo que existiera globalmente "en el ambito global o scope global", y ademas si la variable se declaraba dentro de una funcion esta era declarada al principio de la funcion "scope funcional". <br>
+    </p>
+
+
+
+    <ul><li><h3>Scope o ambito de bloque:</h3></li></ul>
+    
+    <p>Pero ahora se cuenta con este "ambito de bloque" en javascript pero para hacer uso de este se tiene que declarar la varible con la sentencia o palabra reservada <b>let</b> en vez de <b>var</b>, es decir que si se declara una variable con la palabra var esta va a tener el scope global y funcioal.</p>
+    
+    <p>mientas que si se declara con la palabra <b>let</b> esta podra hacer usod e el scope de bloque</p>
+
+    <h2>Objeto Window de javascript:</h2>
+
+    <p>Es el objeto principal en la jerarquía y contiene las propiedades y métodos para controlar la ventana del navegador. De él dependen todos los demás objetos de la jerarquía. Vamos a ver la lista de sus propiedades y métodos.</p>
+
+    <p>El objeto window representa la ventana que contiene un documento DOM; la propiedad document apunta al DOM document cargado en esa ventana. El objeto window al que pertenece un documento puede ser obtenido usando la propiedad document.defaultView.</p>
+
+    <h2>Objeto Window y variables let y var</h2>
+
+    <p>Todas las variables que se declaren con var es decir en un ambito global van a estar dentro de este objeto window es decir que se podran buscar haciendo un <b>console.log(window)</b>.</p>
+
+    <p>mientras que las que se delcaren con <b>let</b> no estaran disponibles dentro de este objeto <b>"Window"</b></p>
+
+    <h2>Ejemplo:</h2>
+
+    <ul>
+        <li><h3>En JS:</h3>
+            <code><pre>
+    let a = 2
+    var b = 3
+
+    console.log(window.a)
+    console.log(window.b)
+            </pre></code>
+        </li>
+
+        <li>
+            <h3>Resultado en consola:</h3>
+            <code><pre>
+    undefined
+    3
+            </pre></code>
+        </li>
+    </ul>
+
+    <h2>Redeclaracion con variables</h2>
+
+    <p>
+        cuando se declara una variable primeramente en un documento no se podria volver a declarar si se esta en el mismo bloque de codigo, pero dentro de un bloque de codigo diferente si se permite la redeclaración de variables ya que se considera otro ambito.
+    </p>
+
+    <h2>Ejemplo de ambitos y declaración con var y let:</h2>
+
+    <ul>
+        <li><h2>en JS:</h2>
+            <code><pre>
+
+                
+            </pre></code>
+        </li>
+    </ul>
+
+    <script src="VAR-y-LET.js"></script>
+
+
+
+
+
+
+    
+</body>
+</html>

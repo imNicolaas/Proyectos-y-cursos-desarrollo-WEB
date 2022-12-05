@@ -1,0 +1,29 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.max_width{
+    max-width: 70%;
+}
+
+.espacio{
+    position: relative;
+    left: 18px;
+}
+
+.rojo{
+    color: red;
+    border-radius: 4px;
+    
+}
+
+#img-1{
+    border-radius: 4px;
+    max-width: 100%;
+    width: 600px;
+}

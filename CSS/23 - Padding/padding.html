@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/288f863fc1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="padding.css">
+
+    <script src="https://kit.fontawesome.com/288f863fc1.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+
+    <h1 class="centrar">Padding en CSS</h1>
+
+    <p>
+        La propiedad CSS padding establece el espacio de relleno requerido por todos los lados de un elemento. El área de padding es el espacio entre el contenido del elemento y su borde (border). No se permiten valores negativos. <br> <br>
+
+        tambien puede constar de cuatro valores especificables, ademas es una propiedad "Shorthand" lo que quierer decir que es capaz de aceptar solo uno de los cuatro valores especificables (es compatible con 1, 2, 3 o 4 valores) <br> <br>
+
+        los valores digitados en css corresponden a: 
+    </p>
+
+    <div class="parrafo_ejem centrar">
+        <p>4 valores  <i class="fas fa-arrow-right"></i></i> 
+            <span class="rojo">padding:</span>
+            <span class="sep-1">top</span>
+            <span class="sep-2">right</span>
+            <span class="sep-3">bottom</span>
+            <span class="sep-4">left</span></p>
+    </div>
+
+    <div class="parrafo_ejem centrar">
+        <p>3 valores  <i class="fas fa-arrow-right"></i></i>
+            <span class="rojo">padding:</span> 
+            <span class="sep-1">top</span> 
+            <span class="sep-2">left / right</span>
+            <span class="sep-3">bottom </span>
+            <span class="sep-4"></span>
+        </p>
+    </div>
+
+    <div class="parrafo_ejem centrar">
+        <p>2 valores  <i class="fas fa-arrow-right"></i></i>
+            <span class="rojo">padding:</span> 
+            <span class="sep-1">top / bottom</span> 
+            <span class="sep-2">left / right</span>
+            <span class="sep-3"></span>
+            <span class="sep-4"></span>
+        </p>
+    </div>
+
+    <div class="parrafo_ejem centrar">
+        <p>1 valor  <i class="fas fa-arrow-right"></i></i>
+            <span class="rojo">padding:</span> 
+            <span class="sep-1">top / bottom / left / right</span> 
+            <span class="sep-2"></span>
+            <span class="sep-3"></span>
+            <span class="sep-4"></span>
+        </p>
+    </div>
+
+    <h2>Ejemplo:</h2>
+
+    <ol>
+        <li> <h3>En HTML:</h3>
+            <pre>
+                <code>
+    &#60;div class="block-1">Prueba de padding &#60;/div>
+                </code>
+            </pre>
+        </li>
+
+        <li> <h3>En CSS:</h3>
+            <pre>
+                <code>
+    .block-1{
+
+        width: 100px;
+        height: 100px;
+        background-color: salmon;
+        margin-top: 20px;
+
+        <span class="rojo">padding: 100px 10px 40px;</span>
+        
+    }
+                </code>
+            </pre>
+        </li>
+
+        <li>
+            <h3>Resultado:</h3>
+        </li>
+    </ol>
+
+
+    <div class="block-1"><p>Prueba de<br>padding</p></div>
+
+    <div class="block-2">
+        <button>Registrarse</button>
+    </div>
+
+    <h2>Ejemplos con todos los valores: </h2>
+
+    <ol>
+        <li> <h3> Ejemplo con cuatro valores: </h3>
+            <div class="block-ejem-1">
+                <i class="fas fa-square-full"></i>ejem 1
+            </div>
+        </li>
+
+        <br>
+
+        <li> <h3> Ejemplo con tres valores: </h3>
+            <div class="block-ejem-2">
+                <i class="fas fa-square-full"></i>ejem 2
+            </div>
+        </li>
+
+        <li> <h3> Ejemplo con dos valores: </h3>
+            <div class="block-ejem-3">
+                <i class="fas fa-square-full"></i>ejem 3
+            </div>
+        </li>
+
+        <li> <h3> Ejemplo con un valor: </h3>
+            <div class="block-ejem-4">
+                <i class="fas fa-square-full"></i>ejem 4
+            </div>
+        </li>
+    </ol>
+
+    <h2>Padding en elementos de linea:</h2>
+
+    <p>
+        el padding para los elementos de lienea en este caso funciona exactamente igual que con los elementos de bloque es decir que soporta le metodo de asignacion de variables "Shorthand" y todas las propiedades tienen potestad en el elemento siempre que tenga un ancho o alto declarado. 
+    </p>
+
+    <h3>Ejemplo:</h3> <br>
+
+    <div class="div-final">
+        <a href="#" class="elem-linea-1">elemento de linea</a>
+    </div>
+    
+    <br>
+
+    
+
+    
+
+    
+
+
+    
+</body>
+</html>

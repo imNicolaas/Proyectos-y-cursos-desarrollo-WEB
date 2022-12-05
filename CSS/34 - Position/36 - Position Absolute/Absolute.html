@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Absolute.css">
+
+</head>
+
+<body>
+
+    <h1>Position Absolute en CSS</h1>
+
+    <p>Al hacer uso de esta propiedad en CSS en un elemento este pierde sus medidas y espacio reservado, Si lo movemos usará el elemento contenedor como referencia <span class="rojo resaltar">(SIEMPRE Y CUANDO SU CONTENEDOR ESTE POSICIONADO, CON CUALQUIERA DE LOS VALORES DE POSITION, DE LO CONTRARIO NO VA A FUNCIONAR.)</span>, y si no tiene un elemento contenedor usará elemento HTML como referencia</p>
+
+    <h2>Ejemplo (perdida de medidas):</h2>
+
+    <ul>
+
+        <li>
+            <h3>Antes:</h3>
+            <div class="box-1-antes">Box 1</div>
+            <div class="box-2-antes">Box 2</div>
+        </li>
+        <li>
+            <h3>En HTML</h3>
+            <pre><code>    &#60;div class="box-1-antes"> Box 1 &#60;/div>
+    &#60;div class="box-2-antes"> Box 2 &#60;/div></code></pre>
+        </li>
+
+        <li>
+            <h3>En CSS:</h3>
+            <pre><code>.box-2{
+    background-color: lightgreen;
+    position: absolute;
+}</code></pre>
+        </li>
+
+        <li>
+            <h3>Resultado (Después):</h3>
+            <div class="box-1">Box 1</div>
+            <div class="box-2">Box 2</div>
+
+            <p>
+                <br><span class="rojo">Nota:</span> El elemento al que se aplica la propiedad Position absolute pierde sus medidas 
+            </p>
+        </li>
+    </ul>
+
+    <p>Si un elemento no tiene contenedor usara el html como contenedor, si este elemento estea dentro del body este sera su contenedor, tenga el tamaño que tenga.
+    </p>
+
+    <h2>Ejemplo 2 (Contenedores):</h2>
+
+    <ul>
+        <li>
+            <h3>En HTML</h3>
+            <pre><code>    &#60;div>
+                &#60;div class="box-3"> Box 3 &#60;/div>
+            &#60;/div>  
+              
+    &#60;div class="box-4"> Box 4 &#60;/div></code></pre>
+        </li>
+
+        <li>
+            <h3>En CSS:</h3>
+            <pre><code></code></pre>
+        </li>
+
+        <li>
+            <h3>Resultado:</h3>
+
+            <div class="contenedor">
+                <div class="box-3">Box 3</div>
+            </div>
+
+            <p>
+                <br><span class="rojo">Nota:</span> El elemento al que se aplica la propiedad Position absolute usa como referencia su contenedor <span class="rojo resaltar">SIEMPRE Y CUANDO SU CONTENEDOR ESTE POSICIONADO, CON CUALQUIERA DE LOS VALORES DE POSITION, DE LO CONTRARIO NO VA A FUNCIONAR.</span>
+            </p>
+        </li>
+    </ul>
+    
+</body>
+
+
+</html>

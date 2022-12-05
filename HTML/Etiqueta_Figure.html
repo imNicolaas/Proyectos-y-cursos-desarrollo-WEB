@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta figure</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        figcaption{
+            color: gray;
+        }
+
+        code{
+            font-size: 15px;
+            color: crimson;
+        }
+
+        .centrar{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        h1{
+            font-size: 42px;
+        }
+
+        img{
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+
+<!--
+     ETIQUETA FIGURE:
+     Se usa para instroducir contenido a la web(no solo imagnes) pero contenido el cual no es completamente necesario para el funcionemiento y entendimiento de la web en si, es decir que sin el, el articulo que estemos leyendo seguiria teniendo sentido
+
+     FIgure se utiliza siempre que se quiera romper el flujo del contenido con otro contendio relacionado pero que no es necesario para la interpretacion del articulo, es decir que si lo quitaramos seguiria funcionando 
+
+     hace uso de la etiqueta <figcaption></figcaption> y se usa como "pie de foto"
+-->
+
+
+
+<body>
+    
+    <h1 class="centrar">Articulo sobre bitcoin</h1>
+
+    <p>
+        El elemento HTML <b>&#60;figure></b> representa contenido independiente, a menudo con un título. Si bien se relaciona con el flujo principal, su posición es independiente de éste. Por lo general, se trata de una imagen, una ilustración, un diagrama, un fragmento de código, o un esquema al que se hace referencia en el texto principal, pero que se puede mover a otra página o a un apéndice sin que afecte al flujo principal. <br> <br>
+    </p>
+        unn uso comun de la etiqueta <b>&#60;figure> &#60;/figure></b> se ve como esto:
+
+        <pre><code>
+            &#60;figure>
+
+            &#60;img src="/HTML y CSS/Contenido_Enbebido/assets/imagenes/bitcoin.jpeg" alt="Bitcoin .jpeg" >
+        
+            &#60;figcaption> Bitcoin image &#60;/figcaption>
+                
+            &#60;/figure>   
+        </code></pre>
+    <p>
+        FIgure se utiliza siempre que se quiera romper el flujo del contenido con otro contendio relacionado pero que no es necesario para la interpretacion del articulo, es decir que si lo quitaramos seguiria funcionando.
+    </p>
+
+
+    <div class="centrar">
+        <figure>
+
+            <img class="centrar" src="/HTML y CSS/HTML/Contenido_Enbebido/assets/imagenes/bitcoin.jpeg" alt="Bitcoin .jpeg" >
+    
+            <figcaption class="centrar" >Bitcoin image</figcaption>
+            
+        </figure>
+    </div>
+    
+</body>
+</html>

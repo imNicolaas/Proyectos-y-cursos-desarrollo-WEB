@@ -1,0 +1,122 @@
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 25px;    
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.div{
+    margin: 0;
+}
+
+h1{
+    font-weight: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+li{
+    margin-bottom: 6px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja{
+    width: 720px;
+    background-color: rgb(130, 153, 94);
+    padding: 2% 3%;
+    border-radius: 12px;
+    margin: 24px auto 24px auto;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.caja-link{
+    width: 200px;
+    background-color: palegoldenrod;
+    padding: 1% 2%;
+    border-radius: 12px;    
+    margin: 24px auto 24px auto;
+    text-align: center;
+}
+
+.none{
+    text-decoration: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.Text-shadow{
+    background-color: navajowhite;
+
+    text-shadow: 4px 4px 0px cornflowerblue;
+    text-transform: uppercase;
+}
+
+.Text-shadow-2{
+    background-color: navajowhite;
+
+    text-shadow: 4px 4px 2px cornflowerblue;
+    text-transform: uppercase;
+}
+
+.Text-shadow-3{
+    background-color: navajowhite;
+
+    text-shadow: 4px 4px 2px rgb(0, 0, 0, .5);
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: mon;
+    src: url(../assets/fonts/varsity_regular.ttf);
+}
+
+.Text-shadow-4{
+    background-color: navajowhite;
+
+    text-shadow: 4px 4px 1px rgba(99, 16, 16);
+    text-transform: uppercase;
+    font-family: 'mon', serif;
+}
+
+.Text-shadow-5{
+    background-color: navajowhite;
+
+    text-shadow: -2px 0 0 red, 0 2px 0 blue;
+    text-transform: uppercase;
+    font-family: 'mon', serif;
+    font-size: 28px;
+}

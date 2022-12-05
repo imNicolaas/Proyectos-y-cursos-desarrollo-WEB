@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos extras formularios</title>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@100;200&family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+    <style>
+
+            body{
+            font-family: 'Quicksand', sans-serif;
+
+            }
+
+            h1, h2{
+                font-family: 'Lato', sans-serif;    
+            }
+
+            .a{
+                font-family: 'Raleway', sans-serif;
+            }
+        
+    </style>
+</head>
+
+<!--
+    fieldset -> Se utiliza para agrupar elementos dentro de un formlulario, se representa por medio de un recuadro que engloba las etiquetas 
+
+        legend -> representa una etiqueta para el contenido del fieldset
+
+    file -> este input se utiliza para cargar archivos y enviarlos desde un formulario 
+
+    meter ->  representa un valor dentro de un rango conocido
+
+    progress -> Representa el progreso de una tarea 
+
+    textarea -> se utiliza para introducir texto en un formulario 
+-->
+
+
+
+<body>
+
+    <p class="a">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repudiandae neque aspernatur voluptate beatae, cupiditate eaque omnis pariatur alias natus quisquam dolorem quam soluta repellat assumenda, nihil error consequatur excepturi!
+    </p>
+    <h1>Elementos extras para formularios </h1>
+
+    <form>
+
+        <h2>Etiqueta fieldset</h2>
+
+        <p>
+            Esta etiqueta (grupo de campos) permite organizar en grupos los campos de un formulario encerrandolos en una cuadricula a al que es posible ponerle un nombre con la etiqueta &lt;legend>&lt;/legend>
+        </p>
+
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name">
+            </div>
+
+            <div>
+                <label for="surname">Apellidos</label>
+                <input type="text" id="surname">
+            </div>
+
+            <div>
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo">
+            </div>
+
+        </fieldset>
+
+        <h2>Etiqueta file</h2>
+
+        <p>
+            Control que permite al usuario seleccionar un archivo. Se puede usar el atributo accept para definir los tipos de archivo que el control podrá seleccionar.
+        </p>
+
+        <label for="archivo">Seleccione el archivo:</label> <br>
+        <input type="file" id="archivo">
+
+        <h2>Etiqueta meter</h2>
+
+        <p>Esta etiqueta se usa para representar una barra de medicion la cual se le puede poner un valor minimo y uno maximo, y entre este intervalo se podran poner el valor por defecto que tendra al caragar la pagina y ademas con los atributos low se establecera lo que se considera como un valor bajo en el intervalo, con el atributo high se establece lo que se consifera un valor alto y con el atributo optimum se establecera lo que es un valor optimo.</p>
+
+        <label for="fuel">Conbustible</label>
+        <meter id="fuel" min="0" max="100" value="60" low="25" high="75" optimum="50" >       
+
+        </meter>
+
+        <h2>Etiqueta progress</h2>
+
+        <p>
+            Se puede usar para representar el progreso de una tarea y tiene los atributos id, max y value.
+        </p>
+
+        <label for="task">Tarea 1</label>
+        <progress id="task" max="100" value="20"></progress>
+
+        <h2>Etiqueta textarea</h2>
+
+        <p>
+            Esta etiqueta representa un area de texto modificable en tamaño o con la potestad de ser bloqueada. Utiliza los atributos name, id, cols y rows
+        </p>
+
+        <label for="textarea_1">Campo de texto 1:</label>
+        <textarea name="ta1" id="textarea_1" cols="30" rows="10"></textarea>
+
+    </form>
+    
+</body>
+</html>

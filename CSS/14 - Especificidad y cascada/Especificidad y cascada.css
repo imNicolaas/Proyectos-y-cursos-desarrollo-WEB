@@ -1,0 +1,79 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.max_width{
+    max-width: 70%;
+}
+
+code{
+    font-size: 16.5px;
+}
+
+.rojo{
+    color: red;
+    border-radius: 4px;
+}
+
+h1{
+    background-color: red;
+    border-radius: 4px;
+}
+
+.title{
+    background-color: aqua;
+    border-radius: 4px;
+}
+
+#title{
+    background-color: yellow;
+    border-radius: 4px;
+}
+
+h1.title {
+    background-color: gray;
+    border-radius: 4px;
+}
+
+h1#title{
+    background-color: darkorchid;
+    border-radius: 4px;
+}
+
+h1.title#title{
+    background-color: saddlebrown;
+    border-radius: 4px;
+    
+}
+
+.letra_ejemplos{
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.letra_numeros{
+    font-family: 'Major Mono Display', monospace;
+}
+
+.espacio{
+    position: relative;
+    left: 50px;
+}
+
+.azul_oscuro{
+    color: steelblue;
+}
+
+img{
+    border-radius: 6px;
+}
+
+
+
+
+

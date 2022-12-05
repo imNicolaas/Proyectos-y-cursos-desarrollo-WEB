@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad y cascada</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Especificidad y cascada.css">
+
+</head>
+
+<body>
+
+    <h1 id="title" class="title centrar">Fundamentos de CSS</h1>
+
+    <h2>¿Como funciona CSS?</h2>
+
+    <ul>
+        <li>
+            <h3>Especificidad:</h3>
+            <p>Hace referencia a como de especifico es un selector para saber que estilo aplicar, si se tienen estas formas de dar estilo en un documento CSS:</p>
+            
+            <ol>
+                <li>
+                    En HTML:
+
+                    <pre><code>
+        &#60;h1 <span class="rojo">id = "title" class = "title"</span>> Fundamentos de CSS &#60;/h1>
+                    </code></pre>
+                </li>
+
+                <li>
+                    EN CSS:
+
+                    <pre><code>
+        <span class="rojo">h1</span>{
+            background-color: red;
+            border-radius: 4px;
+        }
+        
+        <span class="rojo">.title</span>{
+            background-color: aqua;
+            border-radius: 4px;
+        }
+        
+        <span class="rojo">#title</span>{
+            background-color: yellow;
+            border-radius: 4px;
+        }
+        
+        <span class="rojo">h1.title</span> {
+            background-color: gray;
+            border-radius: 4px;
+        }
+        
+        <span class="rojo">h1 #title</span>{
+            background-color: darkorchid;
+            border-radius: 4px;
+        }
+        
+        <span class="rojo">h1.title#title</span>{
+            background-color: saddlebrown;
+            border-radius: 4px;
+        }
+                    </code></pre>
+                </li>
+            </ol>
+
+        </li>
+    </ul>            
+
+            <p>El estilo que se aplicara sera el que tiene el selector <b>" h1.title#title "</b> y esto <span class="rojo"> no es debido al efecto cascada</span></p>
+
+            <p><b>Esto se debe a que cada uno de los elementos de seleccion (ya sea h1 o .title o #title etc) tiene un valor numerico y el navegador hace un calculo y suma los valores, siendo la estructura CSS con el valor mas grande el que tinene mas prioridad </b></p>
+
+            <p>los valores de los elementos son:</p>
+
+            <div class="espacio">
+                <p class="letra_ejemplos">Etiquetas y seudoelementos <span class="letra_numeros azul_oscuro">001</span></p>
+
+                <p class="letra_ejemplos">Clases, atributos y pseudoclases <span class="letra_numeros azul_oscuro">010</span></p>
+
+                <p class="letra_ejemplos">Id's <span class="letra_numeros azul_oscuro">100</span></p>
+
+                <p class="letra_ejemplos">Estilos en linea <span class="letra_numeros azul_oscuro">1000</span></p>
+
+                <p class="letra_ejemplos">Agregar un <span class="letra_ejemplos">!important</span> a la estructura CSS <span class="azul_oscuro">Gana a todos ya que rompe la especificidad y toma toda la prioridad (No se usa nunca)</span></p>
+            </div>
+
+            <div class="centrar">
+                <p class="max_width">
+                    <span class="rojo">Nota:</span> Lo correcto es siempre usar clases.
+                </p>
+            </div>
+
+            <p>
+                Es decir que si un selector intentar dar estilos con un <b>".title"</b> tiene un valor de especificidad de <b>010</b> y si en otra estructura se intenta dar estilo con un <b>"h1.title#title"</b> tiene un valor de <b>111</b> asi que este toma la prioridad de especificidad ya que tiene los valores de etiquetas, clases y id's juntos 
+            </p>
+
+            
+            <div class="centrar">
+                <img src="../assets/images/ejemplo 111.jpg" alt="ejemplo_111.jpg">
+            </div>
+
+            <div class="centrar">
+                <p class="max_width">
+                    <span class="rojo">Nota:</span> El efecto "Cascada" afecta igual en la especificidad pero en las estructuras que tengan la misma especificidad, en ese caso los estilos se aplicaran sobre escribiendose unos a otros.
+                </p>
+            </div>            
+
+
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales JS</title>
+
+    <link rel="icon" href="/HTML y CSS/JS/assets/images/js_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Condicionales.css">
+
+</head>
+
+<body>
+
+    <h1>Condicionales en JS</h1>
+
+    <p>Depende de el evaluar alguna condicion</p>
+
+    <p>El principal de todos es el If Else, y para anidar mas condiciones se puede usar un if-else if-else</p>
+
+    <h2>Ejemplo:</h2>
+<ul>
+    <li>
+        <H3>En JS:</H3>
+
+    <pre><code>
+    if(edad >=18){
+        console.log('mayor de edad')
+    }else{
+        console.log('menor de edad')
+    }
+    </code></pre>
+    </li>
+</ul>
+
+    <h2>Operador ternario:</h2>
+
+    <p>Para simplificar el if else</p>
+
+    <h3>Sintaxis:</h3>
+
+    <p>La sintaxis del operador ternario consta de la condicion que se va a evaluar encerrada entres parentesis, seguido por un signo de interrogacion y la lo que se va a ejecutar si la condicion es verdadera, seguido de : para la con lo que ejecutara si la condicion es falsa. </p>
+
+    <pre>
+        <code>
+    (condicion) ? 'evento de verdadero': 'evento de falso';            
+        </code>
+    </pre>
+
+    <h2>Ejemplo:</h2>
+
+    <pre><code>    let eresMayor = (edad>=18) ? 'mayor de edad': 'menor de edad'; 
+
+    console.log(eresMayor);</code></pre>
+
+    <h2>switch - case</h2>
+
+    <p>Se usa cuando se tengan diferentes valores para una misma variable.</p>
+
+    <h3>Sintaxis:</h3>
+
+    <pre><code>    switch (key <span class="rojo">(llave o variable a evaluar)</span> ) {
+    case value <span class="rojo">(caso en el que la variable tenga este valor)</span>:
+        <span class="rojo">(Instruciones que se ejecuran en este caso)</span>
+    break; <span class="rojo">(Punto de break, dejara de evaluar este case se haya cumplido o no)</span>
+
+    default: <span class="rojo">(Condicion por defecto, si ningun caso cubre el valore de la varialbe)</span>
+    <span class="rojo">(Instruciones que se ejecuran en este caso)</span>
+    break; <span class="rojo">(Punto de break)</span>
+    }</code></pre>
+
+    <h2>Ejemplo:</h2>
+
+    <pre><code>    let dia = 2;
+
+    switch (dia) {
+        case 0:
+            console.log('Es domingo')    
+        break;
+    
+        case 1:
+            console.log('Es lunes')    
+        break;
+    
+        case 2:
+            console.log('Es miercoles')    
+        break;
+    
+        case 3:
+            console.log('Es jueves')    
+        break;
+    
+        case 4:
+            console.log('Es viernes')    
+        break;
+    
+        case 6:
+            console.log('Es sabado')    
+        break;
+    
+        default: //si la variable en cuestion no cae en ningun caso
+            console.log('No es un valor valido para dia')
+        break;
+    }</code></pre>
+
+    <Script src="Condicionales.js"></Script>
+    
+</body>
+</html>

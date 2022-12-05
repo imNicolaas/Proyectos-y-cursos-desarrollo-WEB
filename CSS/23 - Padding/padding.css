@@ -1,0 +1,142 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(192, 190, 190);
+}
+
+h1{
+    font-size: 42px;
+}
+
+code{
+    font-size: 24px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.max_width{
+    max-width: 70%;
+}
+
+.espacio{
+    position: relative;
+    left: 18px;
+}
+
+.rojo{
+    color: red;
+    border-radius: 4px;
+}
+
+.parrafo_ejem{
+
+    font-weight: bold;
+    font-size: 36px;
+    
+}
+
+.sep-1{
+    background-color: grey;
+    border-radius: 6px;
+}
+
+.sep-2{
+    background-color: steelblue;
+    border-radius: 6px;
+}
+
+.sep-3{
+    background-color: slateblue;
+    border-radius: 6px;
+}
+
+.sep-4{
+    background-color: seagreen;
+    border-radius: 6px;
+}
+
+.block-1{
+    
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    margin-top: 20px;
+    padding: 100px 10px 40px;
+    
+}
+
+.block-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+
+    margin: 20px auto 100px 200px;
+
+    padding: 20px 100px;
+
+}
+
+button{
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.block-ejem-1{
+    width: 200px;
+    height: 200px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: steelblue;
+
+    padding: 10px 30px 15px 60px;
+}
+
+.block-ejem-2{
+    width: 200px;
+    height: 200px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: steelblue;
+
+    padding: 40px 20px 30px;
+}
+
+.block-ejem-3{
+    width: 200px;
+    height: 200px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: steelblue;
+
+    padding: 30px 120px;
+}
+
+.block-ejem-4{
+    width: 200px;
+    height: 200px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: steelblue;
+
+    padding: 200px;
+}
+
+.elem-linea-1{
+    background-color: saddlebrown;
+    font-size: 28px;
+    border-radius: 12px;
+
+    padding: 30px;
+}
+
+.div-final{
+
+    margin-bottom: 20px;
+}
+

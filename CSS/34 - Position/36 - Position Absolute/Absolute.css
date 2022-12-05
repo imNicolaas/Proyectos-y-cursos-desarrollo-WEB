@@ -1,0 +1,68 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding-right: 10%;
+    padding-left: 10%;
+    
+}
+
+h1{
+    font-weight: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1-antes{
+     background-color: lightcoral;
+}
+
+.box-2-antes{
+    background-color: lightgreen;
+}
+
+.box-1{
+    background-color: lightcoral;
+}
+
+.box-2{
+   background-color: lightgreen;
+   position: absolute;
+}
+
+.contenedor{
+    width: 320px;
+    height: 320px;
+    background-color: gray;
+    position: relative;
+}
+
+.box-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: steelblue;
+    width: 160px;
+    height: 160px;
+
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    
+}
+
+.resaltar{
+    text-shadow: 0 0 3px red;
+    text-decoration: underline;
+}

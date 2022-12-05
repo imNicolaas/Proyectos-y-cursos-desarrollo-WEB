@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./Herencia.css">
+
+</head>
+
+<body>
+
+    <h1 class="centrar">Herencia en CSS</h1>
+
+    <p>
+        Es la capacidad que tienen algunos <b>elementos</b> de heredar algunas propiedades de los elementos en los cuales estan contenidos <b>(ya sean padres, abuelos, etc)</b>.
+    </p>
+
+    <p>
+        Por ejemplo si se tiene esta estructura de html y css:
+    </p>
+
+    <ul>
+        <li>
+            HTML:
+            
+            <pre><code>
+    &#60;h2> Esto es la herencia en <span class="rojo">&#60;span> CSS &#60;/span></span> &#60;/h2>
+
+    &#60;span> CSS &#60;/span>
+            </code></pre>
+        </li>
+
+        <li>
+            CSS:
+
+            <pre><code>
+    h2{
+        color: steelblue;
+        font-size: 26px;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            El resultado que obtenemos es este:
+        </li>
+    </ul>
+
+
+    <h2 class="espacio">Esto es la herencia en <span>CSS</span></h2>
+
+    <span class="espacio">CSS</span>
+
+    <p>
+        Como se puede apreciar el texto <b>" CSS "</b> que esta dentro de la etiqueta <b>h2</b>, heredó los estilos que se le estan apliacando a la etiqueta h1, y se hace de esta forma para tener una mayor armonia dentro de los estilos CSS ya que de lo contrario aplicar estilos a los elementos seria muy caótico. Ademas la mayoria de los estilos que CSS decide hacer que se puedan heredar por otros elementos tienen mucha coherencia en si.
+    </p>
+
+    <h2>Forzar la herencia a un elemento:</h2>
+
+    <p>
+        Pero no todos los elementos son seceptibles a la herecia, por ejemplo los elementos <b>&#60;a href=""> &#60;/a></b> no so suceptibles a una herencia como la anterior, para darle estilo a un <b>href</b> es necesario darselo a su clase propia o a toda la etiqueta en si (es decir directamente) <br><br>
+        De esta forma:
+    </p>
+
+    <ul>
+        <li>
+            HTML:
+            
+            <pre><code>
+    &#60;p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro<br>        quos fugit eum corporis veritatis illo facilis, natus, reprehenderit <span class="rojo">&#60;a<br>        href="#"></span> Mas sobre este articulo&#60;/a> necessitatibus autem, enim doloribus<br>        corrupti fuga modi impedit aspernatur commodi dicta.
+    &#60;/p><br>
+            </code></pre>
+        </li>
+
+        <li>
+            CSS:
+
+            <pre><code>
+    p{
+        color: deeppink;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            El resultado que obtenemos es este:
+        </li>
+    </ul>
+
+    <p class="p max_width espacio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro quos fugit eum corporis veritatis illo facilis, natus, reprehenderit <a href="#">Mas sobre este articulo</a> necessitatibus autem, enim doloribus corrupti fuga modi impedit aspernatur commodi dicta.</p>
+
+    <p>
+        El estilo no se hereda al <b>href</b> pero hay una forma de 
+        "Forzar" a la herencia a funcionar con este elemento y es haciendo uso de atributo <b><span class="rojo">inherit</span></b> el cual poniendolo dentro de el estilo CSS de el elemento que no fue afectado por la herencia, ahra tendra un color heredado de su "padre" o su contenedor <br><br>
+        De esta forma:
+    </p>
+
+    <ul>
+        <li>
+            HTML:
+            
+            <pre><code>
+    &#60;p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro<br>        quos fugit eum corporis veritatis illo facilis, natus, reprehenderit <br>        &#60;a <span class="rojo">class="link"</span> href="#"> Mas sobre este articulo &#60;/a> necessitatibus autem, enim doloribus<br>        corrupti fuga modi impedit aspernatur commodi dicta.
+    &#60;/p><br>
+            </code></pre>
+        </li>
+
+        <li>
+            CSS:
+
+            <pre><code>
+    p{
+        color: deeppink;
+    }
+
+    .link{
+        color: inherit;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            El resultado que obtenemos es este:
+        </li>
+    </ul>
+
+    <p class="p max_width espacio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro quos fugit eum corporis veritatis illo facilis, natus, reprehenderit <a class="link" href="#">Mas sobre este articulo</a> necessitatibus autem, enim doloribus corrupti fuga modi impedit aspernatur commodi dicta.</p>
+
+    <p>
+        El estilo de los <b>p</b> o parrafos, se heredo a este elemento <b>href</b> que por defecto no esta dispuesto a ser afectado por la herencia, ya que la propiedad <b><span class="rojo">inherit</span></b> se puede aplicar para cualquier propiedad que por defecto no se herede pero queremos que se puede heredar.
+    </p>
+
+    <h2>Suprimir la herencia de un elemento: </h2>
+
+    <p>
+        Si queremos que un elemento que si esta siendo afectado por la herencia vuelva a su estado inicial es conveniente usar la propiedad <b><span class="rojo">initial</span></b> la cual hace que el elemento al cual sea aplicada vuelva a su estado incial "de fabrica" ignorando cualquier tipo de herencia.
+    </p>
+
+    <p>De esta forma: </p>
+
+    <ul>
+        <li>
+            HTML:
+            
+            <pre><code>
+    &#60;h2> Esto es la herencia en &#60;span <span class="rojo">class = "normal"</span>> CSS &#60;/span> &#60;/h2>
+
+    &#60;span> CSS &#60;/span>
+            </code></pre>
+        </li>
+
+        <li>
+            CSS:
+
+            <pre><code>
+    h2{
+        color: steelblue;
+        font-size: 26px;
+    }
+
+    .normal{
+        color: initial;
+        font-size: initial;
+    }
+            </code></pre>
+        </li>
+
+        <li>
+            El resultado que obtenemos es este:
+        </li>
+    </ul>
+
+    <h2 class="espacio">Esto es la herencia en <span class="normal">CSS</span></h2>
+
+    <span class="espacio">CSS</span>
+
+
+
+
+    
+</body>
+</html>

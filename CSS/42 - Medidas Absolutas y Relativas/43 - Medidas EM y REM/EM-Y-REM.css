@@ -1,0 +1,41 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 25px;    
+    padding: 0 10%;
+}
+
+main{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letra_grande{
+    font-size: 22px;
+}
+
+.boton{
+    position: relative;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 2rem;
+    top: 16px;
+}

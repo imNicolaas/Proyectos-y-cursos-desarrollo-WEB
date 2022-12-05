@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+        }
+
+        .centrar{
+            display: flex;
+            justify-content: center;
+        }
+
+        .azul{
+            color: blue;
+        }
+
+        .rojo{
+            color: red;
+        }
+
+        .max{
+            max-width: 40%;
+        }
+
+        .letra_normal{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+        }
+
+        iframe{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="centrar">Atributos de Accesibilidad</h1>
+
+    <p>
+        los atributos de Accesibilidad se usan para darle o no permisos a las personas de acceder al contenido de la pagina, tambien se utiliza com ayuda para gente invidente 
+    </p>
+
+    <p>
+        • Estos son algunos de los atributos de accesibilidad:
+    </p>
+
+    <ol>
+        <li>
+            <b>tabindex:</b> Este atributo de usa para indicar el orden en el que se va desplazar el usuario entre las secciones de la pagina <b>usando la tecla tabulador</b> por ejemplo si usamos tres parrafos de ejemplo de esta forma
+        
+            <pre><code>
+                <span class="azul">&#60;p</span><span class="rojo"> tabindex="1"</span>>Parrafo 1: Lorem ipsum dolor sit amet consectetur <br>                   adipisicing elit. Dolores laudantium dolorem sed neque cum reiciendis<br>                   totam? Id maiores sapiente laboriosam facilis voluptate, dolor, deleniti<br>                   ipsa quisquam aliquam dicta, consequatur dolores. <span class="azul">&#60;/p></span>
+
+                <span class="azul">&#60;p</span><span class="rojo"> tabindex="3"</span>>Parrafo 1: Lorem ipsum dolor sit amet consectetur <br>                   adipisicing elit. Dolores laudantium dolorem sed neque cum reiciendis<br>                   totam? Id maiores sapiente laboriosam facilis voluptate, dolor, deleniti<br>                   ipsa quisquam aliquam dicta, consequatur dolores. <span class="azul">&#60;/p></span>
+
+                <span class="azul">&#60;p</span><span class="rojo"> tabindex="2"</span>>Parrafo 1: Lorem ipsum dolor sit amet consectetur <br>                   adipisicing elit. Dolores laudantium dolorem sed neque cum reiciendis<br>                   totam? Id maiores sapiente laboriosam facilis voluptate, dolor, deleniti<br>                   ipsa quisquam aliquam dicta, consequatur dolores. <span class="azul">&#60;/p></span>
+            </code></pre>
+
+            <p>Obtendriamos este resultado al presionar <b>tabulador</b>:</p>
+
+            <p tabindex="1" class="max">Parrafo 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laudantium dolorem sed neque cum reiciendis totam? Id maiores sapiente laboriosam facilis voluptate, dolor, deleniti ipsa quisquam aliquam dicta, consequatur dolore.</p>
+
+            <p tabindex="3" class="max">Parrafo 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laudantium dolorem sed neque cum reiciendis totam? Id maiores sapiente laboriosam facilis voluptate, dolor, deleniti ipsa quisquam aliquam dicta, consequatur dolore.</p>
+
+            <p tabindex="2" class="max">Parrafo 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laudantium dolorem sed neque cum reiciendis totam? Id maiores sapiente laboriosam facilis voluptate, dolor, deleniti ipsa quisquam aliquam dicta, consequatur dolore.</p>
+        </li>
+
+        <h2>• Atributos para gente invidente: </h2>
+
+        <li>
+            <p>
+                <b>aria-label:</b>Las personas invidentes usan extensiones creadas para el navegador con el proposito de interpretar la web y explicar por comandos de voz en que parte de la web esta el usuario invidente, en el caso de google chrome es la extension <b>Chorme Vox Classic</b> y lo que hace es leer el contenido que tengamos en la web para que las personas invidentes lo escuchen.
+            </p>
+
+            <div class="centrar ">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fpbIsN31hLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <p>
+                y con el atributo <b>aria-label</b> podemos escribir una descripcion de lo que estamos representando en esa seccion de la pagina web asi sin afectar el contenido de la misma, se le sera explicada el lector invidente de esta forma: 
+            </p>
+            
+            <p tabindex="4" class="max"  aria-label="Este parrafo habla sobre el bitcoin y la caída que tuvo en la ultima temporada "> Parrafo 1: Bitcoin cae desmesuradamente... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit itaque aliquam iure quaerat voluptatem vero, dolor perspiciatis quae dolorum in odit ipsum magni incidunt laudantium modi deserunt, porro autem.</p>
+            
+        </li>
+
+        <li>
+            <b>Role:</b> le da informacion al navegador sobre el elemento sobre el cual nos estamos posicionando, por ejemplo si se esta hablando sobre un link de un articulo se colo caria el rol de link <pre>&#60;a href="articulo" <span class="rojo">role="link"</span></pre>
+
+            <p class="max"> <i>
+                "11º round | De poder a poder... Barrios sacó una buena mano izquierda que le devolvió sin miedo Gervonta. Luego Mario se va al suelo con un gancho y aunque se levanta, el Tank acaba noqueando"</i>
+            </p>
+
+            <a  tabindex="5" href="https://us.marca.com/claro/boxeo/2021/06/27/60d7a267ca47418e3e8b4598.html" aria-label="Leer mas sobre el articulo de Gervonta Davis y su victoria ante Mario Barrios" target="_blank">Articulo Gervonta "tank" Davis triple campeon</a>
+        </li>
+
+
+
+        
+
+
+        
+
+
+
+    </ol>
+    
+</body>
+</html>

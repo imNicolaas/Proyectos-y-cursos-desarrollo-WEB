@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height % y Auto CSS</title>
+
+    <link rel="icon" href="/HTML y CSS/CSS/assets/images/css_logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="height-porcen-y-auto.css">
+</head>
+
+<body>
+
+    <h1>height % y Auto en CSS</h1>
+
+    <h2>Height con Porcentaje %:</h2>
+
+    <p>Cuando estamos dentro de un contenedor,
+        <span class="rojo letra_grande">este tiene que tener un alto declarado, si no
+        no podrá calcular el porcentaje. </span>Si se Le
+        aplica una medida con porcentaje se sustituirá
+        automaticamente por auto.</p>
+
+        <p>Cuando se sustituye por auto automaticamente el alto se va a calculara en base al contendio del elemento, es decir que tomara el alto necesario para mostrar el contendido que tenga dentro, si no hay contendo el height esta en auto, directamente no se mostrará.</p>
+
+        <div class="box-1">
+            <div class="box-1-hijo centrar">Box 1 hijo</div>
+        </div>
+
+        Si a box 2 se le da un height del 100% se espera que ocupe toda la pagina, pero no es asi, como para box 2 su padre es el html y este no tiene alto declarado (no tampoco el html), box 2 tendra como height auto.
+
+        <div class="box-2"><h3>Box 2:</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consectetur fugiat, odit ex ipsa modi. Consequuntur voluptate, fuga exercitationem accusamus itaque placeat doloribus eaque distinctio ea praesentium voluptatibus sequi dignissimos.</div>
+
+        <p>Height es una propiedad que tenéis que usar
+            con mucho cuidado.Si no es necesario establecer
+            un alto,dejad que el contenido sea el que decida
+            el alto del elemento.</p>
+
+            <h2>Height con AUTO:</h2>
+
+        <p>si se quiere dar un espacio de margen en el alto de un elemento se puede hacer con padding y no declarando el alto en si, ya que si el contenido aumenta o disminuye este alto que declaramos no servira,</p>
+
+        <div class="box-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe commodi nostrum esse eaque quas eligendi sed consequuntur cupiditate. Consequatur autem ut assumenda voluptatibus veritatis rerum vitae quo nisi pariatur. Nemo?
+        Placeat eveniet asperiores hic saepe similique nam repellat non fuga delectus at voluptatibus esse nemo rerum quaerat a reprehenderit, eligendi dignissimos, officia ex, eos dicta nostrum vero? Illo, ex voluptatibus?
+        Cumque, adipisci? Cumque ipsam et dolorem fugiat, reiciendis recusandae placeat, quis veniam non quibusdam vitae libero, repudiandae iste quae minima repellendus vel esse unde magnam! Reiciendis, voluptatum repellat? Doloribus, nam.</div>
+
+        <h2>Height % con Position absolute y fixed:</h2>
+
+        <p>Cuando se especifica position absolute o fixed en un elemento y al mismo tiempo un height en porcentaje, automaticamente el height se calcula con respecto al viewport, es decir al espacio que hay para visualizar y dibujar cosas, pero si se especifica position Relative o Sticky las cosas vuelven a la normalidad. </p>
+
+        <div class="box-4">
+            <div class="box-4-hijo centrar">Box 4 hijo</div>
+        </div>
+    
+</body>
+</html>

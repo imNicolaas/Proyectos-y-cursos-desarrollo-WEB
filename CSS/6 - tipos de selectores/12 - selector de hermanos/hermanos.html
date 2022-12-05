@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores de hermanos CSS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/HTML y CSS/CSS/6 - tipos de selectores/12 - selector de hermanos/hermanos.css">
+
+</head>
+
+<body>
+    
+    <h1 class="centrar">Selectores de hermanos en CSS</h1>
+
+    <h2>Seleccion de elemento hermano inmediatamente siguiente:</h2>
+
+    <p>Este tipo de seleccion se le denomina <b>seleccion de hermanos</b> y concinste en seleccionar un elemento que este en el mismo nivel que el "original" y a este elemento a seleccionar se le llamara <b>hermano</b> y debe ser el elemento que este estrictamente al siguiente que el <b>original</b> y para hacer la seleccion se usa un signo <b>+</b>.</p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;div>
+
+        &#60;h2 <span class="rojo">class="h2-1"</span>> Subtitulo de prueba: &#60;/h2>
+    
+            &#60;p <span class="rojo">class="parrafo-1"</span>>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>               Molestias laboriosam consequatur reiciendis, vitae officia cupiditate. Aspernatur<br>               omnis suscipit ut minima consectetur at facere? Assumenda, voluptate? Non<br>               totam eaque atque quos.&#60;/p>
+    
+        &#60;h2 <span class="rojo">class="h2-2"</span>> Subtitulo de prueba #2 &#60;/h2>
+    
+            &#60;p <span class="rojo">class="parrafo-2"</span>>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>               Molestias laboriosam consequatur reiciendis, vitae officia cupiditate. Aspernatur<br>               omnis suscipit ut minima consectetur at facere? Assumenda, voluptate? Non<br>               totam eaque atque quos.&#60;/p>
+    
+        &#60;h2 <span class="rojo">class="h2-3"</span>> Subtitulo de prueba #3 &#60;/h2>
+    
+            &#60;p <span class="rojo">class="parrafo-3"</span>>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>               Molestias laboriosam consequatur reiciendis, vitae officia cupiditate. Aspernatur<br>               omnis suscipit ut minima consectetur at facere? Assumenda, voluptate? Non<br>               totam eaque atque quos.&#60;/p>
+            
+    &#60;/div>
+        </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+        <span class="rojo">.h2-1 + .parrafo-1</span>{
+            background-color: red;
+            border-radius: 4px;
+        }
+            </code></pre>
+            <p>Tambien es posible hacer esta seleccion de hermanos con el nombre de la etiqueta y funcinara de la misma forma es decir, poniendo <b>p</b> en lugar de <b>parrafo-1</b> se hubiera seleecionado de la misma forma</p>
+
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <div class="centrar">
+        <div class="max_width">
+
+            <h2 class="h2-1">Subtitulo de prueba:</h2>
+    
+            <p class="parrafo-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias laboriosam consequatur reiciendis, vitae officia cupiditate. Aspernatur omnis suscipit ut minima consectetur at facere? Assumenda, voluptate? Non totam eaque atque quos.</p>
+    
+            <h2 class="h2-2">Subtitulo de prueba #2</h2>
+    
+            <p class="parrafo-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sed quasi dolore distinctio modi beatae similique saepe, illum vero provident soluta. Odio fugit eveniet non facilis quam odit quia sequi.</p>
+    
+            <h2 class="h2-3">Subtitulo de prueba #3</h2>
+    
+            <p class="parrafo-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sed quasi dolore distinctio modi beatae similique saepe, illum vero provident soluta. Odio fugit eveniet non facilis quam odit quia sequi.</p>
+    
+        </div>
+    </div>
+
+    <h2>Seleccion de todos los elementos hermanos siguientes:</h2>
+
+    <p>Es posible hacer una seleccion de los elementos hermanos siguientes a el <b>original</b> si es que obvimente cumplen con la condicion de ser hermanos <b>y ademas son de la misma naturaleza ya que de lo si se pone solo un para metro de seleccion como los "p", entonces seleccionara todos los p hermanos siguientes y les aplicara el estilo </b>, es decir que deben estar en el mismo nivel y se realiza con el simbolo de <b>"birgulilla" ("~")</b> en la estructura de CSS, y se seleccionaran todos los elementos hermanos siguientes al <b>original</b></p>
+
+    <p>De esta forma:</p>
+
+    <ul>
+        <li>
+            En HTML:
+            <pre><code>
+    &#60;div>
+
+        &#60;h2 <span class="rojo">class="h2-1"</span>> Subtitulo de prueba: &#60;/h2>
+    
+            &#60;p <span class="rojo">class="parrafo-1"</span>>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>               Molestias laboriosam consequatur reiciendis, vitae officia cupiditate. Aspernatur<br>               omnis suscipit ut minima consectetur at facere? Assumenda, voluptate? Non<br>               totam eaque atque quos.&#60;/p>
+    
+        &#60;h2 <span class="rojo">class="h2-2"</span>> Subtitulo de prueba #2 &#60;/h2>
+    
+            &#60;p <span class="rojo">class="parrafo-2"</span>>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>               Molestias laboriosam consequatur reiciendis, vitae officia cupiditate. Aspernatur<br>               omnis suscipit ut minima consectetur at facere? Assumenda, voluptate? Non<br>               totam eaque atque quos.&#60;/p>
+    
+        &#60;h2 <span class="rojo">class="h2-3"</span>> Subtitulo de prueba #3 &#60;/h2>
+    
+            &#60;p <span class="rojo">class="parrafo-3"</span>>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>               Molestias laboriosam consequatur reiciendis, vitae officia cupiditate. Aspernatur<br>               omnis suscipit ut minima consectetur at facere? Assumenda, voluptate? Non<br>               totam eaque atque quos.&#60;/p>
+            
+    &#60;/div>
+        </code></pre>
+        </li>
+
+        <li>
+            En CSS:
+
+            <pre><code>
+        <span class="rojo">.h2-4 ~ p</span>{
+            background-color: bisque;
+            border-radius: 4px;
+        }
+            </code></pre>
+            <p>En es te caso el estilo se aplicara a todos los p hermanos que sigan despues del <b>.h2-4</b></p>
+
+        </li>
+
+        <li>
+            Resultado:
+        </li>
+    </ul>
+
+    <div class="centrar">
+        <div class="max_width">
+
+            <h2 class="h2-4">Subtitulo de prueba:</h2>
+    
+            <p class="parrafo-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias laboriosam consequatur reiciendis, vitae officia cupiditate. Aspernatur omnis suscipit ut minima consectetur at facere? Assumenda, voluptate? Non totam eaque atque quos.</p>
+    
+            <h2 class="h2-5">Subtitulo de prueba #2</h2>
+    
+            <p class="parrafo-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sed quasi dolore distinctio modi beatae similique saepe, illum vero provident soluta. Odio fugit eveniet non facilis quam odit quia sequi.</p>
+    
+            <h2 class="h2-6">Subtitulo de prueba #3</h2>
+    
+            <p class="parrafo-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt sed quasi dolore distinctio modi beatae similique saepe, illum vero provident soluta. Odio fugit eveniet non facilis quam odit quia sequi.</p>
+    
+        </div>
+    </div>
+
+    <div class="centrar">
+        <p class="max_width">
+            <span class="rojo">Nota:</span> Todas estas formas de seleccionar elementos se pueden mezclar e intercambiar como convenga.
+        </p>
+    </div>
+
+
+</body>
+</html>
